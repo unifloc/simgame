@@ -1,0 +1,1311 @@
+
+
+
+ ########  #          ######   #           #
+ #         #         #      #   #         # 
+ #####     #         #      #    #   #   #  
+ #         #         #      #     # # # #   
+ #         #######    ######       #   #    
+
+Flow is a simulator for fully implicit three-phase black-oil flow, and is part of OPM.
+For more information visit: https://opm-project.org 
+
+Flow Version  =  2019.04
+System        =  khabibullinra-ThinkPad-T550 (Number of logical cores: 4, RAM: 15737.59 MB) 
+Architecture  =  Linux x86_64 (Release: 5.0.0-27-generic, Version: #28~18.04.1-Ubuntu SMP Thu Aug 22 03:00:32 UTC 2019 )
+User          =  khabibullinra
+Simulation started on 09-09-2019 at 19:09:20 hrs
+Parameters used by Flow:
+# [known parameters which were specified at run-time]
+EclDeckFileName="spe1.DATA" # default: ""
+# [parameters which were specified at compile-time]
+CprEllSolvetype="0"
+CprMaxEllIter="20"
+CprReuseSetup="0"
+CprSolverVerbose="0"
+CprUseDrs="0"
+DbhpMaxRel="1"
+DpMaxRel="0.3"
+DsMax="0.2"
+DwellFractionMax="0.2"
+EclEnableTuning="0"
+EclMaxFails="10"
+EclMaxTimeStepSizeAfterWellEvent="3.15576e+07"
+EclNewtonRelaxedTolerance="1e+09"
+EclNewtonRelaxedVolumeFraction="0.03"
+EclNewtonStrictIterations="8"
+EclNewtonSumTolerance="0.0001"
+EclNewtonSumToleranceExponent="0.333333"
+EclOutputDoublePrecision="0"
+EclOutputInterval="-1"
+EclRestartShrinkFactor="3"
+EclStrictParsing="0"
+EnableAdaptiveTimeStepping="1"
+EnableAsyncEclOutput="1"
+EnableAsyncVtkOutput="1"
+EnableDryRun="auto"
+EnableEclOutput="1"
+EnableGravity="1"
+EnableGridAdaptation="0"
+EnableIntensiveQuantityCache="1"
+EnableLoggingFalloutWarning="0"
+EnableOpmRstFile="0"
+EnableStorageCache="1"
+EnableTerminalOutput="1"
+EnableThermodynamicHints="0"
+EnableTracerModel="0"
+EnableTuning="0"
+EnableVtkOutput="0"
+EnableWriteAllSolutions="0"
+EndTime="1e+100"
+FlowLinearSolverVerbosity="0"
+FlowNewtonMaxIterations="20"
+FlowNewtonMinIterations="1"
+ForceDisableFluidInPlaceOutput="0"
+FullTimeStepInitially="0"
+IgnoreKeywords=""
+IluFillinLevel="0"
+IluRedblack="0"
+IluRelaxation="0.9"
+IluReorderSpheres="0"
+InitialTimeStepInDays="1"
+InitialTimeStepSize="86400"
+LinearSolverIgnoreConvergenceFailure="0"
+LinearSolverMaxIter="200"
+LinearSolverReduction="0.01"
+LinearSolverRequireFullSparsityPattern="0"
+LinearSolverRestart="40"
+MatrixAddWellContributions="0"
+MaxInnerIterMsWells="100"
+MaxPressureChangeMsWells="200000"
+MaxResidualAllowed="1e+07"
+MaxSinglePrecisionDays="20"
+MaxStrictIter="8"
+MaxTimeStepDivisions="10"
+MaxTimeStepSize="inf"
+MaxWelleqIter="30"
+MiluVariant="ILU"
+MinTimeStepSize="0"
+NewtonMaxError="1e+10"
+NewtonMaxIterations="14"
+NewtonMaxRelax="0.5"
+NewtonRelaxationType="dampen"
+NewtonTargetIterations="6"
+NewtonTolerance="0.01"
+NewtonVerbose="1"
+NewtonWriteConvergence="0"
+OutputDir=""
+OutputInterval="1"
+OutputMode="all"
+ParameterFile=""
+PredeterminedTimeStepsFile=""
+PriVarOscilationThreshold="1e-05"
+PrintParameters="2"
+PrintProperties="2"
+RestartTime="-1e+35"
+RestartWritingInterval="16777215"
+ScaleLinearSystem="0"
+SolveWelleqInitially="1"
+SolverGrowthFactor="2"
+SolverMaxGrowth="3"
+SolverMaxRestarts="10"
+SolverMaxTimeStepInDays="365"
+SolverRestartFactor="0.33"
+SolverVerbosity="1"
+SystemStrategy="none"
+ThreadsPerProcess="-1"
+TimeStepAfterEventInDays="-1"
+TimeStepControl="pid"
+TimeStepControlDecayRate="0.75"
+TimeStepControlFileName="timesteps"
+TimeStepControlGrowthRate="1.25"
+TimeStepControlTargetIterations="30"
+TimeStepControlTargetNewtonIterations="8"
+TimeStepControlTolerance="0.1"
+TimeStepVerbosity="1"
+ToleranceCnv="0.01"
+ToleranceCnvRelaxed="1e+09"
+ToleranceMb="1e-06"
+TolerancePressureMsWells="1000"
+ToleranceWellControl="1e-07"
+ToleranceWells="0.0001"
+UpdateEquationsScaling="0"
+UseAmg="0"
+UseCpr="0"
+UseGmres="0"
+UseInnerIterationsMsWells="1"
+UseMultisegmentWell="1"
+UseUpdateStabilization="1"
+VtkWriteAverageMolarMasses="0"
+VtkWriteDensities="1"
+VtkWriteDofIndex="0"
+VtkWriteEclTracerConcentration="0"
+VtkWriteExtrusionFactor="0"
+VtkWriteFilterVelocities="0"
+VtkWriteFugacities="0"
+VtkWriteFugacityCoeffs="0"
+VtkWriteGasDissolutionFactor="0"
+VtkWriteGasFormationVolumeFactor="0"
+VtkWriteGasSaturationPressure="0"
+VtkWriteIntrinsicPermeabilities="0"
+VtkWriteMassFractions="0"
+VtkWriteMobilities="0"
+VtkWriteMolarities="0"
+VtkWriteMoleFractions="1"
+VtkWriteOilFormationVolumeFactor="0"
+VtkWriteOilSaturationPressure="0"
+VtkWriteOilVaporizationFactor="0"
+VtkWritePorosity="1"
+VtkWritePotentialGradients="0"
+VtkWritePressures="1"
+VtkWritePrimaryVars="0"
+VtkWritePrimaryVarsMeaning="0"
+VtkWriteProcessRank="0"
+VtkWriteRelativePermeabilities="1"
+VtkWriteSaturatedGasOilVaporizationFactor="0"
+VtkWriteSaturatedOilGasDissolutionFactor="0"
+VtkWriteSaturationRatios="0"
+VtkWriteSaturations="1"
+VtkWriteTemperature="1"
+VtkWriteTotalMassFractions="0"
+VtkWriteTotalMoleFractions="0"
+VtkWriteViscosities="0"
+VtkWriteWaterFormationVolumeFactor="0"
+
+
+===============Saturation Functions Diagnostics===============
+
+System:  Black-oil system.
+Relative permeability input format: Saturation Family I.
+Number of saturation regions: 1
+
+In saturation table SATNUM = 1, Sowcr + Swcr should be less than 1.
+
+
+================ Starting main simulation loop ===============
+
+
+
+---------------    Simulation step number 0    ---------------
+      Current time (days)     0
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.473 BARSA                 :
+                                                  :      PORV =     417319669   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.473 BARSA                 :
+                                                  :      PORV =     417319669   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+
+Report step  0/16 at day 0/16, date = 01-Jan-2020
+
+Time step 0, stepsize 1 days.
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  1.286e-26  2.781e-32  8.615e-27  6.195e-13  7.679e-18  3.210e-13
+   1  1.183e-17  9.505e-21  3.693e-18  2.523e-13  1.188e-16  1.307e-13
+   2  2.079e-17  1.733e-18  1.069e-17  5.826e-15  9.501e-17  2.947e-15
+Overall linear iterations used: 5
+Time step summary: newton its =  2, linearizations =  3 ( 1.658 sec), linear its =   5 ( 0.905 sec)
+Sub steps started at time = 0 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 1 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at         1  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report    1    02 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.473 BARSA                 :
+                                                  :      PORV =     417319669   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.473 BARSA                 :
+                                                  :      PORV =     417319669   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.732405 seconds; total solver time 2.732405 seconds.
+
+
+---------------    Simulation step number 1    ---------------
+      Current time (days)     1
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step  1/16 at day 1/16, date = 02-Jan-2020
+
+Time step 0, stepsize 1 days.
+    Switching control mode for well P1 from BHP to SURFACE_RATE
+    Switching control mode for well PS1 from BHP to SURFACE_RATE
+    Switching control mode for well PS2 from BHP to SURFACE_RATE
+    Switching control mode for well P4 from BHP to SURFACE_RATE
+    Switching control mode for well P5 from BHP to SURFACE_RATE
+    Switching control mode for well P6 from BHP to SURFACE_RATE
+    Switching control mode for well I1 from BHP to SURFACE_RATE
+    Switching control mode for well I2 from BHP to SURFACE_RATE
+    Switching control mode for well I3 from BHP to SURFACE_RATE
+    Switching control mode for well I4 from BHP to SURFACE_RATE
+    Switching control mode for well I5 from BHP to SURFACE_RATE
+    Switching control mode for well I6 from BHP to SURFACE_RATE
+    Switching control mode for well P1 from SURFACE_RATE to BHP
+Well equation solution gets converged with 4 iterations
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.803e-06  5.989e-06  2.489e-06  1.139e-01  3.153e-02  5.900e-02
+    Switching control mode for well P3 from SURFACE_RATE to BHP
+    Switching control mode for well PS2 from SURFACE_RATE to BHP
+    Switching control mode for well P4 from SURFACE_RATE to BHP
+    Switching control mode for well P6 from SURFACE_RATE to BHP
+    Switching control mode for well I4 from SURFACE_RATE to BHP
+   1  6.147e-06  2.011e-06  3.395e-06  6.677e-01  1.444e-02  4.364e-01
+    Switching control mode for well P1 from BHP to SURFACE_RATE
+    Switching control mode for well P3 from BHP to SURFACE_RATE
+    Switching control mode for well PS2 from BHP to SURFACE_RATE
+    Switching control mode for well P4 from BHP to SURFACE_RATE
+    Switching control mode for well P6 from BHP to SURFACE_RATE
+    Switching control mode for well I4 from BHP to SURFACE_RATE
+   2  8.995e-06  7.908e-08  3.763e-06  3.242e-01  7.626e-03  1.463e-01
+   3  3.940e-06  1.053e-07  4.470e-07  7.095e-01  4.903e-03  4.897e-01
+    Oscillating behavior detected: Relaxation set to 0.900000
+   4  3.376e-07  5.713e-09  3.112e-08  7.624e-02  1.862e-04  7.650e-02
+   5  3.637e-08  8.889e-10  7.623e-09  3.426e-02  2.070e-05  1.776e-02
+   6  3.718e-09  6.790e-11  1.116e-09  8.519e-03  4.447e-06  4.415e-03
+Overall linear iterations used: 29
+Time step summary: newton its =  6, linearizations =  7 ( 3.408 sec), linear its =  29 ( 3.041 sec)
+Sub steps started at time = 1 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 2 (days)
+Suggested next step size = 0.410779 (days)
+
+
+                              **************************************************************************
+  Balance  at         2  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report    2    03 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.478 BARSA                 :
+                                                  :      PORV =     417319786   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171585656             0     171585656:    125780880   :            -0   38812188081   38812188081:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.478 BARSA                 :
+                                                  :      PORV =     417319786   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171585656             0     171585656:    125780880   :            -0   38812188081   38812188081:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 6.784414 seconds; total solver time 9.516819 seconds.
+
+
+---------------    Simulation step number 2    ---------------
+      Current time (days)     2
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step  2/16 at day 2/16, date = 03-Jan-2020
+
+Time step 0, stepsize 0.410779 days.
+    Switching control mode for well P5 from BHP to SURFACE_RATE
+    Switching control mode for well P1 from BHP to SURFACE_RATE
+    Switching control mode for well PS1 from BHP to SURFACE_RATE
+    Switching control mode for well PS2 from BHP to SURFACE_RATE
+    Switching control mode for well P4 from BHP to SURFACE_RATE
+    Switching control mode for well P6 from BHP to SURFACE_RATE
+Well equation solution gets converged with 2 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  2.030e-06  2.460e-06  1.052e-06  1.394e-02  1.499e-02  7.228e-03
+   1  8.293e-09  2.089e-08  4.404e-09  3.274e-03  1.796e-04  1.697e-03
+   2  1.125e-08  6.058e-11  5.947e-09  2.183e-03  6.944e-07  1.131e-03
+Overall linear iterations used: 7
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 1.333 sec), linear its =   7 ( 0.905 sec)
+
+Time step 1, stepsize 0.589221 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  2.913e-06  3.529e-06  1.510e-06  2.142e-02  2.151e-02  1.110e-02
+   1  3.969e-08  5.189e-08  2.235e-08  2.791e-02  5.098e-04  1.447e-02
+   2  8.753e-11  7.176e-11  3.386e-10  4.391e-02  1.326e-05  2.276e-02
+   3  3.083e-08  7.021e-11  1.613e-08  2.757e-02  7.357e-06  1.429e-02
+    Oscillating behavior detected: Relaxation set to 0.900000
+   4  4.389e-09  2.628e-09  2.173e-09  1.511e-01  7.072e-05  7.833e-02
+   5  2.847e-08  2.160e-09  1.478e-08  1.190e-02  6.635e-05  6.170e-03
+   6  1.148e-08  1.894e-10  5.943e-09  6.186e-03  6.385e-06  3.207e-03
+Overall linear iterations used: 34
+Time step summary: newton its =  6, linearizations =  7 ( 3.423 sec), linear its =  34 ( 3.708 sec)
+Sub steps started at time = 2 (days)
+ step[ 0 ] = 0.410779 (days)
+ step[ 1 ] = 0.589221 (days)
+sub steps end time = 3 (days)
+Suggested next step size = 1.76766 (days)
+
+
+                              **************************************************************************
+  Balance  at         3  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report    3    04 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.483 BARSA                 :
+                                                  :      PORV =     417319905   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171584466             0     171584466:    125783280   :             0   38811918892   38811918892:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.483 BARSA                 :
+                                                  :      PORV =     417319905   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171584466             0     171584466:    125783280   :             0   38811918892   38811918892:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 9.892300 seconds; total solver time 19.409119 seconds.
+
+
+---------------    Simulation step number 3    ---------------
+      Current time (days)     3
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step  3/16 at day 3/16, date = 04-Jan-2020
+
+Time step 0, stepsize 1 days.
+    Switching control mode for well P1 from BHP to SURFACE_RATE
+    Switching control mode for well PS1 from BHP to SURFACE_RATE
+    Switching control mode for well PS2 from BHP to SURFACE_RATE
+    Switching control mode for well P1 from SURFACE_RATE to BHP
+    Switching control mode for well P4 from BHP to SURFACE_RATE
+    Switching control mode for well P5 from BHP to SURFACE_RATE
+    Switching control mode for well P6 from BHP to SURFACE_RATE
+Well equation solution gets converged with 2 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.941e-06  5.988e-06  2.562e-06  3.644e-02  3.618e-02  1.889e-02
+   1  1.317e-08  3.037e-07  7.110e-09  6.198e-02  2.510e-03  3.213e-02
+   2  6.131e-09  1.176e-09  3.869e-09  1.011e-02  1.385e-05  5.242e-03
+   3  8.438e-09  6.001e-11  4.451e-09  1.854e-03  2.958e-06  9.612e-04
+Overall linear iterations used: 15
+Time step summary: well its =  2, newton its =  3, linearizations =  4 ( 1.747 sec), linear its =  15 ( 1.511 sec)
+Sub steps started at time = 3 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 4 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at         4  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report    4    05 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.488 BARSA                 :
+                                                  :      PORV =     417320023   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171583275             0     171583275:    125785679   :             0   38811649503   38811649503:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.488 BARSA                 :
+                                                  :      PORV =     417320023   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171583275             0     171583275:    125785679   :             0   38811649503   38811649503:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 3.454639 seconds; total solver time 22.863758 seconds.
+
+
+---------------    Simulation step number 4    ---------------
+      Current time (days)     4
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step  4/16 at day 4/16, date = 05-Jan-2020
+
+Time step 0, stepsize 1 days.
+    Switching control mode for well PS2 from BHP to SURFACE_RATE
+    Switching control mode for well P3 from SURFACE_RATE to BHP
+    Switching control mode for well PS1 from BHP to SURFACE_RATE
+    Switching control mode for well P4 from BHP to SURFACE_RATE
+    Switching control mode for well P5 from BHP to SURFACE_RATE
+    Switching control mode for well P6 from BHP to SURFACE_RATE
+Well equation solution gets converged with 2 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.890e-06  5.988e-06  2.536e-06  3.545e-02  3.907e-02  1.838e-02
+    Switching control mode for well I4 from SURFACE_RATE to BHP
+    Switching control mode for well I6 from SURFACE_RATE to BHP
+   1  5.590e-09  3.017e-07  3.244e-09  4.204e-03  3.152e-03  2.180e-03
+   2  2.259e-08  1.632e-10  1.219e-08  1.835e-02  7.570e-06  9.513e-03
+   3  3.074e-09  3.149e-12  1.673e-09  1.778e-03  2.610e-06  9.219e-04
+Overall linear iterations used: 14
+Time step summary: well its =  2, newton its =  3, linearizations =  4 ( 1.789 sec), linear its =  14 ( 1.484 sec)
+Sub steps started at time = 4 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 5 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at         5  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report    5    06 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.492 BARSA                 :
+                                                  :      PORV =     417320135   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171582097             0     171582097:    125788030   :             0   38811383146   38811383146:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.492 BARSA                 :
+                                                  :      PORV =     417320135   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171582097             0     171582097:    125788030   :             0   38811383146   38811383146:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 3.539328 seconds; total solver time 26.403087 seconds.
+
+
+---------------    Simulation step number 5    ---------------
+      Current time (days)     5
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step  5/16 at day 5/16, date = 06-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.891e-06  5.865e-06  2.537e-06  3.507e-02  3.490e-02  1.819e-02
+    Switching control mode for well I1 from SURFACE_RATE to BHP
+    Switching control mode for well I2 from SURFACE_RATE to BHP
+    Switching control mode for well I5 from SURFACE_RATE to BHP
+   1  3.441e-07  1.030e-06  1.237e-07  4.283e-01  8.681e-03  2.392e-01
+   2  6.185e-08  8.401e-09  3.478e-07  8.371e-02  6.001e-03  3.239e-02
+    Switching control mode for well I3 from SURFACE_RATE to BHP
+   3  3.785e-08  7.688e-08  4.029e-08  6.397e-01  2.413e-03  3.318e-01
+    Switching control mode for well I3 from BHP to SURFACE_RATE
+   4  1.453e-07  8.163e-09  7.550e-08  3.614e-02  1.277e-03  1.874e-02
+    Switching control mode for well I3 from SURFACE_RATE to BHP
+   5  4.375e-08  2.158e-08  2.273e-08  5.115e-01  7.937e-04  2.653e-01
+    Switching control mode for well I3 from BHP to SURFACE_RATE
+   6  1.122e-07  3.168e-09  5.816e-08  1.839e-01  5.255e-04  9.540e-02
+   7  5.944e-08  1.408e-10  3.083e-08  1.992e-02  4.803e-05  1.033e-02
+   8  2.076e-08  6.908e-11  1.078e-08  2.891e-02  1.607e-05  1.499e-02
+Overall linear iterations used: 46
+Time step summary: newton its =  8, linearizations =  9 ( 4.465 sec), linear its =  46 ( 4.638 sec)
+Sub steps started at time = 5 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 6 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at         6  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report    6    07 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.492 BARSA                 :
+                                                  :      PORV =     417320165   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171580915             0     171580915:    125789997   :          2275   38811113407   38811115682:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.492 BARSA                 :
+                                                  :      PORV =     417320165   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171580915             0     171580915:    125789997   :          2275   38811113407   38811115682:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 9.460272 seconds; total solver time 35.863359 seconds.
+
+
+---------------    Simulation step number 6    ---------------
+      Current time (days)     6
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step  6/16 at day 6/16, date = 07-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.887e-06  4.909e-06  2.535e-06  3.236e-02  3.197e-02  1.678e-02
+    Switching control mode for well I3 from SURFACE_RATE to BHP
+   1  1.502e-07  3.575e-07  3.221e-07  2.866e-01  1.313e-02  1.487e-01
+   2  8.091e-08  1.569e-08  4.277e-08  1.524e-02  9.736e-03  7.906e-03
+   3  5.131e-08  5.776e-10  2.670e-08  1.462e-02  4.233e-05  7.582e-03
+   4  3.683e-08  4.774e-12  1.912e-08  9.841e-03  7.469e-07  5.105e-03
+Overall linear iterations used: 33
+Time step summary: newton its =  4, linearizations =  5 ( 2.177 sec), linear its =  33 ( 2.940 sec)
+Sub steps started at time = 6 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 7 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at         7  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report    7    08 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.486 BARSA                 :
+                                                  :      PORV =     417320110   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171579730             0     171579730:    125791537   :         26222   38810821385   38810847607:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.486 BARSA                 :
+                                                  :      PORV =     417320110   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171579730             0     171579730:    125791537   :         26222   38810821385   38810847607:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 5.381271 seconds; total solver time 41.244629 seconds.
+
+
+---------------    Simulation step number 7    ---------------
+      Current time (days)     7
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step  7/16 at day 7/16, date = 08-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.882e-06  3.840e-06  2.532e-06  2.470e-02  2.417e-02  1.281e-02
+   1  5.758e-07  1.271e-08  1.565e-08  4.903e-02  9.411e-04  2.544e-02
+   2  2.541e-07  2.268e-11  1.309e-07  1.402e-03  4.434e-06  7.272e-04
+Overall linear iterations used: 6
+Time step summary: newton its =  2, linearizations =  3 ( 1.413 sec), linear its =   6 ( 0.925 sec)
+Sub steps started at time = 7 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 8 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at         8  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report    8    09 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.479 BARSA                 :
+                                                  :      PORV =     417320016   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171578613             0     171578613:    125792786   :         51953   38810542947   38810594900:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.479 BARSA                 :
+                                                  :      PORV =     417320016   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171578613             0     171578613:    125792786   :         51953   38810542947   38810594900:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.529470 seconds; total solver time 43.774099 seconds.
+
+
+---------------    Simulation step number 8    ---------------
+      Current time (days)     8
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step  8/16 at day 8/16, date = 09-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.889e-06  3.117e-06  2.536e-06  1.875e-02  1.824e-02  9.726e-03
+   1  2.800e-07  1.863e-08  1.432e-07  4.028e-01  5.411e-03  2.091e-01
+   2  1.990e-07  1.581e-09  1.031e-07  2.267e-03  6.156e-05  1.176e-03
+Overall linear iterations used: 6
+Time step summary: newton its =  2, linearizations =  3 ( 1.348 sec), linear its =   6 ( 0.738 sec)
+Sub steps started at time = 8 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 9 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at         9  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report    9    10 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.468 BARSA                 :
+                                                  :      PORV =     417319871   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171577487             0     171577487:    125793809   :         77921   38810262243   38810340165:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.468 BARSA                 :
+                                                  :      PORV =     417319871   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171577487             0     171577487:    125793809   :         77921   38810262243   38810340165:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.243650 seconds; total solver time 46.017749 seconds.
+
+
+---------------    Simulation step number 9    ---------------
+      Current time (days)     9
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step  9/16 at day 9/16, date = 10-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.872e-06  2.553e-06  2.528e-06  1.466e-02  1.421e-02  7.610e-03
+   1  1.461e-07  4.305e-08  7.425e-08  3.929e-03  1.940e-03  2.040e-03
+   2  2.289e-08  5.966e-12  1.176e-08  1.404e-03  3.915e-07  7.288e-04
+Overall linear iterations used: 9
+Time step summary: newton its =  2, linearizations =  3 ( 1.378 sec), linear its =   9 ( 1.039 sec)
+Sub steps started at time = 9 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 10 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        10  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   10    11 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.455 BARSA                 :
+                                                  :      PORV =     417319679   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171576319             0     171576319:    125794672   :        102033   38809974067   38810076100:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.455 BARSA                 :
+                                                  :      PORV =     417319679   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171576319             0     171576319:    125794672   :        102033   38809974067   38810076100:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.613089 seconds; total solver time 48.630838 seconds.
+
+
+---------------    Simulation step number 10    ---------------
+      Current time (days)     10
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step 10/16 at day 10/16, date = 11-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.867e-06  2.156e-06  2.525e-06  1.333e-02  1.294e-02  6.919e-03
+   1  1.701e-07  4.554e-08  8.723e-08  2.321e-02  1.449e-03  1.205e-02
+   2  7.961e-08  1.010e-10  4.118e-08  1.048e-03  1.104e-05  5.439e-04
+Overall linear iterations used: 7
+Time step summary: newton its =  2, linearizations =  3 ( 1.493 sec), linear its =   7 ( 0.968 sec)
+Sub steps started at time = 10 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 11 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        11  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   11    12 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.441 BARSA                 :
+                                                  :      PORV =     417319471   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171575166             0     171575166:    125795442   :        124870   38809690501   38809815372:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.441 BARSA                 :
+                                                  :      PORV =     417319471   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171575166             0     171575166:    125795442   :        124870   38809690501   38809815372:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.694452 seconds; total solver time 51.325289 seconds.
+
+
+---------------    Simulation step number 11    ---------------
+      Current time (days)     11
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step 11/16 at day 11/16, date = 12-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.863e-06  1.919e-06  2.523e-06  1.210e-02  1.176e-02  6.283e-03
+   1  1.352e-07  1.529e-08  6.930e-08  8.547e-03  1.001e-03  4.437e-03
+   2  5.013e-08  6.341e-11  2.589e-08  1.489e-03  1.763e-05  7.729e-04
+Overall linear iterations used: 8
+Time step summary: newton its =  2, linearizations =  3 ( 1.492 sec), linear its =   8 ( 0.969 sec)
+Sub steps started at time = 11 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 12 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        12  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   12    13 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.426 BARSA                 :
+                                                  :      PORV =     417319247   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171574007             0     171574007:    125796146   :        146695   38809406575   38809553270:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.426 BARSA                 :
+                                                  :      PORV =     417319247   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171574007             0     171574007:    125796146   :        146695   38809406575   38809553270:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.656380 seconds; total solver time 53.981670 seconds.
+
+
+---------------    Simulation step number 12    ---------------
+      Current time (days)     12
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step 12/16 at day 12/16, date = 13-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.859e-06  1.758e-06  2.521e-06  1.098e-02  1.066e-02  5.700e-03
+   1  8.719e-08  6.897e-10  4.446e-08  9.497e-03  1.252e-04  4.932e-03
+   2  4.648e-08  5.244e-12  2.404e-08  2.133e-03  8.452e-07  1.107e-03
+Overall linear iterations used: 7
+Time step summary: newton its =  2, linearizations =  3 ( 1.416 sec), linear its =   7 ( 0.781 sec)
+Sub steps started at time = 12 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 13 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        13  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   13    14 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =        320.41 BARSA                 :
+                                                  :      PORV =     417319011   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171572847             0     171572847:    125796797   :        167653   38809123542   38809291195:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =        320.41 BARSA                 :
+                                                  :      PORV =     417319011   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171572847             0     171572847:    125796797   :        167653   38809123542   38809291195:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.366841 seconds; total solver time 56.348511 seconds.
+
+
+---------------    Simulation step number 13    ---------------
+      Current time (days)     13
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step 13/16 at day 13/16, date = 14-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 1 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.649e-06  1.624e-06  2.412e-06  3.129e-02  9.656e-03  1.625e-02
+   1  2.151e-07  8.409e-11  1.110e-07  3.175e-03  4.084e-05  1.649e-03
+   2  2.313e-08  2.727e-12  1.194e-08  1.019e-03  6.013e-07  5.293e-04
+Overall linear iterations used: 10
+Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 1.575 sec), linear its =  10 ( 1.146 sec)
+Sub steps started at time = 13 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 14 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        14  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   14    15 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.394 BARSA                 :
+                                                  :      PORV =     417318778   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171571727             0     171571727:    125797399   :        187831   38808850055   38809037886:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.394 BARSA                 :
+                                                  :      PORV =     417318778   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171571727             0     171571727:    125797399   :        187831   38808850055   38809037886:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.898635 seconds; total solver time 59.247146 seconds.
+
+
+---------------    Simulation step number 14    ---------------
+      Current time (days)     14
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step 14/16 at day 14/16, date = 15-Jan-2020
+
+Time step 0, stepsize 1 days.
+    Switching control mode for well P3 from BHP to SURFACE_RATE
+Well equation solution gets converged with 3 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.385e-06  1.503e-06  2.276e-06  8.721e-02  8.719e-03  4.528e-02
+   1  1.609e-07  2.892e-08  8.302e-08  6.552e-01  8.725e-03  3.403e-01
+   2  1.052e-07  1.124e-08  5.457e-08  2.638e-01  2.625e-03  1.370e-01
+   3  6.452e-08  1.231e-09  3.337e-08  7.729e-04  4.413e-05  4.014e-04
+Overall linear iterations used: 10
+Time step summary: well its =  3, newton its =  3, linearizations =  4 ( 1.900 sec), linear its =  10 ( 1.303 sec)
+Sub steps started at time = 14 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 15 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        15  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   15    16 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =        320.38 BARSA                 :
+                                                  :      PORV =     417318560   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171570685             0     171570685:    125797958   :        207292   38808595103   38808802395:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =        320.38 BARSA                 :
+                                                  :      PORV =     417318560   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171570685             0     171570685:    125797958   :        207292   38808595103   38808802395:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 3.467514 seconds; total solver time 62.714660 seconds.
+
+
+---------------    Simulation step number 15    ---------------
+      Current time (days)     15
+      Current stepsize (days) 1
+      Total time (days)       16
+
+
+
+Report step 15/16 at day 15/16, date = 16-Jan-2020
+
+Time step 0, stepsize 1 days.
+    Switching control mode for well P3 from SURFACE_RATE to BHP
+Well equation solution gets converged with 2 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.619e-06  1.394e-06  2.397e-06  6.906e-02  7.859e-03  3.588e-02
+   1  1.675e-07  9.213e-11  8.688e-08  5.573e-03  4.926e-06  2.895e-03
+   2  5.175e-08  3.537e-14  2.690e-08  8.466e-04  1.577e-08  4.397e-04
+Overall linear iterations used: 9
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 1.270 sec), linear its =   9 ( 1.010 sec)
+Sub steps started at time = 15 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 16 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        16  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   16    17 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.364 BARSA                 :
+                                                  :      PORV =     417318316   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171569588             0     171569588:    125798477   :        226112   38808328186   38808554297:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.364 BARSA                 :
+                                                  :      PORV =     417318316   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171569588             0     171569588:    125798477   :        226112   38808328186   38808554297:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.464881 seconds; total solver time 65.179541 seconds.
+
+
+================    End of simulation     ===============
+
+Total time (seconds):         66.4867
+Solver time (seconds):        65.1795
+ Assembly time (seconds):     33.2854 (Failed: 0; 0%)
+ Linear solve time (seconds): 28.012 (Failed: 0; 0%)
+ Linear solve setup time (seconds): 2.45846 (Failed: 0; 0%)
+ Update time (seconds):       1.96427 (Failed: 0; 0%)
+ Output write time (seconds): 1.36368
+Overall Well Iterations:      12 (Failed: 0; 0%)
+Overall Linearizations:       70 (Failed: 0; 0%)
+Overall Newton Iterations:    53 (Failed: 0; 0%)
+Overall Linear Iterations:    255 (Failed: 0; 0%)
+
+
+
+Error summary:
+Warnings          76
+Info              113
+Errors            0
+Bugs              0
+Debug             169
+Problems          0
+
