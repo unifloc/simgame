@@ -1,26 +1,29 @@
 import os
-import schedule_read
+import game.schedule_read as schedule_read
 import subprocess
 import importlib.util
 import pandas as pd
 
-current_dir = os.getcwd()
-
 # TODO сделать сохранения результатов в папку команд  smspec egrid
 # TODO понять, почему не генерит SMSPEC
 
+current_dir = os.getcwd()
+print("---Текущая рабочая директория---")
 print(current_dir)
 
 team_names = ['ФОН', 'FlexOil']
 
+print("---Генерация schedule в dataspace для всех команд---")
 schedule_read.create_schedules_for_all_teams(team_names)
 
-run_sim_option = True
+
+run_sim_option = False
+print("---Массовый запуск симулятора и перенос результатов из workspace в resultspace---")
 if run_sim_option:
     for this_team_name in team_names:
 
-        print("---Перемежение сгенерированной schedule секции для команды " + this_team_name + '---')
-        path_to_generated_schedule = "/home/khabibullinra/GitHub/simrun2.7/dataspace/" + this_team_name + '/'
+        print("---Перемещение сгенерированной schedule секции для команды " + this_team_name + '---')
+        path_to_generated_schedule = current_dir + "/dataspace/" + this_team_name + '/'
         new_schedule_file_name = "schedule_new_" + this_team_name + ".inc"
         abs_path_to_new_schedule = path_to_generated_schedule + new_schedule_file_name
         #command_to_copy_schedule = "cp -f " + abs_path_to_new_schedule + ' ./workspace/spe1_SCH.INC'
@@ -28,7 +31,7 @@ if run_sim_option:
         subprocess.call(["cp", "-f" , abs_path_to_new_schedule, './workspace/spe1_SCH.INC'])
 
         print("---Запуск симулятора для команды " + this_team_name + '---')
-        path_to_opm_data = "/home/khabibullinra/GitHub/simrun2.7/workspace"
+        path_to_opm_data = current_dir + "/workspace"
         os.chdir(path_to_opm_data)
         result = os.system("mpirun -np 2 flow spe1.DATA")
         #subprocess.call(["mpirun", "-np", '2', 'flow', 'spe1.DATA'])
@@ -44,14 +47,15 @@ if run_sim_option:
         os.system(command_to_move_results)
 
 
-
+print("---Импорт модуля из проекта unifloc для построения графиков---")
 spec = importlib.util.spec_from_file_location("plotly_workflow.py",
                                          "/home/khabibullinra/GitHub/unifloc/uniflocpy/uTools/plotly_workflow.py")
 pwf = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(pwf)
 
+print("---Построение сводных графиков для всех команд---")
 for this_team_name in team_names:
-    path_to_file = "/home/khabibullinra/GitHub/simrun2.7/resultspace/" + this_team_name + "/"
+    path_to_file = current_dir + "/resultspace/" + this_team_name + "/"
     file_name = "sim_result.csv"
     file = path_to_file + file_name
     result = pd.read_csv(file, index_col="time")
