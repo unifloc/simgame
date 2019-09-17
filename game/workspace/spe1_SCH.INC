@@ -58,7 +58,7 @@ I6  WATER OPEN BHP 400 1* 400 /
 /
 
 TSTEP  
-  1*1/
+  1*100/
 
 -- change data at some point
 COMPDAT
@@ -91,7 +91,7 @@ P6 OPEN BHP 3* 200 1* 190 /
 
 
 TSTEP  
-  1*1/
+  1*100/
 
 -- change data at some point
 COMPDAT
@@ -122,7 +122,7 @@ P6 OPEN BHP 3* 200 1* 180 /
 
 
 TSTEP  
-  1*1/
+  1*100/
 
 -- change data at some point
 COMPDAT
@@ -152,7 +152,7 @@ P6 OPEN BHP 3* 200 1* 140 /
 /
 
 TSTEP  
-  1*1/
+  1*100/
 
 
 
@@ -168,7 +168,7 @@ COMPDAT
    PS9   2*   1 2  SHUT     2*      0.2  1*  10 /
 /
 TSTEP
- 1*1
+ 1*100
 /
 WELSPECS
 -- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
@@ -186,50 +186,50 @@ COMPDAT
    PS9   2*   11 15  OPEN     2*        1*    1*  10 /
 /
 TSTEP
- 1*1
+ 1*100
 /
 COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
    PS8   2*   11 15  OPEN     2*        1*    1*  10 /
 /
 TSTEP
- 1*1
+ 1*100
 /
 TSTEP
- 2*1
+ 2*100
 /
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    PS9    OPEN  BHP           3*          1*        1*   150.0 /
 /
 TSTEP
- 1*1
+ 1*100
 /
 WCONINJE
 -- WELLNAME FLUID STATUS CONTROL RATE RESV BHP /
    PS8   WATER  OPEN  BHP     100.0        1*   200.0 /
 /
 TSTEP
- 1*1
+ 1*100
 /
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P1    OPEN  BHP           3*          1*        1*   200.0 /
 /
 TSTEP
- 1*1
+ 1*100
 /
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P3    STOP  BHP           3*          10        1*   50 /
 /
 TSTEP
- 1*1
+ 1*100
 /
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P3    OPEN  LRAT           3*          100.0        1*   200 /
 /
 TSTEP
- 1*1
+ 1*100
 /
