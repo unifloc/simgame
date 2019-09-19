@@ -11,13 +11,13 @@ Flow is a simulator for fully implicit three-phase black-oil flow, and is part o
 For more information visit: https://opm-project.org 
 
 Flow Version  =  2019.04
-System        =  khabibullinra-ThinkPad-T550 (Number of logical cores: 4, RAM: 15737.62 MB) 
-Architecture  =  Linux x86_64 (Release: 5.0.0-27-generic, Version: #28~18.04.1-Ubuntu SMP Thu Aug 22 03:00:32 UTC 2019 )
+System        =  khabibullinra-ThinkPad-T550 (Number of logical cores: 4, RAM: 15737.59 MB) 
+Architecture  =  Linux x86_64 (Release: 5.0.0-29-generic, Version: #31~18.04.1-Ubuntu SMP Thu Sep 12 18:29:21 UTC 2019 )
 User          =  khabibullinra
-Simulation started on 16-09-2019 at 17:23:56 hrs
+Simulation started on 19-09-2019 at 16:39:58 hrs
 Parameters used by Flow:
 # [known parameters which were specified at run-time]
-EclDeckFileName="spe1.data" # default: ""
+EclDeckFileName="spe1.DATA" # default: ""
 # [parameters which were specified at compile-time]
 CprEllSolvetype="0"
 CprMaxEllIter="20"
@@ -189,7 +189,7 @@ In saturation table SATNUM = 1, Sowcr + Swcr should be less than 1.
 ---------------    Simulation step number 0    ---------------
       Current time (days)     0
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
                                                   ===================================================
@@ -219,7 +219,7 @@ In saturation table SATNUM = 1, Sowcr + Swcr should be less than 1.
 :========================:==========================================:================:==========================================:
 
 
-Report step  0/16 at day 0/16, date = 01-Jan-2020
+Report step  0/20 at day 0/20, date = 01-Jan-2020
 
 Time step 0, stepsize 1 days.
 Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
@@ -227,7 +227,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  1.183e-17  9.505e-21  3.693e-18  2.523e-13  1.188e-16  1.307e-13
    2  2.079e-17  1.733e-18  1.069e-17  5.826e-15  9.501e-17  2.947e-15
 Overall linear iterations used: 5
-Time step summary: newton its =  2, linearizations =  3 ( 0.879 sec), linear its =   5 ( 0.538 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.545 sec), linear its =   5 ( 0.896 sec)
 Sub steps started at time = 0 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 1 (days)
@@ -265,17 +265,17 @@ Suggested next step size = 3 (days)
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 1.532253 seconds; total solver time 1.532253 seconds.
+Time step took 2.591891 seconds; total solver time 2.591891 seconds.
 
 
 ---------------    Simulation step number 1    ---------------
       Current time (days)     1
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step  1/16 at day 1/16, date = 02-Jan-2020
+Report step  1/20 at day 1/20, date = 02-Jan-2020
 
 Time step 0, stepsize 1 days.
     Switching control mode for well P1 from BHP to SURFACE_RATE
@@ -314,7 +314,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    5  3.637e-08  8.889e-10  7.623e-09  3.426e-02  2.070e-05  1.776e-02
    6  3.718e-09  6.790e-11  1.116e-09  8.519e-03  4.447e-06  4.415e-03
 Overall linear iterations used: 29
-Time step summary: newton its =  6, linearizations =  7 ( 1.834 sec), linear its =  29 ( 2.136 sec)
+Time step summary: newton its =  6, linearizations =  7 ( 3.166 sec), linear its =  29 ( 3.199 sec)
 Sub steps started at time = 1 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 2 (days)
@@ -357,17 +357,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 4.168289 seconds; total solver time 5.700542 seconds.
+Time step took 6.649359 seconds; total solver time 9.241250 seconds.
 
 
 ---------------    Simulation step number 2    ---------------
       Current time (days)     2
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step  2/16 at day 2/16, date = 03-Jan-2020
+Report step  2/20 at day 2/20, date = 03-Jan-2020
 
 Time step 0, stepsize 0.410779 days.
     Switching control mode for well P5 from BHP to SURFACE_RATE
@@ -382,7 +382,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  8.293e-09  2.089e-08  4.404e-09  3.274e-03  1.796e-04  1.697e-03
    2  1.125e-08  6.058e-11  5.947e-09  2.183e-03  6.944e-07  1.131e-03
 Overall linear iterations used: 7
-Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.728 sec), linear its =   7 ( 0.601 sec)
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 1.594 sec), linear its =   7 ( 1.582 sec)
 
 Time step 1, stepsize 0.589221 days.
 Well equation solution gets converged with 0 iterations
@@ -396,7 +396,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    5  2.847e-08  2.160e-09  1.478e-08  1.190e-02  6.635e-05  6.170e-03
    6  1.148e-08  1.894e-10  5.943e-09  6.186e-03  6.385e-06  3.207e-03
 Overall linear iterations used: 34
-Time step summary: newton its =  6, linearizations =  7 ( 1.831 sec), linear its =  34 ( 2.332 sec)
+Time step summary: newton its =  6, linearizations =  7 ( 4.697 sec), linear its =  34 ( 4.809 sec)
 Sub steps started at time = 2 (days)
  step[ 0 ] = 0.410779 (days)
  step[ 1 ] = 0.589221 (days)
@@ -440,17 +440,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 5.777058 seconds; total solver time 11.477600 seconds.
+Time step took 13.291495 seconds; total solver time 22.532745 seconds.
 
 
 ---------------    Simulation step number 3    ---------------
       Current time (days)     3
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step  3/16 at day 3/16, date = 04-Jan-2020
+Report step  3/20 at day 3/20, date = 04-Jan-2020
 
 Time step 0, stepsize 1 days.
     Switching control mode for well P1 from BHP to SURFACE_RATE
@@ -467,7 +467,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    2  6.131e-09  1.176e-09  3.869e-09  1.011e-02  1.385e-05  5.242e-03
    3  8.438e-09  6.001e-11  4.451e-09  1.854e-03  2.958e-06  9.612e-04
 Overall linear iterations used: 15
-Time step summary: well its =  2, newton its =  3, linearizations =  4 ( 1.000 sec), linear its =  15 ( 1.069 sec)
+Time step summary: well its =  2, newton its =  3, linearizations =  4 ( 2.021 sec), linear its =  15 ( 1.858 sec)
 Sub steps started at time = 3 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 4 (days)
@@ -510,17 +510,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 2.208464 seconds; total solver time 13.686064 seconds.
+Time step took 4.206409 seconds; total solver time 26.739154 seconds.
 
 
 ---------------    Simulation step number 4    ---------------
       Current time (days)     4
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step  4/16 at day 4/16, date = 05-Jan-2020
+Report step  4/20 at day 4/20, date = 05-Jan-2020
 
 Time step 0, stepsize 1 days.
     Switching control mode for well PS2 from BHP to SURFACE_RATE
@@ -538,7 +538,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    2  2.259e-08  1.632e-10  1.219e-08  1.835e-02  7.570e-06  9.513e-03
    3  3.074e-09  3.149e-12  1.673e-09  1.778e-03  2.610e-06  9.219e-04
 Overall linear iterations used: 14
-Time step summary: well its =  2, newton its =  3, linearizations =  4 ( 1.001 sec), linear its =  14 ( 1.028 sec)
+Time step summary: well its =  2, newton its =  3, linearizations =  4 ( 2.011 sec), linear its =  14 ( 1.692 sec)
 Sub steps started at time = 4 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 5 (days)
@@ -581,17 +581,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 2.167674 seconds; total solver time 15.853738 seconds.
+Time step took 3.943518 seconds; total solver time 30.682672 seconds.
 
 
 ---------------    Simulation step number 5    ---------------
       Current time (days)     5
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step  5/16 at day 5/16, date = 06-Jan-2020
+Report step  5/20 at day 5/20, date = 06-Jan-2020
 
 Time step 0, stepsize 1 days.
 Well equation solution gets converged with 0 iterations
@@ -613,7 +613,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    7  5.944e-08  1.408e-10  3.083e-08  1.992e-02  4.803e-05  1.033e-02
    8  2.076e-08  6.908e-11  1.078e-08  2.891e-02  1.607e-05  1.499e-02
 Overall linear iterations used: 46
-Time step summary: newton its =  8, linearizations =  9 ( 2.379 sec), linear its =  46 ( 3.135 sec)
+Time step summary: newton its =  8, linearizations =  9 ( 4.350 sec), linear its =  46 ( 4.903 sec)
 Sub steps started at time = 5 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 6 (days)
@@ -656,17 +656,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 5.744424 seconds; total solver time 21.598162 seconds.
+Time step took 9.603955 seconds; total solver time 40.286627 seconds.
 
 
 ---------------    Simulation step number 6    ---------------
       Current time (days)     6
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step  6/16 at day 6/16, date = 07-Jan-2020
+Report step  6/20 at day 6/20, date = 07-Jan-2020
 
 Time step 0, stepsize 1 days.
 Well equation solution gets converged with 0 iterations
@@ -678,7 +678,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    3  5.131e-08  5.776e-10  2.670e-08  1.462e-02  4.233e-05  7.582e-03
    4  3.683e-08  4.774e-12  1.912e-08  9.841e-03  7.469e-07  5.105e-03
 Overall linear iterations used: 33
-Time step summary: newton its =  4, linearizations =  5 ( 1.285 sec), linear its =  33 ( 2.003 sec)
+Time step summary: newton its =  4, linearizations =  5 ( 2.408 sec), linear its =  33 ( 3.154 sec)
 Sub steps started at time = 6 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 7 (days)
@@ -721,17 +721,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 3.446561 seconds; total solver time 25.044723 seconds.
+Time step took 5.801975 seconds; total solver time 46.088602 seconds.
 
 
 ---------------    Simulation step number 7    ---------------
       Current time (days)     7
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step  7/16 at day 7/16, date = 08-Jan-2020
+Report step  7/20 at day 7/20, date = 08-Jan-2020
 
 Time step 0, stepsize 1 days.
 Well equation solution gets converged with 0 iterations
@@ -740,7 +740,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  5.758e-07  1.271e-08  1.565e-08  4.903e-02  9.411e-04  2.544e-02
    2  2.541e-07  2.268e-11  1.309e-07  1.402e-03  4.434e-06  7.272e-04
 Overall linear iterations used: 6
-Time step summary: newton its =  2, linearizations =  3 ( 0.726 sec), linear its =   6 ( 0.568 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.288 sec), linear its =   6 ( 0.842 sec)
 Sub steps started at time = 7 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 8 (days)
@@ -783,17 +783,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 1.413474 seconds; total solver time 26.458197 seconds.
+Time step took 2.312778 seconds; total solver time 48.401379 seconds.
 
 
 ---------------    Simulation step number 8    ---------------
       Current time (days)     8
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step  8/16 at day 8/16, date = 09-Jan-2020
+Report step  8/20 at day 8/20, date = 09-Jan-2020
 
 Time step 0, stepsize 1 days.
 Well equation solution gets converged with 0 iterations
@@ -802,7 +802,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  2.800e-07  1.863e-08  1.432e-07  4.028e-01  5.411e-03  2.091e-01
    2  1.990e-07  1.581e-09  1.031e-07  2.267e-03  6.156e-05  1.176e-03
 Overall linear iterations used: 6
-Time step summary: newton its =  2, linearizations =  3 ( 0.727 sec), linear its =   6 ( 0.545 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.283 sec), linear its =   6 ( 0.744 sec)
 Sub steps started at time = 8 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 9 (days)
@@ -845,17 +845,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 1.391456 seconds; total solver time 27.849652 seconds.
+Time step took 2.211565 seconds; total solver time 50.612945 seconds.
 
 
 ---------------    Simulation step number 9    ---------------
       Current time (days)     9
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step  9/16 at day 9/16, date = 10-Jan-2020
+Report step  9/20 at day 9/20, date = 10-Jan-2020
 
 Time step 0, stepsize 1 days.
 Well equation solution gets converged with 0 iterations
@@ -864,7 +864,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  1.461e-07  4.305e-08  7.425e-08  3.929e-03  1.940e-03  2.040e-03
    2  2.289e-08  5.966e-12  1.176e-08  1.404e-03  3.915e-07  7.288e-04
 Overall linear iterations used: 9
-Time step summary: newton its =  2, linearizations =  3 ( 0.725 sec), linear its =   9 ( 0.681 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.181 sec), linear its =   9 ( 0.988 sec)
 Sub steps started at time = 9 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 10 (days)
@@ -907,17 +907,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 1.521713 seconds; total solver time 29.371365 seconds.
+Time step took 2.351820 seconds; total solver time 52.964765 seconds.
 
 
 ---------------    Simulation step number 10    ---------------
       Current time (days)     10
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step 10/16 at day 10/16, date = 11-Jan-2020
+Report step 10/20 at day 10/20, date = 11-Jan-2020
 
 Time step 0, stepsize 1 days.
 Well equation solution gets converged with 0 iterations
@@ -926,7 +926,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  1.701e-07  4.554e-08  8.723e-08  2.321e-02  1.449e-03  1.205e-02
    2  7.961e-08  1.010e-10  4.118e-08  1.048e-03  1.104e-05  5.439e-04
 Overall linear iterations used: 7
-Time step summary: newton its =  2, linearizations =  3 ( 0.726 sec), linear its =   7 ( 0.593 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.166 sec), linear its =   7 ( 0.892 sec)
 Sub steps started at time = 10 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 11 (days)
@@ -969,17 +969,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 1.437124 seconds; total solver time 30.808489 seconds.
+Time step took 2.241702 seconds; total solver time 55.206467 seconds.
 
 
 ---------------    Simulation step number 11    ---------------
       Current time (days)     11
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step 11/16 at day 11/16, date = 12-Jan-2020
+Report step 11/20 at day 11/20, date = 12-Jan-2020
 
 Time step 0, stepsize 1 days.
 Well equation solution gets converged with 0 iterations
@@ -988,7 +988,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  1.352e-07  1.529e-08  6.930e-08  8.547e-03  1.001e-03  4.437e-03
    2  5.013e-08  6.341e-11  2.589e-08  1.489e-03  1.763e-05  7.729e-04
 Overall linear iterations used: 8
-Time step summary: newton its =  2, linearizations =  3 ( 0.729 sec), linear its =   8 ( 0.618 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.295 sec), linear its =   8 ( 0.889 sec)
 Sub steps started at time = 11 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 12 (days)
@@ -1031,17 +1031,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 1.464209 seconds; total solver time 32.272698 seconds.
+Time step took 2.344346 seconds; total solver time 57.550812 seconds.
 
 
 ---------------    Simulation step number 12    ---------------
       Current time (days)     12
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step 12/16 at day 12/16, date = 13-Jan-2020
+Report step 12/20 at day 12/20, date = 13-Jan-2020
 
 Time step 0, stepsize 1 days.
 Well equation solution gets converged with 0 iterations
@@ -1050,7 +1050,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  8.719e-08  6.897e-10  4.446e-08  9.497e-03  1.252e-04  4.932e-03
    2  4.648e-08  5.244e-12  2.404e-08  2.133e-03  8.452e-07  1.107e-03
 Overall linear iterations used: 7
-Time step summary: newton its =  2, linearizations =  3 ( 0.730 sec), linear its =   7 ( 0.594 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.359 sec), linear its =   7 ( 0.940 sec)
 Sub steps started at time = 12 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 13 (days)
@@ -1093,17 +1093,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 1.442918 seconds; total solver time 33.715616 seconds.
+Time step took 2.474691 seconds; total solver time 60.025504 seconds.
 
 
 ---------------    Simulation step number 13    ---------------
       Current time (days)     13
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step 13/16 at day 13/16, date = 14-Jan-2020
+Report step 13/20 at day 13/20, date = 14-Jan-2020
 
 Time step 0, stepsize 1 days.
 Well equation solution gets converged with 1 iterations
@@ -1112,7 +1112,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  2.151e-07  8.409e-11  1.110e-07  3.175e-03  4.084e-05  1.649e-03
    2  2.313e-08  2.727e-12  1.194e-08  1.019e-03  6.013e-07  5.293e-04
 Overall linear iterations used: 10
-Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 0.728 sec), linear its =  10 ( 0.734 sec)
+Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 1.286 sec), linear its =  10 ( 1.110 sec)
 Sub steps started at time = 13 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 14 (days)
@@ -1155,17 +1155,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 1.581203 seconds; total solver time 35.296819 seconds.
+Time step took 2.553506 seconds; total solver time 62.579010 seconds.
 
 
 ---------------    Simulation step number 14    ---------------
       Current time (days)     14
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step 14/16 at day 14/16, date = 15-Jan-2020
+Report step 14/20 at day 14/20, date = 15-Jan-2020
 
 Time step 0, stepsize 1 days.
     Switching control mode for well P3 from BHP to SURFACE_RATE
@@ -1176,7 +1176,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    2  1.052e-07  1.124e-08  5.457e-08  2.638e-01  2.625e-03  1.370e-01
    3  6.452e-08  1.231e-09  3.337e-08  7.729e-04  4.413e-05  4.014e-04
 Overall linear iterations used: 10
-Time step summary: well its =  3, newton its =  3, linearizations =  4 ( 1.005 sec), linear its =  10 ( 0.887 sec)
+Time step summary: well its =  3, newton its =  3, linearizations =  4 ( 1.622 sec), linear its =  10 ( 1.263 sec)
 Sub steps started at time = 14 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 15 (days)
@@ -1219,17 +1219,17 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 2.027805 seconds; total solver time 37.324624 seconds.
+Time step took 3.082695 seconds; total solver time 65.661705 seconds.
 
 
 ---------------    Simulation step number 15    ---------------
       Current time (days)     15
       Current stepsize (days) 1
-      Total time (days)       16
+      Total time (days)       20
 
 
 
-Report step 15/16 at day 15/16, date = 16-Jan-2020
+Report step 15/20 at day 15/20, date = 16-Jan-2020
 
 Time step 0, stepsize 1 days.
     Switching control mode for well P3 from SURFACE_RATE to BHP
@@ -1239,7 +1239,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  1.675e-07  9.213e-11  8.688e-08  5.573e-03  4.926e-06  2.895e-03
    2  5.175e-08  3.537e-14  2.690e-08  8.466e-04  1.577e-08  4.397e-04
 Overall linear iterations used: 9
-Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.730 sec), linear its =   9 ( 0.669 sec)
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 1.164 sec), linear its =   9 ( 1.035 sec)
 Sub steps started at time = 15 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 16 (days)
@@ -1282,30 +1282,278 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
 :========================:==========================================:================:==========================================:
 
-Time step took 1.516340 seconds; total solver time 38.840964 seconds.
+Time step took 2.379711 seconds; total solver time 68.041416 seconds.
+
+
+---------------    Simulation step number 16    ---------------
+      Current time (days)     16
+      Current stepsize (days) 1
+      Total time (days)       20
+
+
+
+Report step 16/20 at day 16/20, date = 17-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.604e-06  1.296e-06  2.390e-06  7.314e-03  7.113e-03  3.799e-03
+   1  5.779e-08  7.456e-11  2.956e-08  8.456e-04  9.833e-06  4.393e-04
+   2  1.549e-08  1.395e-12  7.992e-09  9.687e-04  3.259e-07  5.033e-04
+Overall linear iterations used: 9
+Time step summary: newton its =  2, linearizations =  3 ( 1.240 sec), linear its =   9 ( 1.108 sec)
+Sub steps started at time = 16 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 17 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        17  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   17    18 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.347 BARSA                 :
+                                                  :      PORV =     417318061   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171568482             0     171568482:    125798960   :        244339   38808060044   38808304382:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.347 BARSA                 :
+                                                  :      PORV =     417318061   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171568482             0     171568482:    125798960   :        244339   38808060044   38808304382:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.507787 seconds; total solver time 70.549203 seconds.
+
+
+---------------    Simulation step number 17    ---------------
+      Current time (days)     17
+      Current stepsize (days) 1
+      Total time (days)       20
+
+
+
+Report step 17/20 at day 17/20, date = 18-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.601e-06  1.207e-06  2.389e-06  6.667e-03  6.478e-03  3.464e-03
+   1  2.773e-08  4.898e-10  1.393e-08  4.832e-03  6.288e-05  2.511e-03
+   2  1.036e-08  1.376e-12  5.344e-09  5.064e-04  2.467e-07  2.631e-04
+Overall linear iterations used: 8
+Time step summary: newton its =  2, linearizations =  3 ( 1.267 sec), linear its =   8 ( 1.098 sec)
+Sub steps started at time = 17 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 18 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        18  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   18    19 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =        320.33 BARSA                 :
+                                                  :      PORV =     417317799   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171567376             0     171567376:    125799411   :        262015   38807792314   38808054329:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =        320.33 BARSA                 :
+                                                  :      PORV =     417317799   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171567376             0     171567376:    125799411   :        262015   38807792314   38808054329:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.521899 seconds; total solver time 73.071102 seconds.
+
+
+---------------    Simulation step number 18    ---------------
+      Current time (days)     18
+      Current stepsize (days) 1
+      Total time (days)       20
+
+
+
+Report step 18/20 at day 18/20, date = 19-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.599e-06  1.125e-06  2.388e-06  6.160e-03  5.980e-03  3.201e-03
+   1  6.097e-09  1.231e-10  2.496e-09  4.355e-03  5.723e-05  2.263e-03
+   2  7.405e-09  1.238e-11  3.795e-09  6.275e-04  2.777e-06  3.261e-04
+Overall linear iterations used: 8
+Time step summary: newton its =  2, linearizations =  3 ( 1.189 sec), linear its =   8 ( 0.882 sec)
+Sub steps started at time = 18 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 19 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        19  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   19    20 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.312 BARSA                 :
+                                                  :      PORV =     417317531   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171566269             0     171566269:    125799832   :        279178   38807525072   38807804250:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.312 BARSA                 :
+                                                  :      PORV =     417317531   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171566269             0     171566269:    125799832   :        279178   38807525072   38807804250:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.240728 seconds; total solver time 75.311830 seconds.
+
+
+---------------    Simulation step number 19    ---------------
+      Current time (days)     19
+      Current stepsize (days) 1
+      Total time (days)       20
+
+
+
+Report step 19/20 at day 19/20, date = 20-Jan-2020
+
+Time step 0, stepsize 1 days.
+Well equation solution gets converged with 0 iterations
+Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
+   0  4.596e-06  1.050e-06  2.387e-06  5.715e-03  5.548e-03  2.970e-03
+   1  1.571e-08  1.719e-10  7.721e-09  3.347e-04  3.022e-06  1.739e-04
+   2  7.537e-09  4.408e-12  3.867e-09  3.980e-04  8.477e-07  2.073e-04
+Overall linear iterations used: 10
+Time step summary: newton its =  2, linearizations =  3 ( 1.106 sec), linear its =  10 ( 1.041 sec)
+Sub steps started at time = 19 (days)
+ step[ 0 ] = 1 (days)
+sub steps end time = 20 (days)
+Suggested next step size = 3 (days)
+
+
+                              **************************************************************************
+  Balance  at        20  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
+  Report   20    21 Jan 2020  *                                             Flow  version     2019.04  *
+                              **************************************************************************
+
+Keyword 'BASIC' is unhandled for output to file.
+Keyword 'FLOWS' is unhandled for output to file.
+Keyword 'FREQ' is unhandled for output to file.
+Keyword 'SUMMARY' is unhandled for output to file.
+Keyword 'WELSPECS' is unhandled for output to file.
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       320.294 BARSA                 :
+                                                  :      PORV =     417317256   RM3                 :
+                                                  : Pressure is weighted by hydrocarbon pore volume :
+                                                  : Porv volumes are taken at reference conditions  :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171565163             0     171565163:    125800226   :        295872   38807258443   38807554315:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       320.294 BARSA                 :
+                                                  :      PORV =     417317256   RM3                 :
+                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :     171565163             0     171565163:    125800226   :        295872   38807258443   38807554315:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :     171586837             0     171586837:    125778480   :             0   38812455139   38812455139:
+:========================:==========================================:================:==========================================:
+
+Time step took 2.310319 seconds; total solver time 77.622149 seconds.
 
 
 ================    End of simulation     ===============
 
-Total time (seconds):         39.6291
-Solver time (seconds):        38.841
- Assembly time (seconds):     17.7645 (Failed: 0; 0%)
- Linear solve time (seconds): 18.7336 (Failed: 0; 0%)
- Linear solve setup time (seconds): 1.70185 (Failed: 0; 0%)
- Update time (seconds):       1.24887 (Failed: 0; 0%)
- Output write time (seconds): 0.810523
+Total time (seconds):         78.9845
+Solver time (seconds):        77.6221
+ Assembly time (seconds):     38.2371 (Failed: 0; 0%)
+ Linear solve time (seconds): 34.9263 (Failed: 0; 0%)
+ Linear solve setup time (seconds): 2.9067 (Failed: 0; 0%)
+ Update time (seconds):       2.38538 (Failed: 0; 0%)
+ Output write time (seconds): 1.39296
 Overall Well Iterations:      12 (Failed: 0; 0%)
-Overall Linearizations:       70 (Failed: 0; 0%)
-Overall Newton Iterations:    53 (Failed: 0; 0%)
-Overall Linear Iterations:    255 (Failed: 0; 0%)
+Overall Linearizations:       82 (Failed: 0; 0%)
+Overall Newton Iterations:    61 (Failed: 0; 0%)
+Overall Linear Iterations:    290 (Failed: 0; 0%)
 
 
 
 Error summary:
-Warnings          76
-Info              113
+Warnings          96
+Info              125
 Errors            0
 Bugs              0
-Debug             169
+Debug             205
 Problems          0
 
