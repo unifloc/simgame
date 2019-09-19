@@ -18,15 +18,15 @@ print("---Текущая рабочая директория---")
 print(current_dir)
 
 team_names = ['ФОН', 'FlexOil']
-
+#team_names = ['FlexOil']
 if sch_gen_option:
     print("---Генерация schedule в dataspace для всех команд---")
     schedule_read.create_schedules_for_all_teams(team_names)
 
-print("---Массовый запуск симулятора и перенос результатов из workspace в resultspace---")
+
 if run_sim_option:
     for this_team_name in team_names:
-
+        print("---Массовый запуск симулятора и перенос результатов из workspace в resultspace---")
         print("---Перемещение сгенерированной schedule секции для команды " + this_team_name + '---')
         path_to_generated_schedule = current_dir + "/dataspace/" + this_team_name + '/'
         new_schedule_file_name = "schedule_new_" + this_team_name + ".inc"
@@ -41,9 +41,9 @@ if run_sim_option:
         result = os.system("mpirun -np 2 flow spe1.DATA")
         #subprocess.call(["mpirun", "-np", '2', 'flow', 'spe1.DATA'])
 
-        print("---Запуск скрипта на python2.7 для извлечения результатов команды " + this_team_name + '---')
+        print("---Запуск скрипта на python3.7 для извлечения результатов команды " + this_team_name + '---')
         os.chdir(current_dir)
-        os.system("python2.7 data_extractor.py")
+        os.system("python3.7 data_extractor.py")
 
         print("---Перенос результатов в папку команды " + this_team_name + '---')
         command_to_move_results = "mv -f ./sim_result.csv ./resultspace/" + this_team_name + '/'
@@ -51,8 +51,9 @@ if run_sim_option:
         command_to_move_results = "mv -f ./workspace/SPE1.EGRID ./resultspace/" + this_team_name + '/'
         os.system(command_to_move_results)
 
-print("---Построение графиков---")
+
 if plot_option:
+    print("---Построение графиков---")
     print("---Импорт модуля из проекта unifloc для построения графиков---")
     spec = importlib.util.spec_from_file_location("plotly_workflow.py",
                                              "/home/khabibullinra/GitHub/unifloc/uniflocpy/uTools/plotly_workflow.py")

@@ -308,7 +308,15 @@ class Schedule:
     def make_DATES(self, date):
         l =[]
         l.append('DATES')
-        l.append(str(date) + '/')
+        day = date.day
+        month = date.month_name()
+        year = date.year
+        hour = date.hour
+        minute = date.minute
+        second = date.second
+        opm_formated_date = str(day) + " " + month[0:3].upper() + " " + str(year) + \
+            "  " + str(hour) + ":" + str(minute) + ":" + str(second)
+        l.append(str(opm_formated_date) + '/')
         l.append('/')
         return l
 
@@ -334,7 +342,8 @@ class Events:
                 step = 1 #0.1
             else:
                 step = 1 #0.1
-            self.schedule_new.extend(self.schedule.make_TSTEP(num, step))
+            #self.schedule_new.extend(self.schedule.make_TSTEP(num, step))
+            self.schedule_new.extend(self.schedule.make_DATES(self.current_date))
 
     def change_GNO(self,event, tstep):
         self.define_tstep_and_add_to_sch(tstep)
@@ -506,7 +515,7 @@ class Events:
 
         num = int(self.timedelta)
         step = 1
-        self.schedule_new.extend(self.schedule.make_TSTEP(num, step))
+        self.schedule_new.extend(self.schedule.make_TSTEP(2, step))
         return
 
 
