@@ -4,8 +4,9 @@ import sys
 import numpy
 import datetime
 import openpyxl
+import subprocess
 import random
-
+# TODO сделать форматирование чисто из питона, без шаблонов
 pd.set_option('precision', 3)
 
 class TrueReporMaker():
@@ -21,7 +22,7 @@ class TrueReporMaker():
     def make_month_report(self, team_name):
         self.current_dir = os.getcwd()
         self.team_name = team_name
-        self.path_to_team_directory = self.current_dir + "/resultspace/" + team_name + "/"
+        self.path_to_team_directory = self.current_dir + "\\resultspace\\" + team_name + "\\"
         self.df = pd.read_csv(self.path_to_team_directory + "sim_result.csv")
         names=self.df.columns[1:]
         wellnames=[]
@@ -33,7 +34,7 @@ class TrueReporMaker():
             else:
                 wellnames.append(b)
         self.wellnames = wellnames
-        print(wellnames)
+        #print(wellnames)
 
         time=pd.to_datetime(self.df.time)
         self.report=pd.DataFrame()
@@ -41,12 +42,12 @@ class TrueReporMaker():
 
         for name in self.wellnames:
             self.report[name + '. Дебит по нефти, м3/сут']=self.df['WOPR:'+name]
-            self.report[name + '. Дебит по воде, м3/сут']=self.df['WWPR:'+name]
+            #self.report[name + '. Дебит по воде, м3/сут']=self.df['WWPR:'+name]
             self.report[name + '. Дебит по жидкости, м3/сут']=self.df['WLPR:'+name]
             self.report[name + '. Дебит по газу, м3/сут']=self.df['WGPR:'+name]
             self.report[name + '. Закачка воды, м3/сут']=self.df['WWIR:'+name]
 
-        print(self.report.tail())
+        #print(self.report.tail())
 
         self.report.resample('M', on='Time').mean()
 
@@ -97,7 +98,7 @@ class TrueReporMaker():
     def make_tech_regime(self, team_name):
         d = []
         for name in self.wellnames:
-            d.append({'01_НГДУ':'RIENM Corp',
+            d.append({'01_НГДУ': team_name,
             '02_Месторождение': 'RIENM1',
             '03_Скважина':name,
             '04_Тип_скважины':'верт',
@@ -108,18 +109,22 @@ class TrueReporMaker():
             '09_Удл':0,
             '10_Ндин':random.randint(200,500),
             '11_СЭ':'ESP',
-            '12_Рзаб':self.df['WBHP:'+name].tail(30).mean(),
-            '13_Qнефти':self.df['WOPR:'+name].tail(30).mean(),
-            '14_Qжидк':self.df['WLPR:'+name].tail(30).mean(),
-            '15_Обводненность':self.df['WWPR:'+name].tail(30).mean()/1+self.df['WLPR:'+name].tail(20).mean(),
-            '16_Pзатр':15,
-            '17_ГФ':60,
-            '18_Тпл':104,
-            '19_Пл-ть_нефти':0.85,
-            '20_Пл-ть_воды':1 })
+            '12_Рзаб':self.df['WBHP:'+name].tail(1).mean(), # TODO посмотреть значения, брать ли последние?
+            '13_Qнефти':self.df['WOPR:'+name].tail(1).mean(),
+            '14_Qжидк':self.df['WLPR:'+name].tail(1).mean(),
+            '15_Обводненность':self.df['WWPR:'+name].tail(1).mean()/1+self.df['WLPR:'+name].tail(1).mean(),
+            '16_Pзатр':random.randint(11,15),
+            '17_ГФ': self.df['WGOR:'+name].tail(1).mean(),
+            '18_Тпл': 104,
+            '19_Пл-ть_нефти': 0.85,
+            '20_Пл-ть_воды': 1})
         df1=pd.DataFrame(d)
-
-        self.append_df_to_excel(self.path_to_team_directory + "201910_TR_1.xlsx", df1, sheet_name='TR',
+        empty_regime_path = self.current_dir + "\\resultspace\\201910_TR_1.xlsx"
+        print(empty_regime_path)
+        full_regime_path = self.path_to_team_directory + "201910_TR_1.xlsx"
+        print(full_regime_path)
+        #subprocess.call(["copy", empty_regime_path, full_regime_path])  # TODO исправить ошибку с путями и копированием шаблона
+        self.append_df_to_excel(full_regime_path, df1, sheet_name='TR',
                            startrow=9 + 1, startcol=1, index=False, header=False)
 
 
