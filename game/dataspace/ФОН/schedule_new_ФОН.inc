@@ -286,5 +286,5 @@ WCONPROD
    P5    STOP  BHP           3*          10        1*   50 /
 /
 TSTEP
- 1*1
+ 2*1
 /
