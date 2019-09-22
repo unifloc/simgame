@@ -36,9 +36,11 @@ class TrueReporMaker():
                 wellnames.append(b)
         self.wellnames = wellnames
 
-        time=pd.to_datetime(self.df.time)
+        time = pd.to_datetime(self.df.time)
         self.report=pd.DataFrame()
         self.report['Time']=time
+        self.report.reindex(self.report['Time'])
+
 
         for name in self.wellnames:
             self.report[name + '. Дебит по нефти, м3/сут']=self.df['WOPR:'+name]
@@ -46,10 +48,11 @@ class TrueReporMaker():
             self.report[name + '. Дебит по газу, м3/сут']=self.df['WGPR:'+name]
             self.report[name + '. Закачка воды, м3/сут']=self.df['WWIR:'+name]
 
-        self.report.to_excel(self.path_to_team_directory + "МЭР {} исходный.xlsx".format(team_name),
+        self.report.to_excel(self.path_to_team_directory + "МЭР {} сырой.xlsx".format(team_name),
                              sheet_name='МЭР'.format(team_name))
         self.report = self.report.resample('M', on='Time').last()
         self.report = self.report.interpolate()
+        del self.report['Time']
         self.report.to_excel(self.path_to_team_directory + "МЭР {}.xlsx".format(team_name),
                              sheet_name='МЭР'.format(team_name))
 
@@ -88,8 +91,6 @@ class TrueReporMaker():
 
         if startrow is None:
             startrow = 0
-        #pd.set_option('precision', 3)
-        #pd.set_eng_float_format(accuracy=3)
         # write out the new sheet
         df.style.set_precision(precision=3)
         df.to_excel(writer, sheet_name, startrow=startrow, **to_excel_kwargs)

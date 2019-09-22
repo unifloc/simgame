@@ -3,6 +3,9 @@
 Created on Mon Nov 12 05:02:49 2018
 
 @author: Rinat Khabibullin
+
+Модуль для чтения данных о мероприятиях, предоставленными командами и
+формирование на основе их schedule секциии
 """
 
 import pandas as pd
