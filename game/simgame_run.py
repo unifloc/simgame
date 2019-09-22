@@ -1,4 +1,7 @@
-# coding=utf-8
+"""
+Основной модуль для запуска игра (полный цикл расчетов по всем командам)
+
+"""
 import os
 import game.schedule_read as schedule_read
 import subprocess

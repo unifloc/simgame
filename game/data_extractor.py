@@ -1,3 +1,10 @@
+"""
+Модуль для первичного извлечения данных из бинарных файлов eclipse после расчета
+в обычный csv
+
+Кобзарь О.С. 1.09.2019
+"""
+
 from ecl.summary import EclSum
 import pandas as pd
 

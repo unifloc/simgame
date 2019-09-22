@@ -1,14 +1,15 @@
+"""
+Модуль для итогового преобразования данных в требуемый формат МЭР и ТР для выдачи студентам
+
+Кобзарь О., Носачев А. 22.09.2019
+"""
 import pandas as pd
 import os
-import sys
-import numpy
-import datetime
-import openpyxl
-import subprocess
 import random
+#pd.set_option('precision', 3)
+#pd.set_eng_float_format(accuracy=3)
 # TODO сделать форматирование чисто из питона, без шаблонов
-pd.set_option('precision', 3)
-
+# TODO убрать излишнюю точность
 class TrueReporMaker():
     def __init__(self):
         self.team_name = None
@@ -34,7 +35,6 @@ class TrueReporMaker():
             else:
                 wellnames.append(b)
         self.wellnames = wellnames
-        #print(wellnames)
 
         time=pd.to_datetime(self.df.time)
         self.report=pd.DataFrame()
@@ -42,16 +42,16 @@ class TrueReporMaker():
 
         for name in self.wellnames:
             self.report[name + '. Дебит по нефти, м3/сут']=self.df['WOPR:'+name]
-            #self.report[name + '. Дебит по воде, м3/сут']=self.df['WWPR:'+name]
             self.report[name + '. Дебит по жидкости, м3/сут']=self.df['WLPR:'+name]
             self.report[name + '. Дебит по газу, м3/сут']=self.df['WGPR:'+name]
             self.report[name + '. Закачка воды, м3/сут']=self.df['WWIR:'+name]
 
-        #print(self.report.tail())
-
-        self.report.resample('M', on='Time').mean()
-
-        self.report.to_excel(self.path_to_team_directory + "МЭР {}.xlsx".format(team_name), sheet_name='МЭР'.format(team_name))
+        self.report.to_excel(self.path_to_team_directory + "МЭР {} исходный.xlsx".format(team_name),
+                             sheet_name='МЭР'.format(team_name))
+        self.report = self.report.resample('M', on='Time').last()
+        self.report = self.report.interpolate()
+        self.report.to_excel(self.path_to_team_directory + "МЭР {}.xlsx".format(team_name),
+                             sheet_name='МЭР'.format(team_name))
 
 
     def append_df_to_excel(self, filename, df, sheet_name='Sheet1', startrow=None, truncate_sheet=False, **to_excel_kwargs):
@@ -88,16 +88,25 @@ class TrueReporMaker():
 
         if startrow is None:
             startrow = 0
-
+        #pd.set_option('precision', 3)
+        #pd.set_eng_float_format(accuracy=3)
         # write out the new sheet
+        df.style.set_precision(precision=3)
         df.to_excel(writer, sheet_name, startrow=startrow, **to_excel_kwargs)
 
         # save the workbook
         writer.save()
-
+    def calc_watercut_d(self, wellname):
+        q_liq_m3day = self.df['WLPR:'+wellname].tail(1).mean()
+        if q_liq_m3day != 0:
+            watercut_d = self.df['WWPR:'+wellname].tail(1).mean()/self.df['WLPR:'+wellname].tail(1).mean()
+            return watercut_d
+        else:
+            return 0
     def make_tech_regime(self, team_name):
         d = []
         for name in self.wellnames:
+            watercut_d = self.calc_watercut_d(name)
             d.append({'01_НГДУ': team_name,
             '02_Месторождение': 'RIENM1',
             '03_Скважина':name,
@@ -105,24 +114,24 @@ class TrueReporMaker():
             '05_Пласт':"м1",
             '06_Dскв': 200,
             '07_Dнкт':73,
-            '08_Н_вдп':2500,
+            '08_Н_вдп':2500, # TODO индивидуально для каждой команды, исправить
             '09_Удл':0,
-            '10_Ндин':random.randint(200,500),
-            '11_СЭ':'ESP',
-            '12_Рзаб':self.df['WBHP:'+name].tail(1).mean(), # TODO посмотреть значения, брать ли последние?
-            '13_Qнефти':self.df['WOPR:'+name].tail(1).mean(),
+            '10_Ндин':random.randint(200,700),
+            '11_СЭ':'ESP',  # TODO может быть фонтан, справить
+            '12_Рзаб': "", #self.df['WBHP:'+name].tail(1).mean(), # TODO выдавать ли значения, пока нет TM?
+            '13_Qнефти':self.df['WOPR:'+name].tail(1).mean(), # TODO посмотреть значения, брать ли последние?
             '14_Qжидк':self.df['WLPR:'+name].tail(1).mean(),
-            '15_Обводненность':self.df['WWPR:'+name].tail(1).mean()/1+self.df['WLPR:'+name].tail(1).mean(),
+            '15_Обводненность': watercut_d,
             '16_Pзатр':random.randint(11,15),
             '17_ГФ': self.df['WGOR:'+name].tail(1).mean(),
-            '18_Тпл': 104,
+            '18_Тпл': 104, # TODO поставить реальные значения здесь и далее
             '19_Пл-ть_нефти': 0.85,
             '20_Пл-ть_воды': 1})
         df1=pd.DataFrame(d)
         empty_regime_path = self.current_dir + "\\resultspace\\201910_TR_1.xlsx"
-        print(empty_regime_path)
+        #print(empty_regime_path)
         full_regime_path = self.path_to_team_directory + "201910_TR_1.xlsx"
-        print(full_regime_path)
+        #print(full_regime_path)
         #subprocess.call(["copy", empty_regime_path, full_regime_path])  # TODO исправить ошибку с путями и копированием шаблона
         self.append_df_to_excel(full_regime_path, df1, sheet_name='TR',
                            startrow=9 + 1, startcol=1, index=False, header=False)
@@ -131,6 +140,7 @@ class TrueReporMaker():
 
 team_names = ['ФОН', "FlexOil"]
 for this_team_name in team_names:
+    print("---Формирование итоговых файлов (МЭР и ТР) для команды " + this_team_name + ".---" )
     object_team = TrueReporMaker()
     object_team.make_month_report(this_team_name)
     object_team.make_tech_regime(this_team_name)
