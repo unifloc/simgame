@@ -336,6 +336,7 @@ class Events:
         self.previous_date = []
         self.current_date = []
         self.timedelta = 0
+        self.date_range = None
 
     def define_tstep_and_add_to_sch(self, tstep):
         if tstep == True:
@@ -349,8 +350,8 @@ class Events:
             self.schedule_new.extend(self.schedule.make_DATES(self.current_date))
 
     def change_GNO(self,event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
         wname = event['Название скважины']
+        self.schedule_new.extend(['--Смена ГНО на скважине '+ wname + "--"])
         if wname in self.schedule.wells:
             if event['Тип насоса для установки'] == '':
                 self.schedule.wells[wname].pump = ''
@@ -358,8 +359,8 @@ class Events:
                 self.schedule.wells[wname].pump = event['Тип насоса для установки']
 
     def zapusk(self, event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
         wname = event['Название скважины']
+        self.schedule_new.extend(['--Запуск скважины '+ wname + "--"])
         if wname in self.schedule.wells:
             pump = self.schedule.wells[wname].pump
             if pump == '' or pump == 'Нет':
@@ -403,8 +404,8 @@ class Events:
         return
 
     def ostanovka(self, event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
         wname = event['Название скважины']
+        self.schedule_new.extend(['--Остановка скважины '+ wname + "--"])
         if wname in self.schedule.wells:
             status = 'STOP'
             if self.schedule.wells[wname].type == 'PROD':
@@ -425,8 +426,8 @@ class Events:
         return i
 
     def build_well(self, event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
         wname = event['Название скважины']
+        self.schedule_new.extend(['--Строительство скважины '+ wname + "--"])
         if wname not in self.schedule.wells:
             x = event['координата i']
             y = event['координата j']
@@ -454,8 +455,8 @@ class Events:
             return
 
     def reperforation(self, event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
         wname = event['Название скважины']
+        self.schedule_new.extend(['--Реперфорация скважины ' + wname + "--"])
         if wname in self.schedule.wells:
             z1_new = min(self.determine_z(event['перфорация верх, м']), self.determine_z(event['перфорация низ, м']))
             z2_new = max(self.determine_z(event['перфорация верх, м']), self.determine_z(event['перфорация низ, м']))
@@ -464,8 +465,8 @@ class Events:
         return
 
     def OPZ(self, event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
         wname = event['Название скважины']
+        self.schedule_new.extend(['--ОПЗ на скважине ', wname, "--"])
         if wname in self.schedule.wells:
             z1_new = ' 1* '
             z2_new = ' 1* '
@@ -476,6 +477,7 @@ class Events:
 
 
     def read_excel(self, fname):
+        self.date_range = list(pd.date_range(start='7/1/2020', periods=5, freq='M'))
         excel = pd.read_excel(fname)
         excel.index.names = ['Index']
         excel.columns = list(excel.loc[6])
@@ -491,7 +493,7 @@ class Events:
         # self.date = excel['Дата мероприятия'].dt.strftime('%d %b %Y').str.upper()
         # excel['Дата мероприятия'] = excel['Дата мероприятия'].dt.strftime('%d %b %Y').str.upper()
         self.excel = excel
-
+        self.big_step = 0
         # date = True  # индикатор генератора DATES
         self.previous_date = excel.iloc[0]['Дата мероприятия']
         for event in excel.iterrows():
@@ -502,6 +504,15 @@ class Events:
                 self.timedelta = (self.current_date - self.previous_date).days + (self.current_date -
                                                                                   self.previous_date).seconds / (24*3600)
                 tstep = True
+
+            if self.current_date > self.date_range[self.big_step] and self.previous_date < self.date_range[self.big_step]:
+                self.schedule_new.extend(['--big step--' + str(self.big_step)])
+                self.schedule_new.extend(self.schedule.make_DATES(self.date_range[self.big_step]))
+                self.big_step += 1
+
+
+            self.define_tstep_and_add_to_sch(tstep)
+
             if event[1]['Вид мероприятия'] == 'Запуск скважины':
                 self.zapusk(event[1], tstep)
             elif event[1]['Вид мероприятия'] == 'Остановка скважины' or event[1]['Вид мероприятия'] == 'Остановка скважины для КВД':
@@ -516,9 +527,10 @@ class Events:
                 self.change_GNO(event[1], tstep)
             self.previous_date = self.current_date
 
-        num = int(self.timedelta)
-        step = 1
-        self.schedule_new.extend(self.schedule.make_TSTEP(2, step))
+        if self.big_step != len(self.date_range) - 1:
+            for i in self.date_range[self.big_step:]:
+                self.schedule_new.extend(['--big step in end--'])
+                self.schedule_new.extend(self.schedule.make_DATES(i))
         return
 
 

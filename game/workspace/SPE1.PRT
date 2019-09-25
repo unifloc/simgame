@@ -11,10 +11,10 @@ Flow is a simulator for fully implicit three-phase black-oil flow, and is part o
 For more information visit: https://opm-project.org 
 
 Flow Version  =  2019.04
-System        =  khabibullinra-ThinkPad-T550 (Number of logical cores: 4, RAM: 15737.59 MB) 
+System        =  khabibullinra-ThinkPad-T550 (Number of logical cores: 4, RAM: 15737.62 MB) 
 Architecture  =  Linux x86_64 (Release: 5.0.0-29-generic, Version: #31~18.04.1-Ubuntu SMP Thu Sep 12 18:29:21 UTC 2019 )
 User          =  khabibullinra
-Simulation started on 19-09-2019 at 20:18:49 hrs
+Simulation started on 25-09-2019 at 18:47:58 hrs
 Parameters used by Flow:
 # [known parameters which were specified at run-time]
 EclDeckFileName="spe1.DATA" # default: ""
@@ -215,7 +215,7 @@ Warning: In saturation table SATNUM = 1, Sowcr + Swcr should be less than 1.
 Report step  0/20 at day 0/197.083, date = 01-Jan-2020
 
 Time step 0, stepsize 1 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.281 sec), linear its =   5 ( 0.822 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.479 sec), linear its =   5 ( 0.776 sec)
 
                               **************************************************************************
   Balance  at         1  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -277,7 +277,7 @@ Time step 0, stepsize 1 days.
     Switching control mode for well P6 from BHP to SURFACE_RATE
     Switching control mode for well I4 from BHP to SURFACE_RATE
     Oscillating behavior detected: Relaxation set to 0.900000
-Time step summary: newton its =  6, linearizations =  7 ( 2.873 sec), linear its =  29 ( 2.911 sec)
+Time step summary: newton its =  6, linearizations =  7 ( 3.163 sec), linear its =  29 ( 2.914 sec)
 
                               **************************************************************************
   Balance  at         2  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -330,11 +330,11 @@ Time step 0, stepsize 0.410779 days.
     Switching control mode for well PS2 from BHP to SURFACE_RATE
     Switching control mode for well P4 from BHP to SURFACE_RATE
     Switching control mode for well P6 from BHP to SURFACE_RATE
-Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 1.173 sec), linear its =   7 ( 0.786 sec)
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 1.248 sec), linear its =   7 ( 0.837 sec)
 
 Time step 1, stepsize 0.589221 days.
     Oscillating behavior detected: Relaxation set to 0.900000
-Time step summary: newton its =  6, linearizations =  7 ( 3.049 sec), linear its =  34 ( 3.323 sec)
+Time step summary: newton its =  6, linearizations =  7 ( 2.852 sec), linear its =  34 ( 3.060 sec)
 
                               **************************************************************************
   Balance  at         3  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -388,7 +388,7 @@ Time step 0, stepsize 1 days.
     Switching control mode for well P4 from BHP to SURFACE_RATE
     Switching control mode for well P5 from BHP to SURFACE_RATE
     Switching control mode for well P6 from BHP to SURFACE_RATE
-Time step summary: well its =  2, newton its =  3, linearizations =  4 ( 1.548 sec), linear its =  15 ( 1.627 sec)
+Time step summary: well its =  2, newton its =  3, linearizations =  4 ( 1.693 sec), linear its =  15 ( 1.331 sec)
 
                               **************************************************************************
   Balance  at         4  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -443,7 +443,7 @@ Time step 0, stepsize 1 days.
     Switching control mode for well P6 from BHP to SURFACE_RATE
     Switching control mode for well I4 from SURFACE_RATE to BHP
     Switching control mode for well I6 from SURFACE_RATE to BHP
-Time step summary: well its =  2, newton its =  3, linearizations =  4 ( 1.639 sec), linear its =  14 ( 1.356 sec)
+Time step summary: well its =  2, newton its =  3, linearizations =  4 ( 1.592 sec), linear its =  14 ( 1.349 sec)
 
                               **************************************************************************
   Balance  at         5  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -494,24 +494,24 @@ Time step 0, stepsize 3 days.
     Switching control mode for well I2 from SURFACE_RATE to BHP
     Switching control mode for well I3 from SURFACE_RATE to BHP
     Switching control mode for well I5 from SURFACE_RATE to BHP
-Time step summary: newton its =  8, linearizations =  9 ( 3.551 sec), linear its =  38 ( 4.144 sec)
+Time step summary: newton its =  8, linearizations =  9 ( 3.844 sec), linear its =  38 ( 3.685 sec)
 
 Time step 1, stepsize 9 days.
-Time step summary: newton its =  8, linearizations =  9 ( 3.951 sec), linear its =  43 ( 4.565 sec)
+Time step summary: newton its =  8, linearizations =  9 ( 3.845 sec), linear its =  43 ( 3.961 sec)
 
 Time step 2, stepsize 27 days.
     Oscillating behavior detected: Relaxation set to 0.900000
-Time step summary: newton its = 16, linearizations = 17 ( 7.580 sec), linear its = 107 ( 9.991 sec)
+Time step summary: newton its = 16, linearizations = 17 ( 7.301 sec), linear its = 107 ( 9.196 sec)
 
 Time step 3, stepsize 81 days.
     Oscillating behavior detected: Relaxation set to 0.900000
     Oscillating behavior detected: Relaxation set to 0.800000
-Time step summary: newton its = 11, linearizations = 12 ( 5.444 sec), linear its = 224 (16.253 sec)
+Time step summary: newton its = 11, linearizations = 12 ( 4.753 sec), linear its = 224 (15.514 sec)
 
 Time step 4, stepsize 58.0417 days.
     Switching control mode for well P5 from SURFACE_RATE to BHP
     Switching control mode for well P5 from BHP to SURFACE_RATE
-Time step summary: newton its =  7, linearizations =  8 ( 3.607 sec), linear its = 146 (11.402 sec)
+Time step summary: newton its =  7, linearizations =  8 ( 3.209 sec), linear its = 146 ( 9.922 sec)
 
                               **************************************************************************
   Balance  at   183.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -558,7 +558,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step  6/20 at day 183.042/197.083, date = 02-Jul-2020
 
 Time step 0, stepsize 1 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.434 sec), linear its =   9 ( 1.086 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.152 sec), linear its =   9 ( 0.918 sec)
 
                               **************************************************************************
   Balance  at   184.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -605,7 +605,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step  7/20 at day 184.042/197.083, date = 03-Jul-2020
 
 Time step 0, stepsize 1 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.333 sec), linear its =   9 ( 1.237 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.162 sec), linear its =   9 ( 0.874 sec)
 
                               **************************************************************************
   Balance  at   185.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -652,7 +652,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step  8/20 at day 185.042/197.083, date = 04-Jul-2020
 
 Time step 0, stepsize 1 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.279 sec), linear its =   9 ( 0.934 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.170 sec), linear its =   9 ( 0.874 sec)
 
                               **************************************************************************
   Balance  at   186.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -699,7 +699,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step  9/20 at day 186.042/197.083, date = 05-Jul-2020
 
 Time step 0, stepsize 2 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.108 sec), linear its =  12 ( 1.112 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.152 sec), linear its =  12 ( 1.080 sec)
 
                               **************************************************************************
   Balance  at   188.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -747,7 +747,7 @@ Report step 10/20 at day 188.042/197.083, date = 07-Jul-2020
 
 Time step 0, stepsize 1 days.
     Switching control mode for well P5 from SURFACE_RATE to BHP
-Time step summary: newton its =  2, linearizations =  3 ( 1.240 sec), linear its =   9 ( 0.903 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.216 sec), linear its =   9 ( 0.882 sec)
 
                               **************************************************************************
   Balance  at   189.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -794,7 +794,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step 11/20 at day 189.042/197.083, date = 08-Jul-2020
 
 Time step 0, stepsize 1 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.321 sec), linear its =  10 ( 1.065 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.236 sec), linear its =  10 ( 0.933 sec)
 
                               **************************************************************************
   Balance  at   190.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -841,7 +841,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step 12/20 at day 190.042/197.083, date = 09-Jul-2020
 
 Time step 0, stepsize 1 days.
-Time step summary: well its =  1, newton its =  4, linearizations =  5 ( 2.224 sec), linear its =  18 ( 1.917 sec)
+Time step summary: well its =  1, newton its =  4, linearizations =  5 ( 2.147 sec), linear its =  18 ( 1.791 sec)
 
                               **************************************************************************
   Balance  at   191.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -889,7 +889,7 @@ Report step 13/20 at day 191.042/197.083, date = 10-Jul-2020
 
 Time step 0, stepsize 1 days.
     Switching control mode for well P3 from BHP to SURFACE_RATE
-Time step summary: well its =  3, newton its =  2, linearizations =  3 ( 1.309 sec), linear its =  12 ( 1.303 sec)
+Time step summary: well its =  3, newton its =  2, linearizations =  3 ( 1.315 sec), linear its =  12 ( 1.028 sec)
 
                               **************************************************************************
   Balance  at   192.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -937,7 +937,7 @@ Report step 14/20 at day 192.042/197.083, date = 11-Jul-2020
 
 Time step 0, stepsize 1 days.
     Switching control mode for well P3 from SURFACE_RATE to BHP
-Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 1.222 sec), linear its =  11 ( 1.103 sec)
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 1.372 sec), linear its =  11 ( 1.081 sec)
 
                               **************************************************************************
   Balance  at   193.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -984,7 +984,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step 15/20 at day 193.042/197.083, date = 12-Jul-2020
 
 Time step 0, stepsize 1 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.204 sec), linear its =  10 ( 1.053 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.204 sec), linear its =  10 ( 1.105 sec)
 
                               **************************************************************************
   Balance  at   194.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -1031,7 +1031,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step 16/20 at day 194.042/197.083, date = 13-Jul-2020
 
 Time step 0, stepsize 1 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.298 sec), linear its =  10 ( 1.002 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.160 sec), linear its =  10 ( 0.955 sec)
 
                               **************************************************************************
   Balance  at   195.042  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -1078,7 +1078,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step 17/20 at day 195.042/197.083, date = 14-Jul-2020
 
 Time step 0, stepsize 0.0416667 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.346 sec), linear its =   3 ( 0.587 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.172 sec), linear its =   3 ( 0.553 sec)
 
                               **************************************************************************
   Balance  at   195.083  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -1125,13 +1125,13 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step 18/20 at day 195.083/197.083, date = 14-Jul-2020
 
 Time step 0, stepsize 0.125 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.234 sec), linear its =   4 ( 0.572 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.130 sec), linear its =   4 ( 0.612 sec)
 
 Time step 1, stepsize 0.375 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.128 sec), linear its =   6 ( 0.828 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.103 sec), linear its =   6 ( 0.811 sec)
 
 Time step 2, stepsize 0.5 days.
-Time step summary: newton its =  2, linearizations =  3 ( 1.140 sec), linear its =   7 ( 0.829 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.102 sec), linear its =   7 ( 0.875 sec)
 
                               **************************************************************************
   Balance  at   196.083  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -1178,7 +1178,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step 19/20 at day 196.083/197.083, date = 15-Jul-2020
 
 Time step 0, stepsize 1 days.
-Time step summary: newton its =  2, linearizations =  3 ( 0.816 sec), linear its =   9 ( 0.785 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 1.093 sec), linear its =   9 ( 0.948 sec)
 
                               **************************************************************************
   Balance  at   197.083  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -1225,13 +1225,13 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 
 ================    End of simulation     ===============
 
-Total time (seconds):         136.989
-Solver time (seconds):        135.672
- Assembly time (seconds):     56.3303 (Failed: 0; 0%)
- Linear solve time (seconds): 73.4935 (Failed: 0; 0%)
- Linear solve setup time (seconds): 4.56945 (Failed: 0; 0%)
- Update time (seconds):       3.38806 (Failed: 0; 0%)
- Output write time (seconds): 1.54905
+Total time (seconds):         129.501
+Solver time (seconds):        128.207
+ Assembly time (seconds):     54.8625 (Failed: 0; 0%)
+ Linear solve time (seconds): 67.8644 (Failed: 0; 0%)
+ Linear solve setup time (seconds): 4.39089 (Failed: 0; 0%)
+ Update time (seconds):       3.18115 (Failed: 0; 0%)
+ Output write time (seconds): 1.53476
 Overall Well Iterations:      12 (Failed: 0; 0%)
 Overall Linearizations:       133 (Failed: 0; 0%)
 Overall Newton Iterations:    106 (Failed: 0; 0%)
