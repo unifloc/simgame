@@ -355,8 +355,10 @@ class Events:
         if wname in self.schedule.wells:
             if event['Тип насоса для установки'] == '':
                 self.schedule.wells[wname].pump = ''
+                self.schedule_new.extend(['\n'])
             else:
                 self.schedule.wells[wname].pump = event['Тип насоса для установки']
+                self.schedule_new.extend(['\n'])
 
     def zapusk(self, event, tstep):
         wname = event['Название скважины']
@@ -389,6 +391,7 @@ class Events:
                 else:
                     control = 'BHP'
                 self.schedule_new.extend(self.schedule.make_WCONPROD(wname, qliq, bhp, status, control))
+                self.schedule_new.extend(['\n'])
             else:
                 if np.isnan(qliq):
                     control = 'BHP'
@@ -401,6 +404,7 @@ class Events:
                 else:
                     control = 'BHP'
                 self.schedule_new.extend(self.schedule.make_WCONINJE(wname, qliq, bhp, status, control))
+                self.schedule_new.extend(['\n'])
         return
 
     def ostanovka(self, event, tstep):
@@ -410,8 +414,10 @@ class Events:
             status = 'STOP'
             if self.schedule.wells[wname].type == 'PROD':
                 self.schedule_new.extend(self.schedule.make_WCONPROD(wname, status = status))
+                self.schedule_new.extend(['\n'])
             else:
                 self.schedule_new.extend(self.schedule.make_WCONINJE(wname, status = status))
+                self.schedule_new.extend(['\n'])
         return
 
     @staticmethod
@@ -452,6 +458,7 @@ class Events:
             skin = 10
             self.schedule_new.extend(self.schedule.make_WELL(wname, x, y, z1, z2, phase, status, skin))
             self.schedule.wells[wname] = w
+            self.schedule_new.extend(['\n'])
             return
 
     def reperforation(self, event, tstep):
@@ -462,6 +469,7 @@ class Events:
             z2_new = max(self.determine_z(event['перфорация верх, м']), self.determine_z(event['перфорация низ, м']))
             status = 'OPEN'
             self.schedule_new.extend(self.schedule.make_perf(wname, z1_new, z2_new,status))
+            self.schedule_new.extend(['\n'])
         return
 
     def OPZ(self, event, tstep):
@@ -473,6 +481,7 @@ class Events:
             status = 'OPEN'
             skin = self.schedule.wells[wname].skin / 2
             self.schedule_new.extend(self.schedule.make_perf(wname, z1_new, z2_new, status, skin))
+            self.schedule_new.extend(['\n'])
         return
 
 
@@ -505,9 +514,10 @@ class Events:
                                                                                   self.previous_date).seconds / (24*3600)
                 tstep = True
 
-            if self.current_date > self.date_range[self.big_step] and self.previous_date < self.date_range[self.big_step]:
+            if self.current_date > self.date_range[self.big_step] > self.previous_date:
                 self.schedule_new.extend(['--big step--' + str(self.big_step)])
                 self.schedule_new.extend(self.schedule.make_DATES(self.date_range[self.big_step]))
+                self.schedule_new.extend(['\n'])
                 self.big_step += 1
 
 
@@ -531,6 +541,7 @@ class Events:
             for i in self.date_range[self.big_step:]:
                 self.schedule_new.extend(['--big step in end--'])
                 self.schedule_new.extend(self.schedule.make_DATES(i))
+                self.schedule_new.extend(['\n'])
         return
 
 

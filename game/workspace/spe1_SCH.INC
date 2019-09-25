@@ -159,6 +159,7 @@ TSTEP
 
 
 
+--Строительство скважины PS9--
 WELSPECS
 -- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
   PS9     G1   69 69 1*        OIL /
@@ -167,9 +168,12 @@ COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
    PS9   2*   1 2  SHUT     2*      0.2  1*  10 /
 /
+
+
 DATES
 2 JUL 2020  1:0:0/
 /
+--Строительство скважины PS8--
 WELSPECS
 -- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
   PS8     G1   38 69 1*        WATER /
@@ -178,61 +182,88 @@ COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
    PS8   2*   1 2  SHUT     2*      0.2  1*  10 /
 /
+
+
 DATES
 3 JUL 2020  1:0:0/
 /
+--Реперфорация скважины PS9--
 COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
    PS9   2*   11 15  OPEN     2*        1*    1*  10 /
 /
+
+
 DATES
 4 JUL 2020  1:0:0/
 /
+--Реперфорация скважины PS8--
 COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
    PS8   2*   11 15  OPEN     2*        1*    1*  10 /
 /
+
+
 DATES
 5 JUL 2020  1:0:0/
 /
+--Смена ГНО на скважине PS9--
+
+
 DATES
 7 JUL 2020  1:0:0/
 /
+--Запуск скважины PS9--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    PS9    OPEN  BHP           3*          1*        1*   150.0 /
 /
+
+
 DATES
 8 JUL 2020  1:0:0/
 /
+--Запуск скважины PS8--
 WCONINJE
 -- WELLNAME FLUID STATUS CONTROL RATE RESV BHP /
    PS8   WATER  OPEN  BHP     100.0        1*   200.0 /
 /
+
+
 DATES
 9 JUL 2020  1:0:0/
 /
+--Запуск скважины P1--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P1    OPEN  BHP           3*          1*        1*   200.0 /
 /
+
+
 DATES
 10 JUL 2020  1:0:0/
 /
+--Остановка скважины P3--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P3    STOP  BHP           3*          10        1*   50 /
 /
+
+
 DATES
 11 JUL 2020  1:0:0/
 /
+--Запуск скважины P3--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P3    OPEN  LRAT           3*          100.0        1*   200 /
 /
+
+
 DATES
 12 JUL 2020  1:0:0/
 /
+--Строительство скважины PS10--
 WELSPECS
 -- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
   PS10     G1   73 15 1*        OIL /
@@ -241,23 +272,61 @@ COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
    PS10   2*   1 2  SHUT     2*      0.2  1*  10 /
 /
+
+
 DATES
 13 JUL 2020  1:0:0/
 /
+--Реперфорация скважины PS10--
 COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
    PS10   2*   11 15  OPEN     2*        1*    1*  10 /
 /
+
+
+--big step--0
 DATES
-14 JUL 2020  1:0:0/
+31 JUL 2020  0:0:0/
 /
+
+
 DATES
-14 JUL 2020  2:0:0/
+14 AUG 2020  1:0:0/
 /
+--Смена ГНО на скважине PS10--
+
+
+--big step--1
+DATES
+31 AUG 2020  0:0:0/
+/
+
+
+DATES
+14 SEP 2020  2:0:0/
+/
+--Запуск скважины PS10--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    PS10    OPEN  BHP           3*          1*        1*   150.0 /
 /
-TSTEP
- 2*1
+
+
+--big step in end--
+DATES
+30 SEP 2020  0:0:0/
 /
+
+
+--big step in end--
+DATES
+31 OCT 2020  0:0:0/
+/
+
+
+--big step in end--
+DATES
+30 NOV 2020  0:0:0/
+/
+
+

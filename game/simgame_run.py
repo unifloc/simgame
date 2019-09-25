@@ -12,8 +12,8 @@ import pandas as pd
 # TODO понять, почему не генерит SMSPEC
 
 sch_gen_option = True
-run_sim_option = False
-plot_option = False
+run_sim_option = True
+plot_option = True
 
 
 current_dir = os.getcwd()

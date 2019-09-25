@@ -168,6 +168,8 @@ COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
    F1   2*   1 13  OPEN     2*      0.2  1*  10 /
 /
+
+
 --Строительство скважины F2--
 WELSPECS
 -- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
@@ -177,34 +179,24 @@ COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
    F2   2*   1 13  OPEN     2*      0.2  1*  10 /
 /
+
+
 --Смена ГНО на скважине P6--
+
+
 --Смена ГНО на скважине PS2--
+
+
 --Смена ГНО на скважине PS1--
---Смена ГНО на скважине F1--
---Смена ГНО на скважине F2--
+
+
 --Реперфорация скважины P1--
 COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
    P1   2*   1 11  OPEN     2*        1*    1*  10 /
 /
---Запуск скважины F1--
-WCONPROD
--- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
-   F1    OPEN  BHP           3*          1*        1*   210 /
-/
---Запуск скважины F2--
-WCONPROD
--- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
-   F2    OPEN  BHP           3*          1*        1*   200 /
-/
-DATES
-2 JUL 2020  0:0:0/
-/
---Запуск скважины P5--
-WCONPROD
--- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
-   P5    OPEN  BHP           3*          1*        1*   200.0 /
-/
+
+
 DATES
 11 JUL 2020  0:0:0/
 /
@@ -213,6 +205,8 @@ WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P1    STOP  BHP           3*          10        1*   50 /
 /
+
+
 DATES
 14 JUL 2020  0:0:0/
 /
@@ -221,6 +215,8 @@ WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P1    OPEN  BHP           3*          1*        1*   200.0 /
 /
+
+
 DATES
 15 JUL 2020  0:0:0/
 /
@@ -229,6 +225,8 @@ WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P3    STOP  BHP           3*          10        1*   50 /
 /
+
+
 DATES
 18 JUL 2020  0:0:0/
 /
@@ -237,6 +235,8 @@ WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P3    OPEN  BHP           3*          1*        1*   200.0 /
 /
+
+
 DATES
 19 JUL 2020  0:0:0/
 /
@@ -245,87 +245,125 @@ WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P6    STOP  BHP           3*          10        1*   50 /
 /
+
+
+--big step--0
 DATES
-21 JUL 2020  0:0:0/
+31 JUL 2020  0:0:0/
+/
+
+
+DATES
+21 AUG 2020  0:0:0/
 /
 --Запуск скважины P6--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P6    OPEN  BHP           3*          1*        1*   163.3 /
 /
+
+
 DATES
-22 JUL 2020  0:0:0/
+28 AUG 2020  0:0:0/
 /
 --Остановка скважины PS1--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    PS1    STOP  BHP           3*          10        1*   50 /
 /
+
+
+--big step--1
 DATES
-24 JUL 2020  0:0:0/
+31 AUG 2020  0:0:0/
+/
+
+
+DATES
+4 SEP 2020  0:0:0/
 /
 --Запуск скважины PS1--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    PS1    OPEN  BHP           3*          1*        1*   223.46 /
 /
+
+
 DATES
-25 JUL 2020  0:0:0/
+11 SEP 2020  0:0:0/
 /
 --Остановка скважины P4--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P4    STOP  BHP           3*          10        1*   50 /
 /
+
+
 DATES
-27 JUL 2020  0:0:0/
+18 SEP 2020  0:0:0/
 /
 --Запуск скважины P4--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P4    OPEN  BHP           3*          1*        1*   200.0 /
 /
+
+
 DATES
-28 JUL 2020  0:0:0/
+25 SEP 2020  0:0:0/
 /
 --Остановка скважины PS2--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    PS2    STOP  BHP           3*          10        1*   50 /
 /
+
+
+--big step--2
 DATES
-30 JUL 2020  0:0:0/
+30 SEP 2020  0:0:0/
+/
+
+
+DATES
+2 OCT 2020  0:0:0/
 /
 --Запуск скважины PS2--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    PS2    OPEN  BHP           3*          1*        1*   223.3 /
 /
+
+
 DATES
-31 JUL 2020  0:0:0/
+9 OCT 2020  0:0:0/
 /
 --Остановка скважины P5--
 WCONPROD
 -- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
    P5    STOP  BHP           3*          10        1*   50 /
 /
---big step in end--
+
+
 DATES
-31 JUL 2020  0:0:0/
+16 OCT 2020  0:0:0/
 /
---big step in end--
-DATES
-31 AUG 2020  0:0:0/
+--Запуск скважины P5--
+WCONPROD
+-- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
+   P5    OPEN  BHP           3*          1*        1*   200.0 /
 /
---big step in end--
-DATES
-30 SEP 2020  0:0:0/
-/
+
+
 --big step in end--
 DATES
 31 OCT 2020  0:0:0/
 /
+
+
 --big step in end--
 DATES
 30 NOV 2020  0:0:0/
 /
+
+
