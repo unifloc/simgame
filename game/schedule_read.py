@@ -504,7 +504,7 @@ class Events:
         self.excel = excel
         self.big_step = 0
         # date = True  # индикатор генератора DATES
-        self.previous_date = excel.iloc[0]['Дата мероприятия']
+        self.previous_date = excel.iloc[0]['Дата мероприятия'] # TODO разобраться с пропуском на итерации и общим порядком времени
         for event in excel.iterrows():
             self.current_date = event[1]['Дата мероприятия']
             if self.current_date == self.previous_date:
@@ -539,8 +539,8 @@ class Events:
 
         if self.big_step != len(self.date_range) - 1:
             for i in self.date_range[self.big_step:]:
-                self.schedule_new.extend(['--big step in end--'])
                 self.schedule_new.extend(self.schedule.make_DATES(i))
+                self.schedule_new.extend(['--big step in end--'])
                 self.schedule_new.extend(['\n'])
         return
 

@@ -6,6 +6,8 @@
 import pandas as pd
 import os
 import random
+import subprocess
+
 #pd.set_option('precision', 3)
 #pd.set_eng_float_format(accuracy=3)
 # TODO сделать форматирование чисто из питона, без шаблонов
@@ -23,7 +25,7 @@ class TrueReporMaker():
     def make_month_report(self, team_name):
         self.current_dir = os.getcwd()
         self.team_name = team_name
-        self.path_to_team_directory = self.current_dir + "\\resultspace\\" + team_name + "\\"
+        self.path_to_team_directory = self.current_dir + "/resultspace/" + team_name + "/"
         self.df = pd.read_csv(self.path_to_team_directory + "sim_result.csv")
         names=self.df.columns[1:]
         wellnames=[]
@@ -129,19 +131,18 @@ class TrueReporMaker():
             '19_Пл-ть_нефти': 0.85,
             '20_Пл-ть_воды': 1})
         df1=pd.DataFrame(d)
-        empty_regime_path = self.current_dir + "\\resultspace\\201910_TR_1.xlsx"
-        #print(empty_regime_path)
-        full_regime_path = self.path_to_team_directory + "201910_TR_1.xlsx"
-        #print(full_regime_path)
-        #subprocess.call(["copy", empty_regime_path, full_regime_path])  # TODO исправить ошибку с путями и копированием шаблона
+        empty_regime_path = self.current_dir + "/resultspace/ТР_шаблон.xlsx"
+        full_regime_path = self.path_to_team_directory + "/ТР {}.xlsx".format(team_name)
+        subprocess.call(["cp", '-f', empty_regime_path, full_regime_path])  # TODO исправить ошибку с путями и копированием шаблона
         self.append_df_to_excel(full_regime_path, df1, sheet_name='TR',
                            startrow=9 + 1, startcol=1, index=False, header=False)
 
 
 
-team_names = ['ФОН', "FlexOil"]
-for this_team_name in team_names:
-    print("---Формирование итоговых файлов (МЭР и ТР) для команды " + this_team_name + ".---" )
-    object_team = TrueReporMaker()
-    object_team.make_month_report(this_team_name)
-    object_team.make_tech_regime(this_team_name)
+#team_names = ['ФОН', "FlexOil"]
+def run_terminal_postprocessor(team_names):
+    for this_team_name in team_names:
+        print("---Формирование итоговых файлов (МЭР и ТР) для команды " + this_team_name + ".---" )
+        object_team = TrueReporMaker()
+        object_team.make_month_report(this_team_name)
+        object_team.make_tech_regime(this_team_name)

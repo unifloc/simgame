@@ -7,13 +7,15 @@ import game.schedule_read as schedule_read
 import subprocess
 import importlib.util
 import pandas as pd
+import game.terminal_postprocessor as terminal_postprocessor
 
 # TODO сделать сохранения результатов в папку команд  smspec egrid
 # TODO понять, почему не генерит SMSPEC
 
 sch_gen_option = True
-run_sim_option = True
-plot_option = True
+run_sim_option = False
+plot_option = False
+terminal_calc = True
 
 
 current_dir = os.getcwd()
@@ -75,3 +77,7 @@ if plot_option:
         data = traces
         plot_name = "Результат построения графиков команды " + this_team_name
         pwf.plot_func(data, plot_name, path_to_file + plot_name+".html")
+
+if terminal_calc:
+    print("---Запуск итоговой обработки результатов---")
+    terminal_postprocessor.run_terminal_postprocessor(team_names)
