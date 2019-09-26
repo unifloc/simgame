@@ -46,7 +46,7 @@ if run_sim_option:
 
 
 spec = importlib.util.spec_from_file_location("plotly_workflow.py",
-                                         "/home/khabibullinra/GitHub/unifloc/uniflocpy/uTools/plotly_workflow.py")
+                                        "/home/khabibullinra/GitHub/unifloc/uniflocpy/uTools/plotly_workflow.py")
 pwf = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(pwf)
 

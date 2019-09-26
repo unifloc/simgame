@@ -120,7 +120,7 @@ class Schedule:
             if key == 'TSTEP':      #ignored at the moment 
                 continue
             if line[-1:] != '/':
-                print('Warning: ' + key+ 'string has no end character \ ')
+                print('Warning: ' + key + 'string has no end character \ ')
             line = line.split('/')[0]
             params = line.split()   # split data line into parama
             wellname = params[0]    # first in line is well name
