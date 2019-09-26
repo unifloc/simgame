@@ -13,8 +13,8 @@ import game.terminal_postprocessor as terminal_postprocessor
 # TODO понять, почему не генерит SMSPEC
 
 sch_gen_option = True
-run_sim_option = False
-plot_option = False
+run_sim_option = True
+plot_option = True
 terminal_calc = True
 
 

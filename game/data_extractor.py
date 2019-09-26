@@ -21,7 +21,9 @@ result_df = pd.DataFrame({"test": list(range(shape))})
 nedeed_keys = ["WOPR:*", "WWPR:*", "WLPR:*", "WGPR:*", "WWIR:*" ,
                "WGOR:*", "WBHP:*",
                "WOPT:*", "WWPT:*", "WLPT:*", "WGPT:*", "WWIT:*",
-               "FOPT", "FWPT", "FLPT", "FGPT", "FWIT"]
+               "FOPT", "FWPT", "FLPT", "FGPT", "FWIT",
+               "FOPR", "FWPR", "FLPR", "FGPR", "FWIR",
+               "FGOR", "FWCT", "FPR"]
 
 #  all_keys = summary.keys("*")
 #  print all_keys
