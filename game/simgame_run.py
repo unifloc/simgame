@@ -22,8 +22,8 @@ current_dir = os.getcwd()
 print("---Текущая рабочая директория---")
 print(current_dir)
 
-team_names = ['ФОН', 'FlexOil']
-#team_names = ['FlexOil']
+#team_names = ['ФОН', 'FlexOil']
+team_names = ['FlexOil']
 if sch_gen_option:
     print("---Генерация schedule в dataspace для всех команд---")
     schedule_read.create_schedules_for_all_teams(team_names)

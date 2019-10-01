@@ -221,7 +221,11 @@ class Schedule:
                  "  1*  " + str(skin) + " /" )
         l.append(s_compdat_hints)
         l.append(s_compdat)   
-        l.append('/')
+        l.append('/ ')
+        l.append('\n')
+        l.append('WCONPROD \n')
+        l.append(wname)
+        l.append("SHUT / \n")
         return l
 
     def make_perf(self, wname, z1_new, z2_new, status, skin=10):
