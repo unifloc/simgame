@@ -41,7 +41,7 @@ WELLDIMS
 -- 	   - we are dealing with only one 'group'
 -- Item 4: maximum number of wells in any one group
 -- 	   - there must be two wells in a group as there are two wells in total
-   5 1 1 5 /
+   100 100 100 100 /
 
 UNIFOUT
 
@@ -266,6 +266,319 @@ RSVD
 
 SUMMARY
 -- -------------------------------------------------------------------------
+RPTONLY
+DATE
+FGPR
+FGPRF
+FGPRS
+FGPT
+FGPTF
+FGPTS
+FLPR
+FLPT
+FOPR
+FOPRF
+FOPRS
+FOPT
+FOPTF
+FOPTS
+FWPR
+FWPT
+FGIR
+FGIT
+FOIR
+FOIT
+FWIR
+FWIT
+FVPR
+FVPT
+FVIR
+FVIT
+FGOR
+FWCT
+FGSAT
+FOSAT
+FWSAT
+FGPV
+FOPV
+FWPV
+FAQR
+FAQT
+FNQR
+FNQT
+FGIP
+FGIPG
+FGIPL
+FOIP
+FOIPG
+FOIPL
+FWIP
+FRPV
+FHPV
+FOE
+FOEW
+FOEIW
+FOEIG
+FMWIN
+FMWIP
+FMWIT
+FMWPP
+FMWPR
+FMWPT
+FPR
+FOVIS
+FRS
+RGIP
+/
+RGIPG
+/
+RGIPL
+/
+ROIP
+/
+ROIPG
+/
+ROIPL
+/
+RWIP
+/
+RHPV
+/
+RPR
+/
+RRPV
+/
+ROE
+/
+ROEIW
+/
+ROPR
+/
+ROPT
+/
+RWPR
+/
+RWPT
+/
+RWIR
+/
+RWIT
+/
+RGSAT
+/
+ROSAT
+/
+RWSAT
+/
+RRS
+/
+GGPR
+/
+GGPT
+/
+GLPR
+/
+GLPT
+/
+GOPR
+/
+GOPT
+/
+GWPR
+/
+GWPT
+/
+GGIR
+/
+GGIT
+/
+GOIR
+/
+GOIT
+/
+GWIR
+/
+GWIT
+/
+GGOR
+/
+GWCT
+/
+WGPT
+/
+WGPTF
+/
+WLPT
+/
+WOPT
+/
+WOPTF
+/
+WOPTS
+/
+WWPT
+/
+WVPT
+/
+WGIT
+/
+WOIT
+/
+WWIT
+/
+WVIT
+/
+WEFF
+/
+WGPR
+/
+WGPRF
+/
+WLPR
+/
+WOPR
+/
+WOPRF
+/
+WOPRS
+/
+WWPR
+/
+WVPR
+/
+WGIR
+/
+WOIR
+/
+WWIR
+/
+WVIR
+/
+WGOR
+/
+WWCT
+/
+WBHP
+/
+WBP
+/
+WBP4
+/
+WBP5
+/
+WBP9
+/
+WTHP
+/
+WTHT
+/
+WAPI
+/
+CGPT
+/
+CGPTF
+/
+CLPT
+
+/
+COPT
+/
+COPTS
+/
+CVPT
+/
+CWIT
+/
+CVIT
+/
+CPR
+/
+CTFAC
+/
+FGPRH
+FGPTH
+FLPRH
+FLPTH
+FOPRH
+FOPTH
+FWPRH
+FWPTH
+FGIRH
+FGITH
+FOIRH
+FOITH
+FWIRH
+FWITH
+FGORH
+FWCTH
+GGPRH
+/
+GGPTH
+/
+GLPRH
+/
+GLPTH
+/
+GOPRH
+/
+GOPTH
+/
+GWPRH
+/
+GWPTH
+/
+GGIRH
+/
+GGITH
+/
+GOIRH
+/
+GOITH
+/
+GWIRH
+/
+GWITH
+/
+GGORH
+/
+GWCTH
+/
+WGPRH
+/
+WGPTH
+/
+WLPRH
+/
+WLPTH
+/
+WOPRH
+/
+WOPTH
+/
+WWPRH
+/
+WWPTH
+/
+WGIRH
+/
+WGITH
+/
+WOIRH
+/
+WOITH
+/
+WWIRH
+/
+WWITH
+/
+WGORH
+/
+WWCTH
+/
+WBHPH
+/
+WTHPH
+/
 
 -- 2a) Pressures of the cell where the injector and producer are located
 BPR
@@ -323,9 +636,8 @@ WCONPROD
 -- The items > 4 are defaulted with the exception of item  9,
 -- the BHP lower limit, which is given to be 1000psia in Odeh's paper
 
---WCONINJE
+WCONINJE
 -- Item #:1	 2	 3	 4	5      6  7
---	'INJ1'	'WAT'	'OPEN'	'RATE'	100000 1* 9014 /
 /
 -- Stated in Odeh that gas inj. rate (item 5) is 100MMscf per day
 -- BHP upper limit (item 7) should not be exceeding the highest
@@ -333,17 +645,17 @@ WCONPROD
 
 TSTEP
 --Advance the simulater once a month for TEN years:
-31 28 31 30 31 30 31 31 30 31 30 31
-31 28 31 30 31 30 31 31 30 31 30 31
-31 28 31 30 31 30 31 31 30 31 30 31
-31 28 31 30 31 30 31 31 30 31 30 31
-31 28 31 30 31 30 31 31 30 31 30 31
-31 28 31 30 31 30 31 31 30 31 30 31
-31 28 31 30 31 30 31 31 30 31 30 31
-31 28 31 30 31 30 31 31 30 31 30 31
-31 28 31 30 31 30 31 31 30 31 30 31
-31 28 31 30 31 30 31 31 30 31 30 31 /
-
+--31 28 31 30 31 30 31 31 30 31 30 31
+--31 28 31 30 31 30 31 31 30 31 30 31
+--31 28 31 30 31 30 31 31 30 31 30 31
+--31 28 31 30 31 30 31 31 30 31 30 31
+--31 28 31 30 31 30 31 31 30 31 30 31
+--31 28 31 30 31 30 31 31 30 31 30 31
+--31 28 31 30 31 30 31 31 30 31 30 31
+--31 28 31 30 31 30 31 31 30 31 30 31
+--31 28 31 30 31 30 31 31 30 31 30 31
+--31 28 31 30 31 30 31 31 30 31 30 31 /
+100*1 /
 --Advance the simulator once a year for TEN years:
 --10*365 /
 

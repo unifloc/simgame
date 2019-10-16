@@ -10,7 +10,7 @@ class DataParser:
 
     """
     def __init__(self, init_file, nx, ny, nz, dx, dy, dz, por, permx, permy, permz, prod_names, prod_xs,
-                 prod_ys, prod_z1s, prod_z2s):
+                 prod_ys, prod_z1s, prod_z2s, inj_names, inj_xs, inj_ys, inj_z1s, inj_z2s):
         self.content = init_file.readlines()
         'Удалим переносы в конце строк'
         self.content = [line.rstrip('\n') for line in self.content]
@@ -27,6 +27,7 @@ class DataParser:
         self.welspecs = None
         self.compdat = None
         self.wconprod = None
+        self.wconinje = None
         self.nx = nx
         self.ny = ny
         self.nz = nz
@@ -42,6 +43,17 @@ class DataParser:
         self.prod_ys = prod_ys
         self.prod_z1s = prod_z1s
         self.prod_z2s = prod_z2s
+        self.inj_names = inj_names
+        self.inj_xs = inj_xs
+        self.inj_ys = inj_ys
+        self.inj_z1s = inj_z1s
+        self.inj_z2s = inj_z2s
+        self.all_well_names = self.prod_names + self.inj_names
+        self.all_well_xs = self.prod_xs + self.inj_xs
+        self.all_well_ys = self.prod_ys + self.inj_ys
+        self.all_well_z1s = self.prod_z1s + self.inj_z1s
+        self.all_well_z2s = self.prod_z2s + self.inj_z2s
+        self.all_well_fluid = ['OIL' for _ in range(len(self.prod_names))] + ['WAT' for _ in range(len(self.inj_names))]
 
     def parse_file(self, keyword):
         keyword_start_flag = False
@@ -90,14 +102,16 @@ class DataParser:
                 self.content[i] = self.permz_dim
                 keyword_start_flag = self.keyword_read(keyword)
             elif keyword_start_flag and keyword == 'WELSPECS':
-                for prod, x, y in zip(self.prod_names, self.prod_xs, self.prod_ys):
-                    self.create_welspecs(prod, x, y)
+                for prod, x, y, fluid in zip(self.all_well_names, self.all_well_xs,
+                                             self.all_well_ys, self.all_well_fluid):
+                    self.create_welspecs(prod, x, y, fluid)
                     self.content.insert(i, self.welspecs)
                     i += 1
                 keyword_start_flag = self.keyword_read(keyword)
             elif keyword_start_flag and keyword == 'COMPDAT':
-                for prod, x, y, z1, z2 in zip(self.prod_names, self.prod_xs, self.prod_ys, self.prod_z1s, self.prod_z2s):
-                    self.create_compdat(prod, x, y, z1, z2)
+                for well, x, y, z1, z2 in zip(self.all_well_names, self.all_well_xs, self.all_well_ys,
+                                              self.all_well_z1s, self.all_well_z2s):
+                    self.create_compdat(well, x, y, z1, z2)
                     self.content.insert(i, self.compdat)
                     i += 1
                 keyword_start_flag = self.keyword_read(keyword)
@@ -107,12 +121,17 @@ class DataParser:
                     self.content.insert(i, self.wconprod)
                     i += 1
                 keyword_start_flag = self.keyword_read(keyword)
-
+            elif keyword_start_flag and keyword == 'WCONINJE':
+                for inj in self.inj_names:
+                    self.create_wconinje(inj)
+                    self.content.insert(i, self.wconinje)
+                    i += 1
+                keyword_start_flag = self.keyword_read(keyword)
             i += 1
 
     @staticmethod
     def keyword_read(keyword):
-        print('%s writen' % keyword)
+        print('%s written' % keyword)
         keyword_start_flag = False
         return keyword_start_flag
 
@@ -144,11 +163,14 @@ class DataParser:
     def create_permz(self):
         self.permz_dim = str(self.nx*self.ny*self.nz) + '*' + str(self.permz) + ' /'
 
-    def create_welspecs(self, name, x, y):
-        self.welspecs = name + ' G1 ' + str(x) + ' ' + str(y) + ' 8400 OIL /'
+    def create_welspecs(self, name, x, y, fluid):
+        self.welspecs = name + ' G1 ' + str(x) + ' ' + str(y) + ' 8400 ' + fluid + ' /'
 
     def create_compdat(self, name, x, y, z1, z2):
         self.compdat = name + ' ' + str(x) + ' ' + str(y) + ' ' + str(z1) + ' ' + str(z2) + ' OPEN	1*	1*	0.5 /'
 
     def create_wconprod(self, name):
         self.wconprod = name + ' OPEN ORAT 20000 4* 1000 /'
+
+    def create_wconinje(self, name):
+        self.wconinje = name + ' WAT OPEN RATE 100000 1* 9014 /'
