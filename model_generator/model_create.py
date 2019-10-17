@@ -4,8 +4,13 @@ from ecl.summary import EclSum
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
-
-
+import rips
+import subprocess
+import time
+import glob
+from PIL import Image
+from IPython.display import display
+from plotly.offline import plot, iplot
 """
 @alexeyvodopyan
 23.09
@@ -67,6 +72,7 @@ class ModelGenerator:
         self.inj_z2s = inj_z2s
         self.result_df = None
         self.fig = None
+        self.grids = None
         self.init_file_name = init_file_name
         self.filter_initial_data()
         self.parser = None
@@ -108,6 +114,7 @@ class ModelGenerator:
         self.create_result(name=name, keys=keys)
         self.read_result(name=result_name)
         self.make_plot()
+        self.export_snapshots(name.upper())
 
     def create_lazy_5_spot(self):
         prod_xs = [1, 1, self.nx, self.nx]
@@ -179,6 +186,57 @@ class ModelGenerator:
                 x=df.index,
                 y=df[par],
                 mode=mode,
-                ))
+                name=par))
+
+        self.fig.update_xaxes(title='Дата')
+        self.fig.update_layout(title=go.layout.Title(text='Динамика показателей месторождения'))
 
         print('График построен и сохранен в атрибутах класса')
+
+    def export_snapshots(self, name='5_SPOT'):
+        process = subprocess.Popen('exec ResInsight --case "%s.EGRID"' % name, shell=True)
+        time.sleep(5)
+        resinsight = rips.Instance.find()
+        case = resinsight.project.cases()[0]
+        property_list = ['PRESSURE', 'SOIL']
+        case_path = case.grid_path()
+        folder_name = os.path.dirname(case_path)
+
+        # create a folder to hold the snapshots
+        dirname = os.path.join(folder_name, 'snapshots')
+
+        if os.path.exists(dirname) is False:
+            os.mkdir(dirname)
+
+        print("Exporting to folder: " + dirname)
+        resinsight.set_export_folder(export_type='SNAPSHOTS', path=dirname)
+
+        view = case.views()[0]
+
+        for property in property_list:
+            resinsight.set_main_window_size(width=400, height=150)
+            view.apply_cell_result(result_type='DYNAMIC_NATIVE', result_variable=property)
+            view.export_snapshot()
+
+        # os.killpg(os.getpgid(process.pid), signal.SIGTERM) веселая команда, вырубает полностью виртуальную машину
+
+        process.kill()
+
+        images = []
+        image_paths = glob.glob(dirname + '/*')
+
+        for path in image_paths:
+            images.append(Image.open(path))
+
+        self.grids = images
+        print('Изображения сеток сохранены в атрибутах класса')
+
+    def iplot_fig(self):
+        iplot(self.fig)
+
+    def plot_fig(self):
+        plot(self.fig)
+
+    def display_grids(self):
+        for grid in self.grids:
+            display(grid)
