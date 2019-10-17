@@ -178,6 +178,7 @@ class ModelGenerator:
             self.fig.add_trace(go.Scatter(
                 x=df.index,
                 y=df[par],
-                mode=mode))
+                mode=mode,
+                ))
 
         print('График построен и сохранен в атрибутах класса')
