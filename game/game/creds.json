@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "simgame",
+  "private_key_id": "e0e4225b25bf6f0a0778f4e91624681fbbc9202e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxOH08bKQn/ZN2\ndZg9zNv6GlvzOVFhFKPZkZ07gMHn17gSD4eeDeCwV4Gyxf9I23RC/mMvL2H8fQTg\nZE7SaiyrbAccuR7umlKs+rfUHg+/jjRPj+vOazusbk3eQ9XqfwTsoADo4hbUhxrg\nF8FIIhCUEnl8O3CxSdbrKEdGdLQgr3lwxMlUnQ9fJGuHIN1xJuE0vvjwywBgisw5\n3P+oStJfyAK0mdq0s8OC+tlCCA8DKu3VJ6svyPKIP3nYifNS6v1ICvYi/F6IEVxJ\nMOz1exE+4KcTlQnNAwrDl62+IdpqXVQBoiDxoRBVhqLr7ejYEXoQYwYdP3HpOgv8\nA3qonlRLAgMBAAECggEABpab3GRDHkIk5QCORkrGqTiMpKn8rALCJUqLJrGJNatv\n3AAGzH9CW02xELi8bJEGO4KwiAoloZG5z4SlyxFPTJhe6N9lnZlQHWmZX9AZnsdG\nNj3hwQsKu2FDEUP7jtTJeT6+Ms29XTSD8Rg538OuqDU71tkbhQPCj1+Ty6Xo7Q7A\nNZJ12/EC7duHG0SA7KYV1+ZpcTuAGiAsbffEBMDFB/ZizptbRp6SnyQf6RyY2nqT\n0A2mJ5UbrBRIEiCNHMvqCnmKrsvJZ96458UePuBkh3xS1bT/xIEtjJz0mQe71yPZ\ncpI3rIJrQOUeWZMIjfzMnelcCzUOQTK9zlFRmMFTxQKBgQDgjvdw9vGUTyBcVyk5\nWbR3icD1M18XZvx2TSe77TqTIjk6HHgX4M0thQc+pqHRAWpZ5ofG524EsKxGq3Yg\nR5Xd5ooxCPV81aqV6RhgjPBfb27Uuc/AemIaDk8Mv+50IanTSodNzjLYEZQklO4I\nAE79Cyu5vIpQeAbD1dn6JRNvzwKBgQDKCMFB3H1cdwQLq+Da2Rus5iao3Ah7Lt6P\nL8DvXEw20+REgYMfvpSz0/Ll5AcaDtFdZZtbiMdNnUyQJAc+MEZUg1b1G66cPotg\nMrCii17sgDeVRsCViSTrLEFxt5vrorS2r0hmo0ccUuAS9q7FdRB3HrRkoY0CGoVZ\ng9ht4/qWxQKBgCAq2q9H8Js6KnyPz8vzWbK1/Poi/cAwdIHN059MAFQLVv9IDLv+\n6+VVZRBIdm2mMkHmkBSiGlR5qnQFI8rD9mfvGmSjz+auBN2sol1SUyyYndvDMkt0\nPJFW82P0KohgOh+WUYOHwijJe9sxqldjE+2TqBPXOkkEqJNtEuiOXxZpAoGBAJGe\nr9UN3Jm5+wOClmaHWChOFw1c0wweozHnhJPCHfjiz0QFaYKG9l2LZicHLYs9pPBB\nnTHjq2uo9hdqsIHFf9vIcvPmSPu7JPBoeOIfvIKQg/+naIYfvKl5U45ofgzgUIrg\nWjoIc+fZYEKq5RvTndOOIQ3rV1xtyzHTEztZuDPVAoGBALbakHFjBKojcsrnzucG\nG6HbVztE5L9Y6d/IvK/TlVFrqW/eVVsp87svT28clsh/3mpRl97SnJNy7NtTr26X\nqqelwR0vs3KaOSeZMJu1/amr8i+op4ufgwpwkUcFif28GMkM2/cMdfjNDAXBMPtE\nbDEiKkRJYKNHLFupKAw1VnyF\n-----END PRIVATE KEY-----\n",
+  "client_email": "account@simgame.iam.gserviceaccount.com",
+  "client_id": "115199604476438775808",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/account%40simgame.iam.gserviceaccount.com"
+}
