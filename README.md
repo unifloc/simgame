@@ -1,4 +1,12 @@
 # SimGame2020 
+#Authors:
+* Rinat Khabibullin
+* Alexey Vodopyan
+* Oleg Kobzar 
+* Evgeny Svoykin
+* Dmitry Lubnikov
+* Vladislav Dormenev
+* Dmitry Antropov
 
 Репозиторий для развития учебного проекта для изучения разработки нефтяных и газовых проектов с помощью открытого симулятора Open Porous Media.
 
