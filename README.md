@@ -1,5 +1,5 @@
 # SimGame2020 
-#Authors:
+## Authors:
 * Rinat Khabibullin
 * Alexey Vodopyan
 * Oleg Kobzar 
