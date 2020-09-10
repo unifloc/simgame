@@ -14,7 +14,7 @@ Flow Version     =  2020.04 ()
 Machine name     =  DESKTOP-R9KC607 (Number of logical cores: 12, Memory size: 12270.71 MB) 
 Operating system =  Linux x86_64 (Kernel: 4.19.104-microsoft-standard, #1 SMP Wed Feb 19 06:37:35 UTC 2020 )
 Build time       =  2013-10-14 at 09:54:10 hrs
-Simulation started on 07-09-2020 at 12:59:09 hrs
+Simulation started on 10-09-2020 at 18:47:03 hrs
 Parameters used by Flow:
 # [known parameters which were specified at run-time]
 EclDeckFileName="spe1.DATA" # default: ""
@@ -739,7 +739,7 @@ Restart file written for report step:  0/16.  Date: 2020/01/01
 :      I2:   51,   51:     INJ: BHP:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.621 sec), linear its =   2 ( 0.312 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.463 sec), linear its =   2 ( 0.229 sec)
 
                               **************************************************************************
   Balance  at         1  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -1020,7 +1020,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :      I2:   51,   51:     INJ: BHP:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  6, linearizations =  7 ( 1.126 sec), linear its =  75 ( 2.345 sec)
+Time step summary: newton its =  6, linearizations =  7 ( 0.953 sec), linear its =  75 ( 2.329 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1186,7 +1186,7 @@ Restart file written for report step:  2/16.  Date: 2020/01/03
 
 
 
-Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.390 sec), linear its =  10 ( 0.416 sec)
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.403 sec), linear its =  10 ( 0.409 sec)
 
 Time step 1, stepsize 0.410153 days, at day 2.58985/3, date = 03-Jan-2020
 
@@ -1279,7 +1279,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :      I2:   51,   51:     INJ: BHP:        0.0:        0.0:        0.0:        0.0:        0.0:        0.6:        0.0:        0.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.363 sec), linear its =   6 ( 0.335 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.397 sec), linear its =   6 ( 0.352 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1300,12 +1300,6 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step  3/16 at day 3/16, date = 04-Jan-2020
 
 Time step 0, stepsize 1 days, at day 3/4, date = 04-Jan-2020
-    Switching control mode for well PS2 from BHP to LRAT on rank 0
-    Switching control mode for well P6 from BHP to LRAT on rank 1
-    Switching control mode for well P1 from BHP to LRAT on rank 1
-    Switching control mode for well PS1 from BHP to LRAT on rank 1
-    Switching control mode for well P4 from BHP to LRAT on rank 1
-    Switching control mode for well P5 from BHP to LRAT on rank 1
 Restart file written for report step:  3/16.  Date: 2020/01/04
                              **************************************************************************                             
  WELSPECS AT       0.00 DAYS *                                                                        * FLOW                        
@@ -1380,6 +1374,12 @@ Restart file written for report step:  3/16.  Date: 2020/01/04
 
 
 
+    Switching control mode for well PS2 from BHP to LRAT on rank 0
+    Switching control mode for well P6 from BHP to LRAT on rank 1
+    Switching control mode for well P1 from BHP to LRAT on rank 1
+    Switching control mode for well PS1 from BHP to LRAT on rank 1
+    Switching control mode for well P4 from BHP to LRAT on rank 1
+    Switching control mode for well P5 from BHP to LRAT on rank 1
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1470,7 +1470,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :      I2:   51,   51:     INJ: BHP:        0.0:        0.0:        0.0:        0.0:        0.0:        0.8:        0.0:        0.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.395 sec), linear its =   9 ( 0.421 sec)
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.421 sec), linear its =   9 ( 0.392 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1491,6 +1491,14 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step  4/16 at day 4/16, date = 05-Jan-2020
 
 Time step 0, stepsize 1 days, at day 4/5, date = 05-Jan-2020
+    Switching control mode for well PS2 from BHP to LRAT on rank 0
+    Switching control mode for well P1 from BHP to LRAT on rank 1
+    Switching control mode for well P3 from LRAT to BHP on rank 0
+    Switching control mode for well P1 from LRAT to BHP on rank 1
+    Switching control mode for well PS1 from BHP to LRAT on rank 1
+    Switching control mode for well P4 from BHP to LRAT on rank 1
+    Switching control mode for well P5 from BHP to LRAT on rank 1
+    Switching control mode for well P6 from BHP to LRAT on rank 1
 Restart file written for report step:  4/16.  Date: 2020/01/05
                              **************************************************************************                             
  WELSPECS AT       0.00 DAYS *                                                                        * FLOW                        
@@ -1591,14 +1599,6 @@ Restart file written for report step:  4/16.  Date: 2020/01/05
 
 
 
-    Switching control mode for well PS2 from BHP to LRAT on rank 0
-    Switching control mode for well P1 from BHP to LRAT on rank 1
-    Switching control mode for well P3 from LRAT to BHP on rank 0
-    Switching control mode for well P1 from LRAT to BHP on rank 1
-    Switching control mode for well PS1 from BHP to LRAT on rank 1
-    Switching control mode for well P4 from BHP to LRAT on rank 1
-    Switching control mode for well P5 from BHP to LRAT on rank 1
-    Switching control mode for well P6 from BHP to LRAT on rank 1
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1695,7 +1695,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD:none:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.375 sec), linear its =  10 ( 0.482 sec)
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.467 sec), linear its =  10 ( 0.530 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1851,7 +1851,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD:none:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.404 sec), linear its =  11 ( 0.425 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.402 sec), linear its =  11 ( 0.497 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2005,7 +2005,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD:none:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.400 sec), linear its =  10 ( 0.405 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.442 sec), linear its =  10 ( 0.460 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2161,7 +2161,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD:none:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.354 sec), linear its =   9 ( 0.383 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.396 sec), linear its =   9 ( 0.430 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2317,7 +2317,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD:none:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.415 sec), linear its =   9 ( 0.411 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.379 sec), linear its =   9 ( 0.430 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2435,7 +2435,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD:none:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.438 sec), linear its =   9 ( 0.553 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.400 sec), linear its =   9 ( 0.417 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2553,7 +2553,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD: BHP:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.392 sec), linear its =   9 ( 0.386 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.411 sec), linear its =   9 ( 0.396 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2671,7 +2671,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD: BHP:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.395 sec), linear its =   9 ( 0.399 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.412 sec), linear its =   9 ( 0.386 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2789,7 +2789,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD: BHP:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.399 sec), linear its =   7 ( 0.330 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.387 sec), linear its =   7 ( 0.346 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2907,7 +2907,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD: BHP:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 0.368 sec), linear its =  10 ( 0.446 sec)
+Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 0.396 sec), linear its =  10 ( 0.426 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3026,7 +3026,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD: BHP:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 0.373 sec), linear its =  10 ( 0.368 sec)
+Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 0.400 sec), linear its =  10 ( 0.402 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3047,8 +3047,8 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 Report step 15/16 at day 15/16, date = 16-Jan-2020
 
 Time step 0, stepsize 1 days, at day 15/16, date = 16-Jan-2020
-    Switching control mode for well P3 from LRAT to BHP on rank 0
 Restart file written for report step: 15/16.  Date: 2020/01/16
+    Switching control mode for well P3 from LRAT to BHP on rank 0
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3145,7 +3145,7 @@ Warning: Keyword 'WELSPECS' is unhandled for output to file.
 :     PS9:   69,   69:    PROD: BHP:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: well its =  4, newton its =  4, linearizations =  5 ( 0.668 sec), linear its =  14 ( 0.717 sec)
+Time step summary: well its =  4, newton its =  4, linearizations =  5 ( 0.742 sec), linear its =  14 ( 0.743 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3169,13 +3169,13 @@ Restart file written for report step: 16/16.  Date: 2020/01/17
 
 Number of MPI processes:      2
 Threads per MPI process:      2
-Total time (seconds):         19.2727
-Solver time (seconds):        19.1346
- Assembly time (seconds):     7.87609 (Failed: 0; 0%)
- Linear solve time (seconds): 9.13287 (Failed: 0; 0%)
- Linear solve setup time (seconds): 0.684065 (Failed: 0; 0%)
- Update time (seconds):       0.50995 (Failed: 0; 0%)
- Output write time (seconds): 0.835277
+Total time (seconds):         19.4332
+Solver time (seconds):        19.3076
+ Assembly time (seconds):     7.874 (Failed: 0; 0%)
+ Linear solve time (seconds): 9.17475 (Failed: 0; 0%)
+ Linear solve setup time (seconds): 0.678775 (Failed: 0; 0%)
+ Update time (seconds):       0.509006 (Failed: 0; 0%)
+ Output write time (seconds): 0.864033
 Overall Well Iterations:      12 (Failed: 0; 0%)
 Overall Linearizations:       57 (Failed: 0; 0%)
 Overall Newton Iterations:    40 (Failed: 0; 0%)

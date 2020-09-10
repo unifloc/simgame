@@ -11,10 +11,7 @@ current_dir = os.getcwd()
 # TODO сделать сохранения результатов в папку команд  smspec egrid
 # TODO понять, почему не генерит SMSPEC
 
-print(current_dir)
-
 team_names = API.import_teamnames()[0]
-print(team_names)
 
 run_sim_option = True
 if run_sim_option:
@@ -24,7 +21,7 @@ if run_sim_option:
         API.create_table_and_import(this_team_name, current_dir)
         schedule_read.create_schedule_for_team(this_team_name)
 
-        print("---Перемежение сгенерированной schedule секции для команды " + this_team_name + '---')
+        print("---Перемешsение сгенерированной schedule секции для команды " + this_team_name + '---')
         path_to_generated_schedule = current_dir+"/" + this_team_name + '/'
         print(path_to_generated_schedule)
         new_schedule_file_name = "schedule_new_" + this_team_name + ".inc"
@@ -49,5 +46,3 @@ if run_sim_option:
         print("---Экспорт решений в гугл таблицу  " + this_team_name + '---')
         de.export_to_csv(current_dir, this_team_name)
         API.export_to_GT(this_team_name)
-        #result = de.export_to_googletable(current_dir, this_team_name)
-        #API.export_api(result)

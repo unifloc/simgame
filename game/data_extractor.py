@@ -75,9 +75,9 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,truncate
     
     
 # Export to csv
-def export_to_csv(path, name):
+def export_to_csv(path, team_name):
     
-    df=pd.read_csv(path + f"/resultspace/{name}/sim_result.csv")
+    df=pd.read_csv(path + f"/resultspace/{team_name}/sim_result.csv")
     names = df.columns[1:]
     wellnames = []
     for n in names:
@@ -111,5 +111,11 @@ def export_to_csv(path, name):
                   '20_Пл-ть_воды':1 })
         df1=pd.DataFrame(d)
         append_df_to_excel("201910_TR_1.xlsx", df1,sheet_name='TR', 
+                            startrow=0, startcol=0, index=False, header=False)
+        kin = []
+        kin.append({'КИН':df['FOPT']})
+
+        df2=pd.DataFrame(kin)
+        append_df_to_excel("201910_TR_1.xlsx", df2,sheet_name='KIN',
                             startrow=0, startcol=0, index=False, header=False)
         

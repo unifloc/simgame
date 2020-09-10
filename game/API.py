@@ -1,8 +1,10 @@
 from pprint import pprint
-
+import numpy as np
 import httplib2
 import apiclient
 from oauth2client.service_account import ServiceAccountCredentials
+import pandas as pd
+import data_extractor as de
 
 # Производим авторизацию в API
 
@@ -27,7 +29,8 @@ def export_to_GT(name):
     list_data = []
     for rownum in range(sh.nrows):
         list_data.append(sh.row_values(rownum))
-        
+    #list_data.append(sh.col_values(12))
+    
     result = service.spreadsheets().values().batchUpdate(
         spreadsheetId=spreadsheet_id,
         body = {
@@ -35,10 +38,21 @@ def export_to_GT(name):
     "data": [
         {"range": f"{name}!A68:X200",
          "majorDimension": "ROWS",     # сначала заполнять ряды, затем столбцы (т.е. самые внутренние списки в values - это ряды)
-         "values": list_data}]}
+         "values": list_data }]}
         ).execute()
-    print(list_data)
                         
+    sh1 = wb.sheet_by_index(1)
+    kin = []
+    kin.append(sh1.row_values(0))
+    result = service.spreadsheets().values().batchUpdate(
+        spreadsheetId=spreadsheet_id,
+        body = {
+                "valueInputOption": "USER_ENTERED",
+    "data": [
+        {"range": f"{name}!B46:B100",
+         "majorDimension": "ROWS",
+         "values": kin}]}
+        ).execute()
     
 # Добавить импорт счетчика количество строк (выполненных работ) для исключения ошибок
 def create_table_and_import(team_name, path):
@@ -48,33 +62,18 @@ def create_table_and_import(team_name, path):
     
     values = service.spreadsheets().values().batchGet(
         spreadsheetId=spreadsheet_id,
-        ranges=f'{team_name}!A8:P15',
+        ranges=f'{team_name}!A8:P25',
         majorDimension='ROWS'
     ).execute()
     ranges = values.get('valueRanges', [])
 
-    row = 7
-    col = 0
-    style1 = xlwt.XFStyle()
-    style1.num_format_str = 'd mmm yyyy'
-    style2 = xlwt.XFStyle()
-    style2.num_format_str = '#,##0'
     for item in ranges:
         val = item['values']
-        for i in range(0,5):
-            for j in range(0,15):
-                if (j == 1 & i != 0):
-                    ws.write(row, col, val[i][j], style1)
-                elif (j > 4 & j != 11):
-                    ws.write(row, col, val[i][j], style2)
-                else:
-                    ws.write(row, col, val[i][j])
-                col += 1
-            col = 0
-            row += 1
+    df1 = pd.DataFrame(val)
+    path_to_table = path + f'/dataspace/{team_name}/Мероприятия РиЭНМ {team_name}.xlsx'
+    de.append_df_to_excel(path_to_table, df1,sheet_name='sheet1',
+                            startrow=7, startcol=0, index=False, header=False)
 
-    wb.save(path + f'/dataspace/{team_name}/Мероприятия РиЭНМ {team_name}.xls')
-    print('Значения успешно импортированы')
     return
 
 def import_teamnames():
@@ -85,3 +84,30 @@ def import_teamnames():
     ).execute()
     return values['values']
 
+
+# import pandas as pd
+# #import xlwings as xw
+# import xlsxwriter as xlsw
+
+# values = service.spreadsheets().values().batchGet(
+#     spreadsheetId=spreadsheet_id,
+#     ranges='ФОН!A8:P25',
+#     majorDimension='ROWS'
+# ).execute()
+# ranges = values.get('valueRanges', [])
+# for item in ranges:
+#     val = item['values']
+# df1 = pd.DataFrame(val, columns=())
+# #df1['Perf'] = df1.astype(int)
+# print(df1)
+
+# import data_extractor as de
+# de.append_df_to_excel("test.xlsx", df1,sheet_name='Лист1',
+#                             startrow=0, startcol=0, index=False, header=False)
+#writer = pd.ExcelWriter('test.xlsx', engine='xlsxwriter')
+
+#df1.to_excel(writer, sheet_name="TR",startrow=30, startcol=0, header=False, index=False)
+# wb=xw.Book('test.xlsx')
+# data_excel = wb.sheets['TR']
+# data_pd = data_excel.range('A1:X100').options(pd.DataFrame, header = 1, index = False).value
+# print (data_pd)

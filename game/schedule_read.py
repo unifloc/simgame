@@ -45,7 +45,6 @@ class WellParam:
         self.pump = 'Насос 100-500'
 
 
-
 class Schedule:
     """
     schcedule reader and parser
@@ -256,7 +255,7 @@ class Schedule:
         w.status_work = status
         w.control = control
         l.append('WCONPROD')
-        s_wconprod_hints = ("-- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /" )
+        s_wconprod_hints = ("-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /" )
         s_wconprod = ("   " + wname + 
                       "    " + status +
                       "  " + control +
@@ -355,14 +354,14 @@ class Events:
             pump_rate = float(pump.split()[1].split('-')[0])
             pump_head = float(pump.split()[1].split('-')[1])
             pump_bhp_min = 250 - pump_head/10
-            if not np.isnan(event['Контроль дебит']) and event['Контроль дебит'] > pump_rate:
+            if not np.isnan(float(event['Контроль дебит'])) and float(event['Контроль дебит']) > pump_rate:
                 qliq = pump_rate
             else:
-                qliq = event['Контроль дебит']
+                qliq = float(event['Контроль дебит'])
             if not np.isnan(float(event['Контроль Рзаб'])) and float(event['Контроль Рзаб']) < pump_bhp_min:
                 bhp = pump_bhp_min
             else:
-                bhp = event['Контроль Рзаб']
+                bhp = float(event['Контроль Рзаб'])
             status = 'OPEN'
             if self.schedule.wells[wname].type == 'PROD':
                 if np.isnan(qliq):
@@ -416,15 +415,15 @@ class Events:
         self.define_tstep_and_add_to_sch(tstep)
         wname = event['Название скважины']
         if wname not in self.schedule.wells:
-            x = event['координата i']
-            y = event['координата j']
-            if np.isnan(event['перфорация верх, м']) or np.isnan(event['перфорация низ, м']):
+            x = int(event['координата i'])
+            y = int(event['координата j'])
+            if np.isnan(int(event['перфорация верх, м'])) or np.isnan(int(event['перфорация низ, м'])):
                 z1 = 1
                 z2 = 2
                 status = 'SHUT'
             else:
-                z1 = self.determine_z(event['перфорация верх, м'])
-                z2 = self.determine_z(event['перфорация низ, м'])
+                z1 = self.determine_z(int(event['перфорация верх, м']))
+                z2 = self.determine_z(int(event['перфорация низ, м']))
                 status = 'OPEN'
             z1 = min(z1, z2)
             z2 = max(z1, z2)
@@ -524,7 +523,7 @@ def create_schedule_for_team(name):
     print("---Начало работы над созданием schedule секции для команды " + name + "---")
     make_initial_schedule(name)
     a = Events('dataspace/{}/schedule_init_{}.inc'.format(name, name))
-    a.read_excel('dataspace/{}/Мероприятия РиЭНМ {}.xls'.format(name, name))
+    a.read_excel('dataspace/{}/Мероприятия РиЭНМ {}.xlsx'.format(name, name))
     l = []
     file = open('dataspace/{}/schedule_init_{}.inc'.format(name, name)).read()
     l.append(file)

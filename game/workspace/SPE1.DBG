@@ -14,7 +14,7 @@ Flow Version     =  2020.04 ()
 Machine name     =  DESKTOP-R9KC607 (Number of logical cores: 12, Memory size: 12270.71 MB) 
 Operating system =  Linux x86_64 (Kernel: 4.19.104-microsoft-standard, #1 SMP Wed Feb 19 06:37:35 UTC 2020 )
 Build time       =  2013-10-14 at 09:54:10 hrs
-Simulation started on 07-09-2020 at 12:59:09 hrs
+Simulation started on 10-09-2020 at 18:47:03 hrs
 Parameters used by Flow:
 # [known parameters which were specified at run-time]
 EclDeckFileName="spe1.DATA" # default: ""
@@ -696,7 +696,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 2
-Time step summary: newton its =  2, linearizations =  3 ( 0.621 sec), linear its =   2 ( 0.312 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.463 sec), linear its =   2 ( 0.229 sec)
 Sub steps started at time = 0 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 1 (days)
@@ -708,7 +708,7 @@ Suggested next step size = 3 (days)
   Report    1    02 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 1.025671 seconds; total solver time 1.025671 seconds.
+Time step took 0.772471 seconds; total solver time 0.772471 seconds.
 
 
 ---------------    Simulation step number 1    ---------------
@@ -997,7 +997,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 75
-Time step summary: newton its =  6, linearizations =  7 ( 1.126 sec), linear its =  75 ( 2.345 sec)
+Time step summary: newton its =  6, linearizations =  7 ( 0.953 sec), linear its =  75 ( 2.329 sec)
 Sub steps started at time = 1 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 2 (days)
@@ -1014,7 +1014,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report    2    03 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 3.640731 seconds; total solver time 4.666402 seconds.
+Time step took 3.444976 seconds; total solver time 4.217447 seconds.
 
 
 ---------------    Simulation step number 2    ---------------
@@ -1178,7 +1178,7 @@ Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G)
    1  1.451e-07  1.024e-07  7.566e-08  1.553e-03  2.491e-04  8.050e-04
    2  1.290e-08  1.062e-10  6.866e-09  1.080e-03  3.265e-07  5.599e-04
 Overall linear iterations used: 10
-Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.390 sec), linear its =  10 ( 0.416 sec)
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.403 sec), linear its =  10 ( 0.409 sec)
 
 Time step 1, stepsize 0.410153 days, at day 2.58985/3, date = 03-Jan-2020
 Well equation solution gets converged with 0 iterations
@@ -1272,7 +1272,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 6
-Time step summary: newton its =  2, linearizations =  3 ( 0.363 sec), linear its =   6 ( 0.335 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.397 sec), linear its =   6 ( 0.352 sec)
 Sub steps started at time = 2 (days)
  step[ 0 ] = 0.589847 (days)
  step[ 1 ] = 0.410153 (days)
@@ -1290,7 +1290,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report    3    04 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 1.685925 seconds; total solver time 6.352327 seconds.
+Time step took 1.766863 seconds; total solver time 5.984310 seconds.
 
 
 ---------------    Simulation step number 3    ---------------
@@ -1303,12 +1303,6 @@ Time step took 1.685925 seconds; total solver time 6.352327 seconds.
 Report step  3/16 at day 3/16, date = 04-Jan-2020
 
 Time step 0, stepsize 1 days, at day 3/4, date = 04-Jan-2020
-    Switching control mode for well PS2 from BHP to LRAT on rank 0
-    Switching control mode for well P6 from BHP to LRAT on rank 1
-    Switching control mode for well P1 from BHP to LRAT on rank 1
-    Switching control mode for well PS1 from BHP to LRAT on rank 1
-    Switching control mode for well P4 from BHP to LRAT on rank 1
-    Switching control mode for well P5 from BHP to LRAT on rank 1
 Restart file written for report step:  3/16.  Date: 2020/01/04
                              **************************************************************************                             
  WELSPECS AT       0.00 DAYS *                                                                        * FLOW                        
@@ -1383,6 +1377,12 @@ Restart file written for report step:  3/16.  Date: 2020/01/04
 
 
 
+    Switching control mode for well PS2 from BHP to LRAT on rank 0
+    Switching control mode for well P6 from BHP to LRAT on rank 1
+    Switching control mode for well P1 from BHP to LRAT on rank 1
+    Switching control mode for well PS1 from BHP to LRAT on rank 1
+    Switching control mode for well P4 from BHP to LRAT on rank 1
+    Switching control mode for well P5 from BHP to LRAT on rank 1
 Well equation solution gets converged with 2 iterations
 Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
    0  1.093e-05  1.319e-05  5.667e-06  3.117e-02  3.094e-02  1.615e-02
@@ -1474,7 +1474,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 9
-Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.395 sec), linear its =   9 ( 0.421 sec)
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.421 sec), linear its =   9 ( 0.392 sec)
 Sub steps started at time = 3 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 4 (days)
@@ -1491,7 +1491,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report    4    05 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.936684 seconds; total solver time 7.289011 seconds.
+Time step took 0.959952 seconds; total solver time 6.944262 seconds.
 
 
 ---------------    Simulation step number 4    ---------------
@@ -1504,6 +1504,15 @@ Time step took 0.936684 seconds; total solver time 7.289011 seconds.
 Report step  4/16 at day 4/16, date = 05-Jan-2020
 
 Time step 0, stepsize 1 days, at day 4/5, date = 05-Jan-2020
+    Switching control mode for well PS2 from BHP to LRAT on rank 0
+    Switching control mode for well P1 from BHP to LRAT on rank 1
+    Switching control mode for well P3 from LRAT to BHP on rank 0
+    Switching control mode for well P1 from LRAT to BHP on rank 1
+    Switching control mode for well PS1 from BHP to LRAT on rank 1
+    Switching control mode for well P4 from BHP to LRAT on rank 1
+    Switching control mode for well P5 from BHP to LRAT on rank 1
+    Switching control mode for well P6 from BHP to LRAT on rank 1
+Well equation solution gets converged with 2 iterations
 Restart file written for report step:  4/16.  Date: 2020/01/05
                              **************************************************************************                             
  WELSPECS AT       0.00 DAYS *                                                                        * FLOW                        
@@ -1604,15 +1613,6 @@ Restart file written for report step:  4/16.  Date: 2020/01/05
 
 
 
-    Switching control mode for well PS2 from BHP to LRAT on rank 0
-    Switching control mode for well P1 from BHP to LRAT on rank 1
-    Switching control mode for well P3 from LRAT to BHP on rank 0
-    Switching control mode for well P1 from LRAT to BHP on rank 1
-    Switching control mode for well PS1 from BHP to LRAT on rank 1
-    Switching control mode for well P4 from BHP to LRAT on rank 1
-    Switching control mode for well P5 from BHP to LRAT on rank 1
-    Switching control mode for well P6 from BHP to LRAT on rank 1
-Well equation solution gets converged with 2 iterations
 Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
    0  1.094e-05  1.319e-05  5.670e-06  3.090e-02  3.088e-02  1.601e-02
    1  3.159e-07  9.734e-07  1.661e-07  2.298e-03  2.299e-03  1.191e-03
@@ -1709,7 +1709,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 10
-Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.375 sec), linear its =  10 ( 0.482 sec)
+Time step summary: well its =  2, newton its =  2, linearizations =  3 ( 0.467 sec), linear its =  10 ( 0.530 sec)
 Sub steps started at time = 4 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 5 (days)
@@ -1726,7 +1726,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report    5    06 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.989263 seconds; total solver time 8.278275 seconds.
+Time step took 1.137127 seconds; total solver time 8.081388 seconds.
 
 
 ---------------    Simulation step number 5    ---------------
@@ -1875,7 +1875,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 11
-Time step summary: newton its =  2, linearizations =  3 ( 0.404 sec), linear its =  11 ( 0.425 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.402 sec), linear its =  11 ( 0.497 sec)
 Sub steps started at time = 5 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 6 (days)
@@ -1892,7 +1892,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report    6    07 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.953218 seconds; total solver time 9.231493 seconds.
+Time step took 1.045166 seconds; total solver time 9.126555 seconds.
 
 
 ---------------    Simulation step number 6    ---------------
@@ -2039,7 +2039,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 10
-Time step summary: newton its =  2, linearizations =  3 ( 0.400 sec), linear its =  10 ( 0.405 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.442 sec), linear its =  10 ( 0.460 sec)
 Sub steps started at time = 6 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 7 (days)
@@ -2056,7 +2056,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report    7    08 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.942562 seconds; total solver time 10.174055 seconds.
+Time step took 1.039759 seconds; total solver time 10.166314 seconds.
 
 
 ---------------    Simulation step number 7    ---------------
@@ -2205,7 +2205,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 9
-Time step summary: newton its =  2, linearizations =  3 ( 0.354 sec), linear its =   9 ( 0.383 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.396 sec), linear its =   9 ( 0.430 sec)
 Sub steps started at time = 7 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 8 (days)
@@ -2222,7 +2222,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report    8    09 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.852803 seconds; total solver time 11.026858 seconds.
+Time step took 0.948780 seconds; total solver time 11.115094 seconds.
 
 
 ---------------    Simulation step number 8    ---------------
@@ -2235,7 +2235,6 @@ Time step took 0.852803 seconds; total solver time 11.026858 seconds.
 Report step  8/16 at day 8/16, date = 09-Jan-2020
 
 Time step 0, stepsize 1 days, at day 8/9, date = 09-Jan-2020
-Well equation solution gets converged with 0 iterations
 Restart file written for report step:  8/16.  Date: 2020/01/09
                              **************************************************************************                             
  WELSPECS AT       0.00 DAYS *                                                                        * FLOW                        
@@ -2275,6 +2274,7 @@ Restart file written for report step:  8/16.  Date: 2020/01/09
 
 
 
+Well equation solution gets converged with 0 iterations
 Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
    0  1.093e-05  7.860e-06  5.671e-06  2.136e-02  2.088e-02  1.108e-02
    1  8.436e-07  1.363e-08  4.370e-07  2.128e-03  5.191e-05  1.104e-03
@@ -2371,7 +2371,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 9
-Time step summary: newton its =  2, linearizations =  3 ( 0.415 sec), linear its =   9 ( 0.411 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.379 sec), linear its =   9 ( 0.430 sec)
 Sub steps started at time = 8 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 9 (days)
@@ -2388,7 +2388,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report    9    10 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.975063 seconds; total solver time 12.001921 seconds.
+Time step took 0.939903 seconds; total solver time 12.054997 seconds.
 
 
 ---------------    Simulation step number 9    ---------------
@@ -2499,7 +2499,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 9
-Time step summary: newton its =  2, linearizations =  3 ( 0.438 sec), linear its =   9 ( 0.553 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.400 sec), linear its =   9 ( 0.417 sec)
 Sub steps started at time = 9 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 10 (days)
@@ -2516,7 +2516,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report   10    11 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 1.125847 seconds; total solver time 13.127769 seconds.
+Time step took 0.945142 seconds; total solver time 13.000139 seconds.
 
 
 ---------------    Simulation step number 10    ---------------
@@ -2529,8 +2529,8 @@ Time step took 1.125847 seconds; total solver time 13.127769 seconds.
 Report step 10/16 at day 10/16, date = 11-Jan-2020
 
 Time step 0, stepsize 1 days, at day 10/11, date = 11-Jan-2020
-Restart file written for report step: 10/16.  Date: 2020/01/11
 Well equation solution gets converged with 0 iterations
+Restart file written for report step: 10/16.  Date: 2020/01/11
 Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
    0  1.093e-05  5.164e-06  5.669e-06  1.334e-02  1.298e-02  6.922e-03
    1  7.779e-07  1.793e-07  4.018e-07  2.409e-03  1.315e-03  1.250e-03
@@ -2627,7 +2627,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 9
-Time step summary: newton its =  2, linearizations =  3 ( 0.392 sec), linear its =   9 ( 0.386 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.411 sec), linear its =   9 ( 0.396 sec)
 Sub steps started at time = 10 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 11 (days)
@@ -2644,7 +2644,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report   11    12 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.899319 seconds; total solver time 14.027088 seconds.
+Time step took 0.941505 seconds; total solver time 13.941645 seconds.
 
 
 ---------------    Simulation step number 11    ---------------
@@ -2657,8 +2657,8 @@ Time step took 0.899319 seconds; total solver time 14.027088 seconds.
 Report step 11/16 at day 11/16, date = 12-Jan-2020
 
 Time step 0, stepsize 1 days, at day 11/12, date = 12-Jan-2020
-Restart file written for report step: 11/16.  Date: 2020/01/12
 Well equation solution gets converged with 0 iterations
+Restart file written for report step: 11/16.  Date: 2020/01/12
 Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
    0  1.092e-05  4.463e-06  5.668e-06  1.216e-02  1.184e-02  6.308e-03
    1  5.851e-07  8.143e-08  2.978e-07  2.003e-03  9.154e-04  1.040e-03
@@ -2755,7 +2755,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 9
-Time step summary: newton its =  2, linearizations =  3 ( 0.395 sec), linear its =   9 ( 0.399 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.412 sec), linear its =   9 ( 0.386 sec)
 Sub steps started at time = 11 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 12 (days)
@@ -2772,7 +2772,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report   12    13 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.911799 seconds; total solver time 14.938887 seconds.
+Time step took 0.931607 seconds; total solver time 14.873252 seconds.
 
 
 ---------------    Simulation step number 12    ---------------
@@ -2786,8 +2786,8 @@ Report step 12/16 at day 12/16, date = 13-Jan-2020
 
 Time step 0, stepsize 1 days, at day 12/13, date = 13-Jan-2020
  well PS9 did not get converged during well potential calculations returning zero values for the potential
-Well equation solution gets converged with 0 iterations
 Restart file written for report step: 12/16.  Date: 2020/01/13
+Well equation solution gets converged with 0 iterations
 Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
    0  1.092e-05  4.075e-06  5.667e-06  1.107e-02  1.079e-02  5.747e-03
    1  4.474e-07  3.056e-09  2.314e-07  3.782e-02  5.082e-04  1.963e-02
@@ -2884,7 +2884,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 7
-Time step summary: newton its =  2, linearizations =  3 ( 0.399 sec), linear its =   7 ( 0.330 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.387 sec), linear its =   7 ( 0.346 sec)
 Sub steps started at time = 12 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 13 (days)
@@ -2901,7 +2901,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report   13    14 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.848162 seconds; total solver time 15.787049 seconds.
+Time step took 0.876046 seconds; total solver time 15.749298 seconds.
 
 
 ---------------    Simulation step number 13    ---------------
@@ -3014,7 +3014,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 10
-Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 0.368 sec), linear its =  10 ( 0.446 sec)
+Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 0.396 sec), linear its =  10 ( 0.426 sec)
 Sub steps started at time = 13 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 14 (days)
@@ -3031,7 +3031,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report   14    15 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.933958 seconds; total solver time 16.721007 seconds.
+Time step took 0.967829 seconds; total solver time 16.717127 seconds.
 
 
 ---------------    Simulation step number 14    ---------------
@@ -3046,8 +3046,8 @@ Report step 14/16 at day 14/16, date = 15-Jan-2020
 Time step 0, stepsize 1 days, at day 14/15, date = 15-Jan-2020
  well PS9 did not get converged during well potential calculations returning zero values for the potential
  well PS8 did not get converged during well potential calculations returning zero values for the potential
-Well equation solution gets converged with 1 iterations
 Restart file written for report step: 14/16.  Date: 2020/01/15
+Well equation solution gets converged with 1 iterations
 Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
    0  9.748e-06  3.519e-06  5.061e-06  1.040e-01  8.962e-03  5.398e-02
    1  1.056e-06  2.003e-10  5.479e-07  4.340e-03  5.787e-05  2.253e-03
@@ -3145,7 +3145,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 10
-Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 0.373 sec), linear its =  10 ( 0.368 sec)
+Time step summary: well its =  1, newton its =  2, linearizations =  3 ( 0.400 sec), linear its =  10 ( 0.402 sec)
 Sub steps started at time = 14 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 15 (days)
@@ -3162,7 +3162,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report   15    16 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 0.878631 seconds; total solver time 17.599638 seconds.
+Time step took 0.937685 seconds; total solver time 17.654811 seconds.
 
 
 ---------------    Simulation step number 15    ---------------
@@ -3177,9 +3177,9 @@ Report step 15/16 at day 15/16, date = 16-Jan-2020
 Time step 0, stepsize 1 days, at day 15/16, date = 16-Jan-2020
  well PS9 did not get converged during well potential calculations returning zero values for the potential
  well PS8 did not get converged during well potential calculations returning zero values for the potential
+Restart file written for report step: 15/16.  Date: 2020/01/16
     Switching control mode for well P3 from LRAT to BHP on rank 0
 Well equation solution gets converged with 4 iterations
-Restart file written for report step: 15/16.  Date: 2020/01/16
 Iter    MB(O)      MB(W)      MB(G)      CNV(O)     CNV(W)     CNV(G) 
    0  1.038e-05  3.266e-06  5.389e-06  8.546e-02  8.157e-03  4.437e-02
    1  2.506e-07  6.238e-08  1.300e-07  6.556e-01  8.725e-03  3.404e-01
@@ -3278,7 +3278,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
 Overall linear iterations used: 14
-Time step summary: well its =  4, newton its =  4, linearizations =  5 ( 0.668 sec), linear its =  14 ( 0.717 sec)
+Time step summary: well its =  4, newton its =  4, linearizations =  5 ( 0.742 sec), linear its =  14 ( 0.743 sec)
 Sub steps started at time = 15 (days)
  step[ 0 ] = 1 (days)
 sub steps end time = 16 (days)
@@ -3295,7 +3295,7 @@ Keyword 'WELSPECS' is unhandled for output to file.
   Report   16    17 Jan 2020  *                                             Flow  version     2020.04  *
                               **************************************************************************
 
-Time step took 1.534942 seconds; total solver time 19.134580 seconds.
+Time step took 1.652819 seconds; total solver time 19.307630 seconds.
 Restart file written for report step: 16/16.  Date: 2020/01/17
 
 
@@ -3303,13 +3303,13 @@ Restart file written for report step: 16/16.  Date: 2020/01/17
 
 Number of MPI processes:      2
 Threads per MPI process:      2
-Total time (seconds):         19.2727
-Solver time (seconds):        19.1346
- Assembly time (seconds):     7.87609 (Failed: 0; 0%)
- Linear solve time (seconds): 9.13287 (Failed: 0; 0%)
- Linear solve setup time (seconds): 0.684065 (Failed: 0; 0%)
- Update time (seconds):       0.50995 (Failed: 0; 0%)
- Output write time (seconds): 0.835277
+Total time (seconds):         19.4332
+Solver time (seconds):        19.3076
+ Assembly time (seconds):     7.874 (Failed: 0; 0%)
+ Linear solve time (seconds): 9.17475 (Failed: 0; 0%)
+ Linear solve setup time (seconds): 0.678775 (Failed: 0; 0%)
+ Update time (seconds):       0.509006 (Failed: 0; 0%)
+ Output write time (seconds): 0.864033
 Overall Well Iterations:      12 (Failed: 0; 0%)
 Overall Linearizations:       57 (Failed: 0; 0%)
 Overall Newton Iterations:    40 (Failed: 0; 0%)
