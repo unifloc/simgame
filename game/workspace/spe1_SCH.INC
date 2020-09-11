@@ -159,77 +159,60 @@ TSTEP
 
 
 
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   P1    OPEN  BHP           3*          1*        1*   200 /
+/
+TSTEP
+ 4*1
+/
+COMPDAT
+-- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
+   P1   2*   1 1  OPEN     2*        1*    1*  10 /
+/
+TSTEP
+ 4*1
+/
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   P1    STOP  BHP           3*          10        1*   50 /
+/
+TSTEP
+ 8*1
+/
+TSTEP
+ 4*1
+/
 WELSPECS
 -- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
-  PS9     G1   69 69 1*        OIL /
+  newPS6     G1   39 39 1*        OIL /
 /
 COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
-   PS9   2*   1 2  SHUT     2*      0.2  1*  10 /
+   newPS6   2*   1 10  OPEN     2*      0.2  1*  10 /
 /
 TSTEP
- 1*1
+ 4*1
 /
 WELSPECS
 -- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
-  PS8     G1   38 69 1*        WATER /
+  newPS7     G1   21 21 1*        OIL /
 /
 COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
-   PS8   2*   1 2  SHUT     2*      0.2  1*  10 /
+   newPS7   2*   1 10  OPEN     2*      0.2  1*  10 /
 /
 TSTEP
- 1*1
+ 4*1
+/
+WELSPECS
+-- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
+  newPS8     G1   57 53 1*        OIL /
 /
 COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
-   PS9   2*   11 15  OPEN     2*        1*    1*  10 /
+   newPS8   2*   1 10  OPEN     2*      0.2  1*  10 /
 /
 TSTEP
- 1*1
-/
-COMPDAT
--- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
-   PS8   2*   11 15  OPEN     2*        1*    1*  10 /
-/
-TSTEP
- 1*1
-/
-TSTEP
- 2*1
-/
-WCONPROD
--- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
-   PS9    OPEN  BHP           3*          1*        1*   150.0 /
-/
-TSTEP
- 1*1
-/
-WCONINJE
--- WELLNAME FLUID STATUS CONTROL RATE RESV BHP /
-   PS8   WATER  OPEN  BHP     100.0        1*   200.0 /
-/
-TSTEP
- 1*1
-/
-WCONPROD
--- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
-   P1    OPEN  BHP           3*          1*        1*   200.0 /
-/
-TSTEP
- 1*1
-/
-WCONPROD
--- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
-   P3    STOP  BHP           3*          10        1*   50 /
-/
-TSTEP
- 1*1
-/
-WCONPROD
--- WELLNAME STATUS CONTROL ORATE WRATE GRATE LRATE RESV BHP /
-   P3    OPEN  LRAT           3*          100.0        1*   200 /
-/
-TSTEP
- 1*1
+ 4*1
 /

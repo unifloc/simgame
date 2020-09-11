@@ -1,5 +1,3 @@
-from pprint import pprint
-import numpy as np
 import httplib2
 import apiclient
 from oauth2client.service_account import ServiceAccountCredentials
@@ -21,7 +19,6 @@ service = apiclient.discovery.build('sheets', 'v4', http = httpAuth)
 # Создаем таблицу и импортируем значения
 import xlwt
 import xlrd
-from xlutils.copy import copy
 
 def export_to_GT(name):
     wb = xlrd.open_workbook("201910_TR_1.xlsx")
@@ -29,7 +26,6 @@ def export_to_GT(name):
     list_data = []
     for rownum in range(sh.nrows):
         list_data.append(sh.row_values(rownum))
-    #list_data.append(sh.col_values(12))
     
     result = service.spreadsheets().values().batchUpdate(
         spreadsheetId=spreadsheet_id,
@@ -84,30 +80,3 @@ def import_teamnames():
     ).execute()
     return values['values']
 
-
-# import pandas as pd
-# #import xlwings as xw
-# import xlsxwriter as xlsw
-
-# values = service.spreadsheets().values().batchGet(
-#     spreadsheetId=spreadsheet_id,
-#     ranges='ФОН!A8:P25',
-#     majorDimension='ROWS'
-# ).execute()
-# ranges = values.get('valueRanges', [])
-# for item in ranges:
-#     val = item['values']
-# df1 = pd.DataFrame(val, columns=())
-# #df1['Perf'] = df1.astype(int)
-# print(df1)
-
-# import data_extractor as de
-# de.append_df_to_excel("test.xlsx", df1,sheet_name='Лист1',
-#                             startrow=0, startcol=0, index=False, header=False)
-#writer = pd.ExcelWriter('test.xlsx', engine='xlsxwriter')
-
-#df1.to_excel(writer, sheet_name="TR",startrow=30, startcol=0, header=False, index=False)
-# wb=xw.Book('test.xlsx')
-# data_excel = wb.sheets['TR']
-# data_pd = data_excel.range('A1:X100').options(pd.DataFrame, header = 1, index = False).value
-# print (data_pd)

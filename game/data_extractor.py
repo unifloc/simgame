@@ -1,22 +1,44 @@
 from ecl.summary import EclSum
 import pandas as pd
 import random
+import numpy as np
 
+# def create_result(file_name):
+#     summary = EclSum(file_name)
+#     dates = summary.dates
+#     results = []
+#     all_keys = []
 
-path_to_sim_dir = "./workspace/"
-model_data_file_name = "spe1.DATA"
+#     nedeed_keys = ["WOPR:*", "WWPR:*", "WLPR:*", "WGPR:*", "WWIR:*" ,
+#                    "WGOR:*", "WBHP:*",
+#                    "WOPT:*", "WWPT:*", "WLPT:*", "WGPT:*", "WWIT:*",
+#                    "FOPT", "FWPT", "FLPT", "FGPT", "FWIT"]
 
-file_name = path_to_sim_dir + model_data_file_name
+#     for key in nedeed_keys:
+#         key_all_wells = summary.keys(key)
+#         all_keys = all_keys + list(key_all_wells)
+
+#     for key in all_keys:
+#         results.append(list(summary.numpy_vector(key)))
+
+#     if len(results) == 0:
+#         return print('Результаты из модели не загрузились. Файл с результатами не был создан')
+
+#     result_df = pd.DataFrame(data=np.array(results).T, index=dates, columns=all_keys)
+#     result_df.index.name = 'Time'
+#     result_df.to_csv('sim_result.csv')
+    
+file_name = "./workspace/spe1.DATA"
 summary = EclSum(file_name)
 dates = summary.dates
 
+nedeed_keys = ["WOPR:*", "WWPR:*", "WLPR:*", "WGPR:*", "WWIR:*" ,
+                    "WGOR:*", "WBHP:*",
+                    "WOPT:*", "WWPT:*", "WLPT:*", "WGPT:*", "WWIT:*",
+                    "FOPT", "FWPT", "FLPT", "FGPT", "FWIT"]
+
 shape = len(dates)
 result_df = pd.DataFrame({"test": list(range(shape))})
-
-nedeed_keys = ["WOPR:*", "WWPR:*", "WLPR:*", "WGPR:*", "WWIR:*" ,
-               "WGOR:*", "WBHP:*",
-               "WOPT:*", "WWPT:*", "WLPT:*", "WGPT:*", "WWIT:*",
-               "FOPT", "FWPT", "FLPT", "FGPT", "FWIT"]
 
 for i in nedeed_keys:
     keys_by_wells = summary.keys(i)
@@ -112,10 +134,10 @@ def export_to_csv(path, team_name):
         df1=pd.DataFrame(d)
         append_df_to_excel("201910_TR_1.xlsx", df1,sheet_name='TR', 
                             startrow=0, startcol=0, index=False, header=False)
-        kin = []
-        kin.append({'КИН':df['FOPT']})
+    kin = []
+    kin.append({'КИН':df['FOPT']})
 
-        df2=pd.DataFrame(kin)
-        append_df_to_excel("201910_TR_1.xlsx", df2,sheet_name='KIN',
+    df2=pd.DataFrame(kin)
+    append_df_to_excel("201910_TR_1.xlsx", df2,sheet_name='KIN',
                             startrow=0, startcol=0, index=False, header=False)
         

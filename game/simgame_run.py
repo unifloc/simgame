@@ -17,16 +17,18 @@ run_sim_option = True
 if run_sim_option:
     for this_team_name in team_names:
 
+        if not os.path.isdir(f"dataspace/{this_team_name}"):
+             os.mkdir(f"dataspace/{this_team_name}")
+     
         print("---Импорт решений " + this_team_name + '---')
         API.create_table_and_import(this_team_name, current_dir)
         schedule_read.create_schedule_for_team(this_team_name)
 
         print("---Перемешsение сгенерированной schedule секции для команды " + this_team_name + '---')
-        path_to_generated_schedule = current_dir+"/" + this_team_name + '/'
-        print(path_to_generated_schedule)
+        path_to_generated_schedule = "dataspace/" + this_team_name + '/'
         new_schedule_file_name = "schedule_new_" + this_team_name + ".inc"
         abs_path_to_new_schedule = path_to_generated_schedule + new_schedule_file_name
-        subprocess.call(["cp", "-f" , abs_path_to_new_schedule, './workspace/spe1_SCH.INC'])
+        subprocess.call(["cp", "-r" , abs_path_to_new_schedule, 'workspace/spe1_SCH.INC'])
 
         print("---Запуск симулятора для команды " + this_team_name + '---')
         path_to_opm_data = current_dir+ "/workspace"

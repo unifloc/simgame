@@ -533,5 +533,3 @@ def create_schedule_for_team(name):
         for item in l:
             print(item, file=file)
 
-#create_schedules_for_all_teams(command_names)
-# w = Schedule(filename)
