@@ -1,33 +1,7 @@
 from ecl.summary import EclSum
 import pandas as pd
 import random
-import numpy as np
 
-# def create_result(file_name):
-#     summary = EclSum(file_name)
-#     dates = summary.dates
-#     results = []
-#     all_keys = []
-
-#     nedeed_keys = ["WOPR:*", "WWPR:*", "WLPR:*", "WGPR:*", "WWIR:*" ,
-#                    "WGOR:*", "WBHP:*",
-#                    "WOPT:*", "WWPT:*", "WLPT:*", "WGPT:*", "WWIT:*",
-#                    "FOPT", "FWPT", "FLPT", "FGPT", "FWIT"]
-
-#     for key in nedeed_keys:
-#         key_all_wells = summary.keys(key)
-#         all_keys = all_keys + list(key_all_wells)
-
-#     for key in all_keys:
-#         results.append(list(summary.numpy_vector(key)))
-
-#     if len(results) == 0:
-#         return print('Результаты из модели не загрузились. Файл с результатами не был создан')
-
-#     result_df = pd.DataFrame(data=np.array(results).T, index=dates, columns=all_keys)
-#     result_df.index.name = 'Time'
-#     result_df.to_csv('sim_result.csv')
-    
 file_name = "./workspace/spe1.DATA"
 summary = EclSum(file_name)
 dates = summary.dates
