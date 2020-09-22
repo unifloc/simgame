@@ -2,7 +2,7 @@ from ecl.summary import EclSum
 import pandas as pd
 import random
 
-file_name = "./workspace/spe1.DATA"
+file_name = "./workspace/SPE1.DATA"
 summary = EclSum(file_name)
 dates = summary.dates
 

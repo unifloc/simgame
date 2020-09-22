@@ -161,18 +161,99 @@ TSTEP
 
 WELSPECS
 -- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
-  P18     G1   37 37 1*        OIL /
+  PSF22     G1   37 37 1*        OIL /
 /
 COMPDAT
 -- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
-   P18   2*   1 10  OPEN     2*      0.2  1*  10 /
+   PSF22   2*   1 11  OPEN     2*      0.2  1*  10 /
+/
+TSTEP
+ 1*1
+/
+COMPDAT
+-- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
+   PSF22   2*   1 11  OPEN     2*        1*    1*  10 /
 /
 TSTEP
  1*1
 /
 WCONPROD
 -- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
-   P1    STOP  BHP           3*          10        1*   50 /
+   PSF22    OPEN  BHP           3*          1*        1*   200 /
+/
+TSTEP
+ 1*1
+/
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   P4    STOP  BHP           3*          10        1*   50 /
+/
+TSTEP
+ 1*1
+/
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   P5    STOP  BHP           3*          10        1*   50 /
+/
+TSTEP
+ 1*1
+/
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   P6    STOP  BHP           3*          10        1*   50 /
+/
+TSTEP
+ 1*1
+/
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   PS2    STOP  BHP           3*          10        1*   50 /
+/
+TSTEP
+ 1*1
+/
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   P1    OPEN  BHP           3*          1*        1*   200 /
+/
+TSTEP
+ 1*1
+/
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   P4    OPEN  BHP           3*          1*        1*   200 /
+/
+TSTEP
+ 1*1
+/
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   P5    OPEN  BHP           3*          1*        1*   200 /
+/
+TSTEP
+ 1*1
+/
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   P6    OPEN  BHP           3*          1*        1*   200 /
+/
+TSTEP
+ 1*1
+/
+WCONPROD
+-- WELLNAME STATUS ORATE CONTROL WRATE GRATE LRATE RESV BHP /
+   PS2    OPEN  BHP           3*          1*        1*   200 /
+/
+TSTEP
+ 1*1
+/
+WELSPECS
+-- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
+  P121     G1   24 10 1*        OIL /
+/
+COMPDAT
+-- WELLNAME I J K1 K2 STATUS SATNUM  CF  RW(DIAM) KH SKIN  /
+   P121   2*   5 9  OPEN     2*      0.2  1*  10 /
 /
 TSTEP
  1*1

@@ -405,7 +405,7 @@ class Events:
         z_range = np.arange(2500, 2575, 5)
         i = 1
         for z in z_range:
-            if z_m > z:
+            if int(z_m) > z:
                 i += 1
             else:
                 break
