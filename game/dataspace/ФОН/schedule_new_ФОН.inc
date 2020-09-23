@@ -47,7 +47,6 @@ P5 OPEN BHP 3* 200 1* 175 /
 P6 OPEN BHP 3* 200 1* 210 /
 /
 
-
 WCONINJE
 I2  WATER OPEN BHP 400 1* 400 /
 I1  WATER OPEN BHP 400 1* 400 /
@@ -56,9 +55,6 @@ I4  WATER OPEN BHP 400 1* 400 /
 I5  WATER OPEN BHP 400 1* 400 /
 I6  WATER OPEN BHP 400 1* 400 /
 /
-
-TSTEP  
-  1*1/
 
 -- change data at some point
 COMPDAT
@@ -87,12 +83,6 @@ P5 OPEN BHP 3* 200 1* 170 /
 P6 OPEN BHP 3* 200 1* 190 /
 /
 
-
-
-
-TSTEP  
-  1*1/
-
 -- change data at some point
 COMPDAT
 P1 2*  1 2 OPEN 2* 0.2 1* 12/
@@ -119,10 +109,6 @@ P4 OPEN BHP 3* 200 1* 160 /
 P5 OPEN BHP 3* 200 1* 160 /
 P6 OPEN BHP 3* 200 1* 180 /
 /
-
-
-TSTEP  
-  1*1/
 
 -- change data at some point
 COMPDAT
@@ -151,14 +137,14 @@ P5 OPEN BHP 3* 200 1* 155 /
 P6 OPEN BHP 3* 200 1* 140 /
 /
 
-TSTEP  
-  1*1/
 
 
 
 
 
-
+TSTEP
+ 1*1
+/
 WELSPECS
 -- WELLNAME GRPNAME I J BHPREF TYPE(PHASE) /
   PSF22     G1   37 37 1*        OIL /

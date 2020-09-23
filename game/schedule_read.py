@@ -321,18 +321,11 @@ class Events:
         self.sname = sname
         self.schedule = Schedule(sname)
         self.schedule_new = []
-        self.previous_date = []
-        self.current_date = []
-        self.timedelta = 0
 
     def define_tstep_and_add_to_sch(self, tstep):
         if tstep == True:
-            num = int(self.timedelta)#/ 0.1)
-            if num == 0:
-                num = 1
-                step = 1 #0.1
-            else:
-                step = 1 #0.1
+            num = 1
+            step = 1
             self.schedule_new.extend(self.schedule.make_TSTEP(num, step))
 
     def change_GNO(self,event, tstep):
@@ -467,28 +460,14 @@ class Events:
         excel.index.names = ['Index']
         excel.columns = list(excel.loc[6])
         excel = excel[excel.index > 6]
-        excel = excel.dropna(subset=['Дата мероприятия'])
         excel = excel.drop(excel[excel['Название команды'] == 'Проверка'].index)
-        excel['Дата мероприятия'] = pd.to_datetime(excel['Дата мероприятия'], format='%d.%m.%Y %H:%M:%S')
-        excel = excel.sort_values(['Дата мероприятия', 'Вид мероприятия'], ascending=[True, False])
         excel = excel.loc[excel['Вид мероприятия'].isin(['Остановка скважины','Остановка скважины для КВД',
                                                         'Строительство новой скважины', 'Запуск скважины',
                                                                                    'Реперфорация', 'ОПЗ', 'Смена ГНО'])]
-        # Была задумка сделать с DATES и разными TSTEP, пока так сложно, но можно в буд сделать
-        # self.date = excel['Дата мероприятия'].dt.strftime('%d %b %Y').str.upper()
-        # excel['Дата мероприятия'] = excel['Дата мероприятия'].dt.strftime('%d %b %Y').str.upper()
         self.excel = excel
 
-        # date = True  # индикатор генератора DATES
-        self.previous_date = excel.iloc[0]['Дата мероприятия']
         for event in excel.iterrows():
-            self.current_date = event[1]['Дата мероприятия']
-            if self.current_date == self.previous_date:
-                tstep = False  # индикатор генератора TSTEP
-            else:
-                self.timedelta = (self.current_date - self.previous_date).days + (self.current_date -
-                                                                                  self.previous_date).seconds / (24*3600)
-                tstep = True
+            tstep = True
             if event[1]['Вид мероприятия'] == 'Запуск скважины':
                 self.zapusk(event[1], tstep)
             elif event[1]['Вид мероприятия'] == 'Остановка скважины' or event[1]['Вид мероприятия'] == 'Остановка скважины для КВД':
@@ -501,9 +480,8 @@ class Events:
                 self.OPZ(event[1], tstep)
             elif event[1]['Вид мероприятия'] == 'Смена ГНО':
                 self.change_GNO(event[1], tstep)
-            self.previous_date = self.current_date
 
-        num = int(self.timedelta)
+        num = 1
         step = 1
         self.schedule_new.extend(self.schedule.make_TSTEP(num, step))
         return

@@ -7,9 +7,6 @@ import data_extractor as de
 
 current_dir = os.getcwd()
 
-# TODO сделать сохранения результатов в папку команд  smspec egrid
-# TODO понять, почему не генерит SMSPEC
-
 team_names = API.import_teamnames()[0]
 
 run_sim_option = True
@@ -34,19 +31,15 @@ if run_sim_option:
         os.chdir(path_to_opm_data)
         result = os.system("mpirun -np 2 flow spe1.DATA")
 
-        time.sleep(1)
         print("---Запуск скрипта на python3.8 для извлечения результатов команды " + this_team_name + '---')
         os.chdir(current_dir)
         os.system("python3.8 data_extractor.py")
 
-        time.sleep(1)
         print("---Перенос результатов в папку команды " + this_team_name + '---')
         command_to_move_results = "mv -f ./sim_result.csv ./resultspace/" + this_team_name + '/'
         os.system(command_to_move_results)
-        command_to_move_results = "mv -f ./workspace/SPE1.EGRID ./resultspace/" + this_team_name + '/'
-        os.system(command_to_move_results)
         
-        time.sleep(1)
         print("---Экспорт решений в гугл таблицу  " + this_team_name + '---')
         de.export_to_csv(current_dir, this_team_name)
-        API.export_to_GT(this_team_name)
+        API.export_to_GT(current_dir,this_team_name)
+        API.export_snapshots(this_team_name)
