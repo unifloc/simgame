@@ -11,6 +11,7 @@ import glob
 from PIL import Image
 from IPython.display import display
 from plotly.offline import plot, iplot
+import shutil
 """
 @alexeyvodopyan
 23.09
@@ -25,9 +26,11 @@ class ModelGenerator:
 
     """
 
-    def __init__(self, init_file_name='RIENM1_INIT.DATA', nx=100, ny=100, nz=5, dx=500, dy=500, dz=20, por=0.3, permx=100,
-                 permy=100, permz=10, prod_names=None, prod_xs=None, prod_ys=None, prod_z1s=None, prod_z2s=None,
-                 inj_names=None, inj_xs=None, inj_ys=None, inj_z1s=None, inj_z2s=None):
+    def __init__(self, init_file_name='RIENM1_INIT.DATA', start_date="1 'SEP' 2019", mounths = 24, nx=100, ny=100, nz=5, dx=500, dy=500, dz=20, por=0.3, permx=100,
+                 permy=100, permz=10, prod_names=None, prod_xs=None, prod_ys=None, prod_z1s=None, prod_z2s=None, prod_q_oil=100,
+                 inj_names=None, inj_xs=None, inj_ys=None, inj_z1s=None, inj_z2s=None, inj_bhp=400, skin=0, density=None):
+        self.start_date = start_date
+        self.mounths = mounths
         self.nx = nx
         self.ny = ny
         self.nz = nz
@@ -59,33 +62,39 @@ class ModelGenerator:
             inj_z1s = [1]
         if inj_z2s is None:
             inj_z2s = [2]
+        if density is None:
+            density =[860, 1010, 0.9]
 
         self.prod_names = prod_names
         self.prod_xs = prod_xs
         self.prod_ys = prod_ys
         self.prod_z1s = prod_z1s
         self.prod_z2s = prod_z2s
+        self.q_oil = prod_q_oil
         self.inj_ys = inj_ys
         self.inj_xs = inj_xs
         self.inj_names = inj_names
         self.inj_z1s = inj_z1s
         self.inj_z2s = inj_z2s
+        self.inj_bhp = inj_bhp
+        self.skin = skin
+        self.density = density
         self.result_df = None
         self.fig = None
         self.dir = None
         self.init_file_name = init_file_name
         self.filter_initial_data()
         self.parser = None
-        self.initialize_parser(self.init_file_name, self.nx, self.ny, self.nz, self.dx, self.dy, self.dz, self.por,
+        self.initialize_parser(self.init_file_name, self.start_date, self.mounths, self.nx, self.ny, self.nz, self.dx, self.dy, self.dz, self.por,
                                self.permx, self.permy, self.permz, self.prod_names, self.prod_xs, self.prod_ys,
-                               self.prod_z1s, self.prod_z2s, self.inj_names, self.inj_xs, self.inj_ys, self.inj_z1s,
-                               self.inj_z2s)
+                               self.prod_z1s, self.prod_z2s, self.q_oil, self.inj_names, self.inj_xs, self.inj_ys, self.inj_z1s,
+                               self.inj_z2s, self.inj_bhp, self.skin, self.density)
 
-    def initialize_parser(self, init_file_name, nx, ny, nz, dx, dy, dz, por, permx, permy, permz, prod_names, prod_xs,
-                          prod_ys, prod_z1s, prod_z2s, inj_names, inj_xs, inj_ys, inj_z1s, inj_z2s):
+    def initialize_parser(self, init_file_name, start_date, mounths, nx, ny, nz, dx, dy, dz, por, permx, permy, permz, prod_names, prod_xs,
+                          prod_ys, prod_z1s, prod_z2s, q_oil, inj_names, inj_xs, inj_ys, inj_z1s, inj_z2s, inj_bhp, skin, density):
         init_file = open(init_file_name)
-        self.parser = DataParser(init_file, nx, ny, nz, dx, dy, dz, por, permx, permy, permz, prod_names, prod_xs,
-                                 prod_ys, prod_z1s, prod_z2s, inj_names, inj_xs, inj_ys, inj_z1s, inj_z2s)
+        self.parser = DataParser(init_file, start_date, mounths, nx, ny, nz, dx, dy, dz, por, permx, permy, permz, prod_names, prod_xs,
+                                 prod_ys, prod_z1s, prod_z2s, q_oil, inj_names, inj_xs, inj_ys, inj_z1s, inj_z2s, inj_bhp, skin, density)
 
     def filter_initial_data(self):
         if max(self.prod_xs) > self.nx:
@@ -97,6 +106,7 @@ class ModelGenerator:
 
     def create_model(self, name, result_name, keys):
         self.parser.parse_file('DIMENS')
+        self.parser.parse_file('START')
         self.parser.parse_file('DX')
         self.parser.parse_file('DY')
         self.parser.parse_file('DZ')
@@ -105,10 +115,12 @@ class ModelGenerator:
         self.parser.parse_file('PERMX')
         self.parser.parse_file('PERMY')
         self.parser.parse_file('PERMZ')
+        self.parser.parse_file('DENSITY')
         self.parser.parse_file('WELSPECS')
         self.parser.parse_file('COMPDAT')
         self.parser.parse_file('WCONPROD')
         self.parser.parse_file('WCONINJE')
+        self.parser.parse_file('TSTEP')
         self.save_file(name=name)
         self.calculate_file(name=name)
         self.create_result(name=name, keys=keys)
@@ -125,9 +137,9 @@ class ModelGenerator:
         inj_ys = [int(self.ny/2)]
         inj_z1s = [1]
         inj_z2s = [self.nz]
-        self.initialize_parser(self.init_file_name, self.nx, self.ny, self.nz, self.dx, self.dy, self.dz, self.por,
+        self.initialize_parser(self.init_file_name, self.start_date, self.mounths, self.nx, self.ny, self.nz, self.dx, self.dy, self.dz, self.por,
                                self.permx, self.permy, self.permz, self.prod_names, prod_xs, prod_ys, prod_z1s,
-                               prod_z2s, self.inj_names, inj_xs, inj_ys, inj_z1s, inj_z2s)
+                               prod_z2s, self.q_oil, self.inj_names, inj_xs, inj_ys, inj_z1s, inj_z2s, self.inj_bhp, self.skin, self.density)
         self.create_model(name='5_SPOT', result_name='5_SPOT_RESULT', keys=["WOPR:*", "WWPR:*", "WLPR:*",
                                                                             "WGPR:*", "WWIR:*", "WGOR:*", "WBHP:*",
                                                                             "WOPT:*", "WWPT:*", "WLPT:*", "WGPT:*",
@@ -206,6 +218,7 @@ class ModelGenerator:
         # create a folder to hold the snapshots
         dirname = os.path.join(folder_name, f"snapshots/{name}")
         self.dir = dirname
+        shutil.rmtree(dirname)
 
         if os.path.exists(dirname) is False:
             os.mkdir(f"snapshots/{name}")

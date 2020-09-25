@@ -14,7 +14,7 @@ Flow Version     =  2020.04 ()
 Machine name     =  DESKTOP-R9KC607 (Number of logical cores: 12, Memory size: 12270.70 MB) 
 Operating system =  Linux x86_64 (Kernel: 4.19.128-microsoft-standard, #1 SMP Tue Jun 23 12:58:10 UTC 2020 )
 Build time       =  2013-10-14 at 09:54:10 hrs
-Simulation started on 25-09-2020 at 18:38:11 hrs
+Simulation started on 25-09-2020 at 21:06:14 hrs
 Parameters used by Flow:
 # [known parameters which were specified at run-time]
 EclDeckFileName="5_SPOT.DATA" # default: ""
@@ -672,7 +672,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  5, linearizations =  6 ( 0.540 sec), linear its =  11 ( 0.298 sec)
+Time step summary: newton its =  5, linearizations =  6 ( 0.495 sec), linear its =  11 ( 0.307 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -796,7 +796,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:       67.3:        0.0:       69.6: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  3, linearizations =  4 ( 0.356 sec), linear its =   7 ( 0.185 sec)
+Time step summary: newton its =  3, linearizations =  4 ( 0.395 sec), linear its =   7 ( 0.250 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -920,7 +920,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      128.3:        0.0:      132.9: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.251 sec), linear its =   6 ( 0.125 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.226 sec), linear its =   6 ( 0.135 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1044,7 +1044,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      186.6:        0.0:      193.2: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.259 sec), linear its =   6 ( 0.134 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.236 sec), linear its =   6 ( 0.137 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1168,7 +1168,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      242.1:        0.0:      250.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.247 sec), linear its =   6 ( 0.122 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.239 sec), linear its =   6 ( 0.143 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1292,7 +1292,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      288.1:        0.0:      298.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.251 sec), linear its =   7 ( 0.131 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.271 sec), linear its =   7 ( 0.187 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1311,9 +1311,9 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 
 
 Report step  6/100 at day 6/100, date = 07-Sep-2019
+Restart file written for report step:   6/100.  Date: 2019/09/07
 
 Time step 0, stepsize 1 days, at day 6/7, date = 07-Sep-2019
-Restart file written for report step:   6/100.  Date: 2019/09/07
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1416,7 +1416,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      326.1:        0.0:      337.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.247 sec), linear its =   7 ( 0.130 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.241 sec), linear its =   7 ( 0.151 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1540,7 +1540,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      356.6:        0.0:      369.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.227 sec), linear its =   5 ( 0.111 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.236 sec), linear its =   5 ( 0.111 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1664,7 +1664,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      381.1:        0.0:      394.6: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.245 sec), linear its =   6 ( 0.125 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.220 sec), linear its =   6 ( 0.124 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1788,7 +1788,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      401.2:        0.0:      415.4: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.246 sec), linear its =   6 ( 0.128 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.224 sec), linear its =   6 ( 0.122 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -1912,7 +1912,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      419.5:        0.0:      434.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.252 sec), linear its =   6 ( 0.137 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   6 ( 0.125 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2040,7 +2040,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      436.0:        0.0:      451.4: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.219 sec), linear its =   5 ( 0.111 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.223 sec), linear its =   5 ( 0.107 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2164,7 +2164,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      450.8:        0.0:      466.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.240 sec), linear its =   6 ( 0.121 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.227 sec), linear its =   6 ( 0.113 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2288,7 +2288,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      464.3:        0.0:      480.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.235 sec), linear its =   5 ( 0.111 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   5 ( 0.116 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2412,7 +2412,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      476.4:        0.0:      493.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.241 sec), linear its =   5 ( 0.115 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   5 ( 0.109 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2536,7 +2536,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      487.6:        0.0:      504.9: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.236 sec), linear its =   6 ( 0.123 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.235 sec), linear its =   6 ( 0.118 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2660,7 +2660,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      498.0:        0.0:      515.6: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.249 sec), linear its =   6 ( 0.115 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   6 ( 0.111 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2784,7 +2784,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      507.6:        0.0:      525.5: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.246 sec), linear its =   5 ( 0.112 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   5 ( 0.108 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -2908,7 +2908,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      516.4:        0.0:      534.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.243 sec), linear its =   5 ( 0.107 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.222 sec), linear its =   5 ( 0.106 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3032,7 +3032,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      524.6:        0.0:      543.2: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.238 sec), linear its =   6 ( 0.120 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.241 sec), linear its =   6 ( 0.119 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3156,7 +3156,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      532.1:        0.0:      551.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.243 sec), linear its =   6 ( 0.121 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   6 ( 0.117 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3280,7 +3280,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      539.1:        0.0:      558.2: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.245 sec), linear its =   6 ( 0.119 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   6 ( 0.118 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3404,7 +3404,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      545.5:        0.0:      564.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.244 sec), linear its =   6 ( 0.121 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   6 ( 0.118 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3528,7 +3528,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      551.4:        0.0:      570.9: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.242 sec), linear its =   6 ( 0.119 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   6 ( 0.117 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3652,7 +3652,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      556.9:        0.0:      576.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.238 sec), linear its =   6 ( 0.114 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   6 ( 0.113 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3776,7 +3776,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      562.2:        0.0:      582.1: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.245 sec), linear its =   5 ( 0.109 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.219 sec), linear its =   5 ( 0.110 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -3900,7 +3900,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      567.2:        0.0:      587.2: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.224 sec), linear its =   5 ( 0.114 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   5 ( 0.107 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -4024,7 +4024,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      571.9:        0.0:      592.1: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.245 sec), linear its =   6 ( 0.118 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   6 ( 0.118 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -4148,7 +4148,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      576.4:        0.0:      596.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.247 sec), linear its =   6 ( 0.113 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.219 sec), linear its =   6 ( 0.112 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -4272,7 +4272,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      580.6:        0.0:      601.2: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.248 sec), linear its =   6 ( 0.119 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.218 sec), linear its =   6 ( 0.122 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -4396,7 +4396,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      584.7:        0.0:      605.4: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.246 sec), linear its =   7 ( 0.125 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.222 sec), linear its =   7 ( 0.138 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -4520,7 +4520,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      588.5:        0.0:      609.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.245 sec), linear its =   7 ( 0.133 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   7 ( 0.124 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -4644,7 +4644,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      592.1:        0.0:      613.1: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.256 sec), linear its =   7 ( 0.133 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   7 ( 0.125 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -4768,7 +4768,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      595.6:        0.0:      616.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.247 sec), linear its =   7 ( 0.131 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.123 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -4892,7 +4892,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      598.8:        0.0:      620.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.289 sec), linear its =   7 ( 0.135 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   7 ( 0.123 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -5016,7 +5016,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      601.9:        0.0:      623.2: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.283 sec), linear its =   7 ( 0.181 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.222 sec), linear its =   7 ( 0.134 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -5140,7 +5140,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      604.8:        0.0:      626.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.287 sec), linear its =   6 ( 0.155 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.240 sec), linear its =   6 ( 0.119 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -5264,7 +5264,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      607.6:        0.0:      629.1: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.258 sec), linear its =   5 ( 0.146 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   5 ( 0.107 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -5388,7 +5388,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      610.3:        0.0:      631.9: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.263 sec), linear its =   5 ( 0.154 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.225 sec), linear its =   5 ( 0.108 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -5512,7 +5512,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      612.7:        0.0:      634.5: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.260 sec), linear its =   6 ( 0.154 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   6 ( 0.114 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -5636,7 +5636,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      615.1:        0.0:      636.9: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.279 sec), linear its =   6 ( 0.125 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.227 sec), linear its =   6 ( 0.116 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -5760,7 +5760,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      617.3:        0.0:      639.2: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.263 sec), linear its =   6 ( 0.150 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   6 ( 0.112 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -5884,7 +5884,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      619.5:        0.0:      641.4: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.262 sec), linear its =   6 ( 0.153 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   6 ( 0.113 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -6008,7 +6008,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      621.5:        0.0:      643.5: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.277 sec), linear its =   7 ( 0.154 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   7 ( 0.125 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -6132,7 +6132,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      623.4:        0.0:      645.5: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.279 sec), linear its =   7 ( 0.156 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   7 ( 0.124 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -6256,7 +6256,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      625.2:        0.0:      647.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.275 sec), linear its =   7 ( 0.162 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.218 sec), linear its =   7 ( 0.125 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -6380,7 +6380,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      626.9:        0.0:      649.1: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.277 sec), linear its =   5 ( 0.133 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   5 ( 0.106 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -6504,7 +6504,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      628.5:        0.0:      650.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.259 sec), linear its =   5 ( 0.110 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   5 ( 0.107 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -6628,7 +6628,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      630.0:        0.0:      652.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.312 sec), linear its =   5 ( 0.145 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.222 sec), linear its =   5 ( 0.107 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -6752,7 +6752,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      631.5:        0.0:      653.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.280 sec), linear its =   5 ( 0.145 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.219 sec), linear its =   5 ( 0.108 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -6876,7 +6876,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      632.8:        0.0:      655.2: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.277 sec), linear its =   5 ( 0.138 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   5 ( 0.107 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -7000,7 +7000,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      634.2:        0.0:      656.6: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.261 sec), linear its =   7 ( 0.143 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.123 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -7124,7 +7124,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      635.5:        0.0:      658.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.252 sec), linear its =   7 ( 0.159 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.124 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -7248,7 +7248,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      636.9:        0.0:      659.4: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.267 sec), linear its =   7 ( 0.164 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.127 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -7372,7 +7372,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      638.2:        0.0:      660.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.264 sec), linear its =   7 ( 0.162 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   7 ( 0.124 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -7496,7 +7496,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      639.5:        0.0:      662.1: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.292 sec), linear its =   7 ( 0.138 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.122 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -7620,7 +7620,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      640.8:        0.0:      663.5: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.264 sec), linear its =   7 ( 0.168 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.126 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -7744,7 +7744,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      642.1:        0.0:      664.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.246 sec), linear its =   7 ( 0.174 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.121 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -7868,7 +7868,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      643.3:        0.0:      666.1: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.265 sec), linear its =   7 ( 0.160 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   7 ( 0.124 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -7992,7 +7992,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      644.6:        0.0:      667.4: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.271 sec), linear its =   7 ( 0.147 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.126 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -8116,7 +8116,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      645.9:        0.0:      668.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.256 sec), linear its =   7 ( 0.153 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.225 sec), linear its =   7 ( 0.124 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -8240,7 +8240,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      647.1:        0.0:      670.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.248 sec), linear its =   7 ( 0.172 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.123 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -8364,7 +8364,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      648.3:        0.0:      671.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.247 sec), linear its =   6 ( 0.154 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   6 ( 0.120 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -8488,7 +8488,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      649.6:        0.0:      672.6: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.252 sec), linear its =   5 ( 0.141 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   5 ( 0.109 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -8612,7 +8612,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      650.8:        0.0:      673.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.288 sec), linear its =   5 ( 0.114 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.215 sec), linear its =   5 ( 0.109 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -8736,7 +8736,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      652.0:        0.0:      675.1: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.284 sec), linear its =   6 ( 0.135 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   6 ( 0.116 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -8860,7 +8860,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      653.2:        0.0:      676.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.266 sec), linear its =   6 ( 0.142 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.223 sec), linear its =   6 ( 0.120 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -8984,7 +8984,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      654.3:        0.0:      677.5: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.286 sec), linear its =   5 ( 0.137 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.214 sec), linear its =   5 ( 0.108 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -9108,7 +9108,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      655.5:        0.0:      678.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.261 sec), linear its =   6 ( 0.145 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   6 ( 0.117 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -9232,7 +9232,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      656.7:        0.0:      679.9: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.278 sec), linear its =   5 ( 0.144 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.218 sec), linear its =   5 ( 0.107 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -9356,7 +9356,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      657.8:        0.0:      681.1: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.265 sec), linear its =   7 ( 0.165 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.124 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -9480,7 +9480,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      659.0:        0.0:      682.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.275 sec), linear its =   5 ( 0.133 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.223 sec), linear its =   5 ( 0.107 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -9604,7 +9604,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      660.1:        0.0:      683.5: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.283 sec), linear its =   7 ( 0.167 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.227 sec), linear its =   7 ( 0.122 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -9728,7 +9728,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      661.2:        0.0:      684.6: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.287 sec), linear its =   5 ( 0.159 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   5 ( 0.107 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -9852,7 +9852,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      662.3:        0.0:      685.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.301 sec), linear its =   6 ( 0.161 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   6 ( 0.114 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -9976,7 +9976,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      663.4:        0.0:      686.9: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.292 sec), linear its =   6 ( 0.179 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   6 ( 0.118 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -10100,7 +10100,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      664.5:        0.0:      688.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.284 sec), linear its =   6 ( 0.122 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   6 ( 0.112 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -10224,7 +10224,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      665.6:        0.0:      689.2: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.282 sec), linear its =   6 ( 0.147 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.218 sec), linear its =   6 ( 0.120 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -10348,7 +10348,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      666.6:        0.0:      690.3: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.281 sec), linear its =   6 ( 0.153 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   6 ( 0.116 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -10472,7 +10472,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      667.7:        0.0:      691.4: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.289 sec), linear its =   6 ( 0.167 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.229 sec), linear its =   6 ( 0.112 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -10596,7 +10596,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      668.8:        0.0:      692.4: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.290 sec), linear its =   7 ( 0.152 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.123 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -10720,7 +10720,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      669.8:        0.0:      693.5: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.297 sec), linear its =   6 ( 0.156 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.242 sec), linear its =   6 ( 0.114 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -10844,7 +10844,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      670.8:        0.0:      694.6: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.292 sec), linear its =   7 ( 0.172 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.121 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -10968,7 +10968,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      671.9:        0.0:      695.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.277 sec), linear its =   6 ( 0.166 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.218 sec), linear its =   6 ( 0.117 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -11092,7 +11092,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      672.9:        0.0:      696.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.331 sec), linear its =   7 ( 0.135 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   7 ( 0.126 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -11216,7 +11216,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      673.9:        0.0:      697.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.279 sec), linear its =   6 ( 0.135 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   6 ( 0.112 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -11340,7 +11340,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      674.9:        0.0:      698.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.285 sec), linear its =   7 ( 0.209 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.123 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -11464,7 +11464,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      675.9:        0.0:      699.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.302 sec), linear its =   6 ( 0.164 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.218 sec), linear its =   6 ( 0.114 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -11588,7 +11588,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      676.8:        0.0:      700.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.300 sec), linear its =   7 ( 0.157 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.124 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -11712,7 +11712,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      677.8:        0.0:      701.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.285 sec), linear its =   7 ( 0.178 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.216 sec), linear its =   7 ( 0.123 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -11836,7 +11836,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      678.8:        0.0:      702.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.259 sec), linear its =   5 ( 0.165 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   5 ( 0.106 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -11960,7 +11960,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      679.7:        0.0:      703.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.253 sec), linear its =   7 ( 0.171 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.220 sec), linear its =   7 ( 0.122 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -12084,7 +12084,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      680.7:        0.0:      704.8: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.245 sec), linear its =   5 ( 0.157 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.244 sec), linear its =   5 ( 0.109 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -12208,7 +12208,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      681.6:        0.0:      705.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.294 sec), linear its =   7 ( 0.209 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.232 sec), linear its =   7 ( 0.124 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -12332,7 +12332,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      682.5:        0.0:      706.7: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.290 sec), linear its =   5 ( 0.134 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.249 sec), linear its =   5 ( 0.111 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -12456,7 +12456,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      683.4:        0.0:      707.6: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.283 sec), linear its =   7 ( 0.141 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.230 sec), linear its =   7 ( 0.130 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -12580,7 +12580,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      684.3:        0.0:      708.6: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.263 sec), linear its =   6 ( 0.123 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.217 sec), linear its =   6 ( 0.113 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -12704,7 +12704,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      685.2:        0.0:      709.5: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.287 sec), linear its =   7 ( 0.136 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.230 sec), linear its =   7 ( 0.126 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -12828,7 +12828,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      686.1:        0.0:      710.5: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.271 sec), linear its =   6 ( 0.133 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.236 sec), linear its =   6 ( 0.117 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -12952,7 +12952,7 @@ Warning: Keyword 'WELLS' is unhandled for output to file.
 :    INJ1:   50,   50:     INJ:WRAT:        0.0:        0.0:        0.0:        0.0:        0.0:      687.0:        0.0:      711.4: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.289 sec), linear its =   5 ( 0.132 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.218 sec), linear its =   5 ( 0.106 sec)
 
 Warning: Keyword 'BASIC' is unhandled for output to file.
 
@@ -12976,13 +12976,13 @@ Restart file written for report step: 100/100.  Date: 2019/12/10
 
 Number of MPI processes:      1
 Threads per MPI process:      2
-Total time (seconds):         47.2336
-Solver time (seconds):        47.1821
- Assembly time (seconds):     26.9222 (Failed: 0; 0%)
- Linear solve time (seconds): 14.3763 (Failed: 0; 0%)
- Linear solve setup time (seconds): 1.61403 (Failed: 0; 0%)
- Update time (seconds):       1.49446 (Failed: 0; 0%)
- Output write time (seconds): 0.782015
+Total time (seconds):         40.139
+Solver time (seconds):        40.0873
+ Assembly time (seconds):     22.5704 (Failed: 0; 0%)
+ Linear solve time (seconds): 12.1992 (Failed: 0; 0%)
+ Linear solve setup time (seconds): 1.37977 (Failed: 0; 0%)
+ Update time (seconds):       1.3516 (Failed: 0; 0%)
+ Output write time (seconds): 0.727718
 Overall Well Iterations:      0 (Failed: 0; -nan%)
 Overall Linearizations:       304 (Failed: 0; 0%)
 Overall Newton Iterations:    204 (Failed: 0; 0%)
