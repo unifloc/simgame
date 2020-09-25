@@ -72,7 +72,7 @@ class ModelGenerator:
         self.inj_z2s = inj_z2s
         self.result_df = None
         self.fig = None
-        self.dirname = None
+        self.dir = None
         self.init_file_name = init_file_name
         self.filter_initial_data()
         self.parser = None
@@ -114,7 +114,7 @@ class ModelGenerator:
         self.create_result(name=name, keys=keys)
         self.read_result(name=result_name)
         self.make_plot()
-        self.export_snapshots(name.upper())
+        self.export_snapshots(name=name)
 
     def create_lazy_5_spot(self):
         prod_xs = [1, 1, self.nx, self.nx]
@@ -205,7 +205,7 @@ class ModelGenerator:
 
         # create a folder to hold the snapshots
         dirname = os.path.join(folder_name, f"snapshots/{name}")
-        self.dirname = dirname
+        self.dir = dirname
 
         if os.path.exists(dirname) is False:
             os.mkdir(f"snapshots/{name}")
@@ -219,8 +219,6 @@ class ModelGenerator:
             view.apply_cell_result(result_type='DYNAMIC_NATIVE', result_variable=property)
             view.export_snapshot()
 
-        # os.killpg(os.getpgid(process.pid), signal.SIGTERM) веселая команда, вырубает полностью виртуальную машину
-
         process.kill()
 
     def iplot_fig(self):
@@ -231,7 +229,7 @@ class ModelGenerator:
 
     def display_grids(self):
         images = []
-        image_paths = glob.glob(self.dirname + '/*')
+        image_paths = glob.glob(self.dir + '/*')
 
         for path in image_paths:
             images.append(Image.open(path))
