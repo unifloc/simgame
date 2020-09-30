@@ -26,4 +26,4 @@
 
 # [Мануал по игре](https://docs.google.com/document/d/1-QevtR_6TomRk5jX3PCB7LC9chd18N2i2_e7WbmRB4A/edit)
 
-## Пример оформления гугл таблицы WIP
+## [Пример оформления гугл таблицы WIP](https://docs.google.com/spreadsheets/d/17O_GghnChsKLxtdRGGWG8W9aOMx411DRHKszuMPflMo/edit#gid=0)
