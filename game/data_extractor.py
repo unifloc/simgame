@@ -93,6 +93,6 @@ def export_to_csv(path, team_name):
                   '19_Пл-ть_нефти':0.85,
                   '20_Пл-ть_воды':1 })
         df1=pd.DataFrame(d)
-        append_df_to_excel("201910_TR_1.xlsx", df1,sheet_name='TR', 
+        append_df_to_excel(f"resultspace/{team_name}/201910_TR_1.xlsx", df1,sheet_name='TR', 
                             startrow=0, startcol=0, index=False, header=False)
         

@@ -28,7 +28,7 @@ import xlwt
 import xlrd
 
 def export_to_GT(path, name):
-    wb = xlrd.open_workbook("201910_TR_1.xlsx")
+    wb = xlrd.open_workbook(f"resultspace/{name}/201910_TR_1.xlsx")
     sh = wb.sheet_by_index(0)
     list_data = []
     for rownum in range(sh.nrows):
@@ -68,7 +68,7 @@ def create_table_and_import(team_name, path):
     
     values = service.spreadsheets().values().batchGet(
         spreadsheetId=spreadsheet_id,
-        ranges=f'{team_name}!A8:O25',
+        ranges=f'{team_name}!A8:O65',
         majorDimension='ROWS'
     ).execute()
     ranges = values.get('valueRanges', [])
@@ -85,7 +85,7 @@ def create_table_and_import(team_name, path):
 def import_teamnames():
     values = service.spreadsheets().values().get(
         spreadsheetId=spreadsheet_id,
-        range='Teams!A1:B2',
+        range='Teams!A1:B20',
         majorDimension='ROWS'
     ).execute()
     return values['values']
