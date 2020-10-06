@@ -321,15 +321,24 @@ class Events:
         self.sname = sname
         self.schedule = Schedule(sname)
         self.schedule_new = []
+        self.time_step = 0
+        self.year = 1
 
-    def define_tstep_and_add_to_sch(self, tstep):
+        
+
+    def define_tstep_and_add_to_sch(self, tstep, step, year):
         if tstep == True:
-            num = 1
-            step = 1
-            self.schedule_new.extend(self.schedule.make_TSTEP(num, step))
+            if year != self.year: 
+                add_step = 365 - self.time_step
+                self.schedule_new.extend(self.schedule.make_TSTEP(1, add_step))
+                self.time_step = 0
+                self.year += 1
+            self.schedule_new.extend(self.schedule.make_TSTEP(1, step))
+            self.time_step += step
+                
 
-    def change_GNO(self,event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
+    def change_GNO(self, event, tstep, year):
+        self.define_tstep_and_add_to_sch(tstep, 3, year)
         wname = event['Название скважины']
         if wname in self.schedule.wells:
             if event['Тип насоса для установки'] == '':
@@ -337,8 +346,8 @@ class Events:
             else:
                 self.schedule.wells[wname].pump = event['Тип насоса для установки']
 
-    def zapusk(self, event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
+    def zapusk(self, event, tstep, year):
+        self.define_tstep_and_add_to_sch(tstep, 1, year)
         wname = event['Название скважины']
         if wname in self.schedule.wells:
             pump = self.schedule.wells[wname].pump
@@ -382,8 +391,8 @@ class Events:
                 self.schedule_new.extend(self.schedule.make_WCONINJE(wname, qliq, bhp, status, control))
         return
 
-    def ostanovka(self, event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
+    def ostanovka(self, event, tstep, year):
+        self.define_tstep_and_add_to_sch(tstep, 1, year)
         wname = event['Название скважины']
         if wname in self.schedule.wells:
             status = 'STOP'
@@ -404,8 +413,8 @@ class Events:
                 break
         return i
 
-    def build_well(self, event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
+    def build_well(self, event, tstep, year):
+        self.define_tstep_and_add_to_sch(tstep, 14, year)
         wname = event['Название скважины']
         if wname not in self.schedule.wells:
             x = int(event['координата i'])
@@ -433,8 +442,8 @@ class Events:
             self.schedule.wells[wname] = w
             return
 
-    def reperforation(self, event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
+    def reperforation(self, event, tstep, year):
+        self.define_tstep_and_add_to_sch(tstep, 4, year)
         wname = event['Название скважины']
         if wname in self.schedule.wells:
             z1_new = min(self.determine_z(event['перфорация верх, м']), self.determine_z(event['перфорация низ, м']))
@@ -443,8 +452,8 @@ class Events:
             self.schedule_new.extend(self.schedule.make_perf(wname, z1_new, z2_new,status))
         return
 
-    def OPZ(self, event, tstep):
-        self.define_tstep_and_add_to_sch(tstep)
+    def OPZ(self, event, tstep, year):
+        self.define_tstep_and_add_to_sch(tstep, 3, year)
         wname = event['Название скважины']
         if wname in self.schedule.wells:
             z1_new = ' 1* '
@@ -460,30 +469,29 @@ class Events:
         excel.index.names = ['Index']
         excel.columns = list(excel.loc[6])
         excel = excel[excel.index > 6]
-        excel = excel.drop(excel[excel['Название команды'] == 'Проверка'].index)
         excel = excel.loc[excel['Вид мероприятия'].isin(['Остановка скважины','Остановка скважины для КВД',
                                                         'Строительство новой скважины', 'Запуск скважины',
                                                                                    'Реперфорация', 'ОПЗ', 'Смена ГНО'])]
         self.excel = excel
-
         for event in excel.iterrows():
+            year = int(event[1]['Неделя'])
             tstep = True
             if event[1]['Вид мероприятия'] == 'Запуск скважины':
-                self.zapusk(event[1], tstep)
+                self.zapusk(event[1], tstep, year)
             elif event[1]['Вид мероприятия'] == 'Остановка скважины' or event[1]['Вид мероприятия'] == 'Остановка скважины для КВД':
-                self.ostanovka(event[1], tstep)
+                self.ostanovka(event[1], tstep, year)
             elif event[1]['Вид мероприятия'] == 'Строительство новой скважины':
-                self.build_well(event[1], tstep)
+                self.build_well(event[1], tstep, year)
             elif event[1]['Вид мероприятия'] == 'Реперфорация':
-                self.reperforation(event[1], tstep)
+                self.reperforation(event[1], tstep, year)
             elif event[1]['Вид мероприятия'] == 'ОПЗ':
-                self.OPZ(event[1], tstep)
+                self.OPZ(event[1], tstep, year)
             elif event[1]['Вид мероприятия'] == 'Смена ГНО':
-                self.change_GNO(event[1], tstep)
-
-        num = 1
-        step = 1
-        self.schedule_new.extend(self.schedule.make_TSTEP(num, step))
+                self.change_GNO(event[1], tstep, year)
+                
+                
+        add_step = 365 - self.time_step
+        self.schedule_new.extend(self.schedule.make_TSTEP(1, add_step))
         return
 
 

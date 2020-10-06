@@ -85,7 +85,7 @@ def create_table_and_import(team_name, path):
 def import_teamnames():
     values = service.spreadsheets().values().get(
         spreadsheetId=spreadsheet_id,
-        range='Teams!A1:B20',
+        range='Teams!A1:B50',
         majorDimension='ROWS'
     ).execute()
     return values['values']
