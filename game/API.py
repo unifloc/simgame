@@ -47,7 +47,7 @@ def export_to_GT(path, name):
     kin = []
     for i in range(0, len(df['FOPT'])-1):
         col = []
-        col.append(int(i))
+        col.append(df['time'][i])
         col.append(int(df['FOPT'][i]))
         kin.append(col)
     service.spreadsheets().values().batchUpdate(
@@ -68,7 +68,7 @@ def create_table_and_import(team_name, path):
     
     values = service.spreadsheets().values().batchGet(
         spreadsheetId=spreadsheet_id,
-        ranges=f'{team_name}!A8:O65',
+        ranges=f'{team_name}!A8:O60',
         majorDimension='ROWS'
     ).execute()
     ranges = values.get('valueRanges', [])

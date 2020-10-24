@@ -9,7 +9,7 @@ current_dir = os.getcwd()
 
 team_names = API.import_teamnames()
 print(team_names)
-team_names = [['Fusix']]
+#team_names = [['Образец']]
 run_sim_option = True
 if run_sim_option:
     for this_team_name in team_names:
