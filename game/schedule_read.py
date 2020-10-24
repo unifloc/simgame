@@ -448,6 +448,7 @@ class Events:
             skin = 10
             self.schedule_new.extend(self.schedule.make_WELL(wname, x, y, z1, z2, phase, status, skin))
             self.schedule.wells[wname] = w
+            self.schedule.wells[wname].skin = skin
             self.change_GNO(event, tstep, year)
             self.zapusk(event, tstep, year)
             return
@@ -498,6 +499,7 @@ class Events:
             skin = 10
             self.schedule_new.extend(self.schedule.make_WELL(wname, x, y, z1, z2, phase, status, skin))
             self.schedule.wells[wname] = w
+            self.schedule.wells[wname].skin = skin
             self.zapusk(event, tstep, year)
             return
 
@@ -505,8 +507,14 @@ class Events:
         self.define_tstep_and_add_to_sch(tstep, 3, year)
         wname = event['Название скважины']
         if wname in self.schedule.wells:
-            z1_new = ' 1* '
-            z2_new = ' 1* '
+            z1 = self.determine_z(int(event['перфорация верх, м']))
+            z2 = self.determine_z(int(event['перфорация низ, м']))
+            if z1 > 15:
+                z1 = 15
+            if z2 > 15:
+                z2 = 15
+            z1_new = f' {z1} '
+            z2_new = f' {z2} '
             status = 'OPEN'
             skin = self.schedule.wells[wname].skin / 2
             self.schedule_new.extend(self.schedule.make_perf(wname, z1_new, z2_new, status, skin))
