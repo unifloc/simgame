@@ -46,4 +46,4 @@ if run_sim_option:
         de.export_to_csv(current_dir, this_team_name[0])
         time.sleep(2)
         API.export_to_GT(current_dir,this_team_name[0])
-        API.export_snapshots(this_team_name[0])
+        #API.export_snapshots(this_team_name[0])

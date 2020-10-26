@@ -14,7 +14,7 @@ Flow Version     =  2020.04 ()
 Machine name     =  DESKTOP-R9KC607 (Number of logical cores: 12, Memory size: 12270.70 MB) 
 Operating system =  Linux x86_64 (Kernel: 4.19.128-microsoft-standard, #1 SMP Tue Jun 23 12:58:10 UTC 2020 )
 Build time       =  2013-10-14 at 09:54:10 hrs
-Simulation started on 24-10-2020 at 22:50:34 hrs
+Simulation started on 26-10-2020 at 17:12:24 hrs
 Parameters used by Flow:
 # [known parameters which were specified at run-time]
 EclDeckFileName="spe1.DATA" # default: ""
@@ -448,8 +448,48 @@ Warning: Expected the kewyord: EQLDIMS to infer the number of records in: RSVD
   259 Reading WELSPECS in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 49
   260 Reading COMPDAT  in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 53
   261 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 57
-  262 Reading WCONPROD in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 60
+  262 Reading WCONINJE in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 60
   263 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 64
+  264 Reading WELSPECS in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 67
+  265 Reading COMPDAT  in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 71
+  266 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 75
+  267 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 78
+  268 Reading WCONPROD in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 81
+  269 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 85
+  270 Reading WCONPROD in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 88
+  271 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 92
+  272 Reading WELSPECS in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 95
+  273 Reading COMPDAT  in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 99
+  274 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 103
+  275 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 106
+  276 Reading WCONPROD in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 109
+  277 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 113
+  278 Reading WCONPROD in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 116
+  279 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 120
+  280 Reading WCONPROD in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 123
+  281 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 127
+  282 Reading WELSPECS in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 130
+  283 Reading COMPDAT  in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 134
+  284 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 138
+  285 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 141
+  286 Reading WCONPROD in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 144
+  287 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 148
+  288 Reading COMPDAT  in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 151
+  289 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 155
+  290 Reading WELSPECS in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 158
+  291 Reading COMPDAT  in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 162
+  292 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 166
+  293 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 169
+  294 Reading WCONPROD in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 172
+  295 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 176
+  296 Reading COMPDAT  in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 179
+  297 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 183
+  298 Reading WCONINJE in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 186
+  299 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 190
+  300 Reading WCONINJE in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 193
+  301 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 197
+  302 Reading WCONPROD in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 200
+  303 Reading TSTEP    in file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SCH.INC, line 204
 
 Warning: Keyword 'NOINSPEC' is not supported by flow.
 In file /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1.DATA, line 27
@@ -502,14 +542,22 @@ All completions in well p is shut at 15.000000 days.
 The well is therefore also shut.
 All completions in well p_perev is shut at 46.000000 days. 
 The well is therefore also shut.
+All completions in well R1 is shut at 61.000000 days. 
+The well is therefore also shut.
+All completions in well R2 is shut at 80.000000 days. 
+The well is therefore also shut.
+All completions in well R3 is shut at 100.000000 days. 
+The well is therefore also shut.
+All completions in well R4 is shut at 121.000000 days. 
+The well is therefore also shut.
 
 Load balancing distributes 138383 active cells on 2 processes as follows:
   rank   owned cells   overlap cells   total cells
 --------------------------------------------------
-     0         65610             927         66537
-     1         72773             929         73702
+     0         62799            1112         63911
+     1         75584            1093         76677
 --------------------------------------------------
-   sum        138383            1856        140239
+   sum        138383            2205        140588
 
 
 Warning: Unhandled summary keyword 'DAY' at /home/re/Documents/GitHub/SimGame2020/game/workspace/spe1_SUM.INC, line 2
@@ -607,10 +655,10 @@ Warning: In saturation table SATNUM = 1, Sowcr + Swcr should be less than 1.
 ================ Starting main simulation loop ===============
 
 
-Report step  0/10 at day 0/366, date = 01-Jan-2020
+Report step  0/30 at day 0/366, date = 01-Jan-2020
 
 Time step 0, stepsize 1 days, at day 0/1, date = 01-Jan-2020
-Restart file written for report step:  0/10.  Date: 2020/01/01
+Restart file written for report step:  0/30.  Date: 2020/01/01
                                                   ===================================================
                                                   :                   Field Totals                  :
                                                   :      PAV  =       320.862 BARSA                 :
@@ -673,7 +721,7 @@ Restart file written for report step:  0/10.  Date: 2020/01/01
 :      G1:           :        :    :        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
 :--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
 
-Time step summary: newton its =  2, linearizations =  3 ( 0.483 sec), linear its =   2 ( 0.270 sec)
+Time step summary: newton its =  2, linearizations =  3 ( 0.548 sec), linear its =   2 ( 0.280 sec)
 
                               **************************************************************************
   Balance  at         1  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
@@ -681,342 +729,6 @@ Time step summary: newton its =  2, linearizations =  3 ( 0.483 sec), linear its
                               **************************************************************************
 
 
-Report step  1/10 at day 1/366, date = 02-Jan-2020
+Report step  1/30 at day 1/366, date = 02-Jan-2020
 
 Time step 0, stepsize 3 days, at day 1/15, date = 02-Jan-2020
-Time step summary: newton its =  2, linearizations =  3 ( 0.380 sec), linear its =  11 ( 0.506 sec)
-
-Time step 1, stepsize 5.5 days, at day 4/15, date = 05-Jan-2020
-Time step summary: newton its =  2, linearizations =  3 ( 0.352 sec), linear its =  10 ( 0.400 sec)
-
-Time step 2, stepsize 5.5 days, at day 9.5/15, date = 10-Jan-2020
-
-Warning: Keyword 'BASIC' is unhandled for output to file.
-
-Warning: Keyword 'FLOWS' is unhandled for output to file.
-
-Warning: Keyword 'FREQ' is unhandled for output to file.
-
-Warning: Keyword 'SUMMARY' is unhandled for output to file.
-
-Warning: Keyword 'WELSPECS' is unhandled for output to file.
-                                                  ===================================================
-                                                  :                   Field Totals                  :
-                                                  :      PAV  =       320.862 BARSA                 :
-                                                  :      PORV =     189441851   RM3                 :
-                                                  : Pressure is weighted by hydrocarbon pore volume :
-                                                  : Porv volumes are taken at reference conditions  :
-                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
-                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Currently   in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Originally  in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:========================:==========================================:================:==========================================:
-
-                                                  ===================================================
-                                                  :        FIPNUM report region   1                 :
-                                                  :      PAV  =       320.862 BARSA                 :
-                                                  :      PORV =     189441851   RM3                 :
-                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
-                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Currently   in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Originally  in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:========================:==========================================:================:==========================================:
-
-======================================================= PRODUCTION REPORT =======================================================
-:  WELL  :  LOCATION :CTRL:    OIL    :   WATER   :    GAS    :   FLUID   :   WATER   : GAS/OIL  :  WAT/GAS   : BHP OR : THP OR :
-:  NAME  :  (I,J,K)  :MODE:    RATE   :   RATE    :    RATE   :  RES.VOL. :    CUT    :  RATIO   :   RATIO    : CON.PR.: BLK.PR.:
-:        :           :    :  SCM/DAY  :  SCM/DAY  :  SCM/DAY  :  RCM/DAY  :  SCM/SCM  :  SCM/SCM :  SCM/SCM   :  BARSA :  BARSA :
-=================================================================================================================================
-
-:   FIELD:           :    :        0.0:        0.0:        0.0:        0.0:      0.000:      0.00:        -nan:        :        : 
-:--------:-----------:----:-----------:-----------:-----------:-----------:-----------:----------:------------:--------:--------:
-
-:      G1:           :    :        0.0:        0.0:        0.0:        0.0:      0.000:      0.00:        -nan:        :        : 
-:--------:-----------:----:-----------:-----------:-----------:-----------:-----------:----------:------------:--------:--------:
-
-=================================================== INJECTION REPORT ========================================
-:  WELL  :  LOCATION : CTRL : CTRL : CTRL :    OIL    :   WATER   :    GAS    :   FLUID   : BHP OR : THP OR :
-:  NAME  :  (I,J,K)  : MODE : MODE : MODE :    RATE   :   RATE    :    RATE   :  RES.VOL. : CON.PR.: BLK.PR.:
-:        :           : OIL  : WAT  : GAS  :  SCM/DAY  :  SCM/DAY  :  SCM/DAY  :  RCM/DAY  :  BARSA :  BARSA :
-==============================================================================================================
-
-:   FIELD:           :      :      :      :        0.0:        0.0:        0.0:        0.0:        :        : 
-:--------:-----------:------:------:------:------------:----------:-----------:-----------:--------:--------: 
-
-:      G1:           :      :      :      :        0.0:        0.0:        0.0:        0.0:        :        : 
-:--------:-----------:------:------:------:------------:----------:-----------:-----------:--------:--------: 
-
-=================================================== CUMULATIVE PRODUCTION/INJECTION REPORT =========================================
-:  WELL  :  LOCATION :  WELL  :CTRL:    OIL    :   WATER   :    GAS    :   Prod    :    OIL    :   WATER   :    GAS    :   INJ     :
-:  NAME  :  (I,J,K)  :  TYPE  :MODE:    PROD   :   PROD    :    PROD   :  RES.VOL. :    INJ    :   INJ     :    INJ    :  RES.VOL. :
-:        :           :        :    :    MSCM   :   MSCM    :    MMSCM  :   MRCM    :    MSCM   :   MSCM    :    MMSCM  :   MRCM    :
-====================================================================================================================================
-
-:   FIELD:           :        :    :        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
-:--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
-
-:      G1:           :        :    :        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
-:--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
-
-Time step summary: newton its =  2, linearizations =  3 ( 0.356 sec), linear its =  14 ( 0.535 sec)
-
-Warning: Keyword 'BASIC' is unhandled for output to file.
-
-Warning: Keyword 'FLOWS' is unhandled for output to file.
-
-Warning: Keyword 'FREQ' is unhandled for output to file.
-
-Warning: Keyword 'SUMMARY' is unhandled for output to file.
-
-Warning: Keyword 'WELSPECS' is unhandled for output to file.
-
-                              **************************************************************************
-  Balance  at        15  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
-  Report    2    16 Jan 2020  *                                             Flow  version     2020.04  *
-                              **************************************************************************
-
-
-Report step  2/10 at day 15/366, date = 16-Jan-2020
-
-Time step 0, stepsize 3 days, at day 15/18, date = 16-Jan-2020
-Restart file written for report step:  2/10.  Date: 2020/01/16
-                             **************************************************************************                             
- WELSPECS AT       0.00 DAYS *                                                                        * FLOW                        
- REPORT   0     31 DEC 2007  *                                                                        * RUN AT 12:41 ON 12 SEP 2016 
-                             **************************************************************************                             
-
-                                                  WELL SPECIFICATION DATA                                                 
-                                                  -----------------------                                                 
-
---------------------------------------------------------------------------------------------------------------------------
-:   WELL   :   GROUP  : WELLHEAD :  B.H.REF : PREF- : DRAINAGE :  GAS : SHUT-IN : CROSS : PVT : WELL : FIP :     WELL    :
-:   NAME   :   NAME   : LOCATION :   DEPTH  : ERRED :  RADIUS  : INFL : INSTRCT :  FLOW : TAB : DENS : REG :  D-FACTOR 1 :
-:          :          : ( I, J ) :  METRES  : PHASE :  METRES  : EQUN :         : ABLTY :     : CALC :     :   DAY/SM3   :
---------------------------------------------------------------------------------------------------------------------------
-: p        : G1       :   1,   1 :   2552.5 :  OIL  : P.EQUIV.R:  STD :   SHUT  :  YES  :  1  :  SEG :  0  :      0      :
---------------------------------------------------------------------------------------------------------------------------
-1: The WELL D-FACTOR is not implemented - and the report will always show the default value 0.
-
-
-                                                        WELL CONNECTION DATA                                                        
-                                                        --------------------                                                        
-
-------------------------------------------------------------------------------------------------------------------------------------
-:   WELL  :     GRID     : CMPL:  CENTRE : OPEN: SAT :CONNECTION:   INT  :   K  H  :  SKIN  : CONNECTION : SATURATION SCALING DATA :
-:   NAME  :     BLOCK    : NO# :  DEPTH  : SHUT: TAB :  FACTOR* :  DIAM  :  VALUE  : FACTOR : D-FACTOR 1 :SWMIN SWMAX SGMIN SGMAX 2:
-:         :              :     :  METRES :     :     : CPM3/D/B : METRES : MD.METRE:        :   DAY/SM3  :                         :
-------------------------------------------------------------------------------------------------------------------------------------
-: p       :    1,  1,  1 :   1 :  2552.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1,  2 :   2 :  2557.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1,  3 :   3 :  2562.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1,  4 :   4 :  2567.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1,  5 :   5 :  2572.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1,  6 :   6 :  2577.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1,  7 :   7 :  2582.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1,  8 :   8 :  2587.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1,  9 :   9 :  2592.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1, 10 :  10 :  2597.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1, 11 :  11 :  2602.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1, 12 :  12 :  2607.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1, 13 :  13 :  2612.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1, 14 :  14 :  2617.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-: p       :    1,  1, 15 :  15 :  2622.5 : OPEN:  1  : 0.000000 :0.200000: 0.000000:10.00000:      0     :                         :
-------------------------------------------------------------------------------------------------------------------------------------
-1: The well connection D-FACTOR is not implemented in opm and the report will always show 0.
-2: The saturation scaling data has not been implemented in the report and will show blank
-
-
-
-
-Warning: Keyword 'BASIC' is unhandled for output to file.
-
-Warning: Keyword 'FLOWS' is unhandled for output to file.
-
-Warning: Keyword 'FREQ' is unhandled for output to file.
-
-Warning: Keyword 'SUMMARY' is unhandled for output to file.
-
-Warning: Keyword 'WELSPECS' is unhandled for output to file.
-                                                  ===================================================
-                                                  :                   Field Totals                  :
-                                                  :      PAV  =       320.862 BARSA                 :
-                                                  :      PORV =     189441851   RM3                 :
-                                                  : Pressure is weighted by hydrocarbon pore volume :
-                                                  : Porv volumes are taken at reference conditions  :
-                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
-                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Currently   in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Originally  in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:========================:==========================================:================:==========================================:
-
-                                                  ===================================================
-                                                  :        FIPNUM report region   1                 :
-                                                  :      PAV  =       320.862 BARSA                 :
-                                                  :      PORV =     189441851   RM3                 :
-                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
-                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Currently   in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Originally  in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:========================:==========================================:================:==========================================:
-
-======================================================= PRODUCTION REPORT =======================================================
-:  WELL  :  LOCATION :CTRL:    OIL    :   WATER   :    GAS    :   FLUID   :   WATER   : GAS/OIL  :  WAT/GAS   : BHP OR : THP OR :
-:  NAME  :  (I,J,K)  :MODE:    RATE   :   RATE    :    RATE   :  RES.VOL. :    CUT    :  RATIO   :   RATIO    : CON.PR.: BLK.PR.:
-:        :           :    :  SCM/DAY  :  SCM/DAY  :  SCM/DAY  :  RCM/DAY  :  SCM/SCM  :  SCM/SCM :  SCM/SCM   :  BARSA :  BARSA :
-=================================================================================================================================
-
-:   FIELD:           :    :        0.0:        0.0:        0.0:        0.0:      0.000:      0.00:        -nan:        :        : 
-:--------:-----------:----:-----------:-----------:-----------:-----------:-----------:----------:------------:--------:--------:
-
-:      G1:           :    :        0.0:        0.0:        0.0:        0.0:      0.000:      0.00:        -nan:        :        : 
-:--------:-----------:----:-----------:-----------:-----------:-----------:-----------:----------:------------:--------:--------:
-
-=================================================== INJECTION REPORT ========================================
-:  WELL  :  LOCATION : CTRL : CTRL : CTRL :    OIL    :   WATER   :    GAS    :   FLUID   : BHP OR : THP OR :
-:  NAME  :  (I,J,K)  : MODE : MODE : MODE :    RATE   :   RATE    :    RATE   :  RES.VOL. : CON.PR.: BLK.PR.:
-:        :           : OIL  : WAT  : GAS  :  SCM/DAY  :  SCM/DAY  :  SCM/DAY  :  RCM/DAY  :  BARSA :  BARSA :
-==============================================================================================================
-
-:   FIELD:           :      :      :      :        0.0:        0.0:        0.0:        0.0:        :        : 
-:--------:-----------:------:------:------:------------:----------:-----------:-----------:--------:--------: 
-
-:      G1:           :      :      :      :        0.0:        0.0:        0.0:        0.0:        :        : 
-:--------:-----------:------:------:------:------------:----------:-----------:-----------:--------:--------: 
-
-=================================================== CUMULATIVE PRODUCTION/INJECTION REPORT =========================================
-:  WELL  :  LOCATION :  WELL  :CTRL:    OIL    :   WATER   :    GAS    :   Prod    :    OIL    :   WATER   :    GAS    :   INJ     :
-:  NAME  :  (I,J,K)  :  TYPE  :MODE:    PROD   :   PROD    :    PROD   :  RES.VOL. :    INJ    :   INJ     :    INJ    :  RES.VOL. :
-:        :           :        :    :    MSCM   :   MSCM    :    MMSCM  :   MRCM    :    MSCM   :   MSCM    :    MMSCM  :   MRCM    :
-====================================================================================================================================
-
-:   FIELD:           :        :    :        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
-:--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
-
-:      G1:           :        :    :        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
-:--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
-
-Time step summary: newton its =  2, linearizations =  3 ( 0.383 sec), linear its =   5 ( 0.313 sec)
-
-Warning: Keyword 'BASIC' is unhandled for output to file.
-
-Warning: Keyword 'FLOWS' is unhandled for output to file.
-
-Warning: Keyword 'FREQ' is unhandled for output to file.
-
-Warning: Keyword 'SUMMARY' is unhandled for output to file.
-
-Warning: Keyword 'WELSPECS' is unhandled for output to file.
-
-                              **************************************************************************
-  Balance  at        18  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
-  Report    3    19 Jan 2020  *                                             Flow  version     2020.04  *
-                              **************************************************************************
-
-
-Report step  3/10 at day 18/366, date = 19-Jan-2020
-
-Time step 0, stepsize 1 days, at day 18/19, date = 19-Jan-2020
-Restart file written for report step:  3/10.  Date: 2020/01/19
-
-Warning: Keyword 'BASIC' is unhandled for output to file.
-
-Warning: Keyword 'FLOWS' is unhandled for output to file.
-
-Warning: Keyword 'FREQ' is unhandled for output to file.
-
-Warning: Keyword 'SUMMARY' is unhandled for output to file.
-
-Warning: Keyword 'WELSPECS' is unhandled for output to file.
-                                                  ===================================================
-                                                  :                   Field Totals                  :
-                                                  :      PAV  =       320.862 BARSA                 :
-                                                  :      PORV =     189441851   RM3                 :
-                                                  : Pressure is weighted by hydrocarbon pore volume :
-                                                  : Porv volumes are taken at reference conditions  :
-                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
-                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Currently   in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Originally  in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:========================:==========================================:================:==========================================:
-
-                                                  ===================================================
-                                                  :        FIPNUM report region   1                 :
-                                                  :      PAV  =       320.862 BARSA                 :
-                                                  :      PORV =     189441851   RM3                 :
-                         :--------------- Oil    SM3 ---------------:-- Wat    SM3 --:--------------- Gas    SM3 ---------------:
-                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Currently   in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:------------------------:------------------------------------------:----------------:------------------------------------------:
-:Originally  in place    :      63038144             0      63038144:     81399919   :             0   14259049061   14259049061:
-:========================:==========================================:================:==========================================:
-
-======================================================= PRODUCTION REPORT =======================================================
-:  WELL  :  LOCATION :CTRL:    OIL    :   WATER   :    GAS    :   FLUID   :   WATER   : GAS/OIL  :  WAT/GAS   : BHP OR : THP OR :
-:  NAME  :  (I,J,K)  :MODE:    RATE   :   RATE    :    RATE   :  RES.VOL. :    CUT    :  RATIO   :   RATIO    : CON.PR.: BLK.PR.:
-:        :           :    :  SCM/DAY  :  SCM/DAY  :  SCM/DAY  :  RCM/DAY  :  SCM/SCM  :  SCM/SCM :  SCM/SCM   :  BARSA :  BARSA :
-=================================================================================================================================
-
-:   FIELD:           :    :        0.0:        0.0:        0.0:        0.0:      0.000:      0.00:        -nan:        :        : 
-:--------:-----------:----:-----------:-----------:-----------:-----------:-----------:----------:------------:--------:--------:
-
-:      G1:           :    :       -0.0:       -0.0:       -0.0:       -0.0:      0.000:      0.00:        -nan:        :        : 
-:--------:-----------:----:-----------:-----------:-----------:-----------:-----------:----------:------------:--------:--------:
-
-=================================================== INJECTION REPORT ========================================
-:  WELL  :  LOCATION : CTRL : CTRL : CTRL :    OIL    :   WATER   :    GAS    :   FLUID   : BHP OR : THP OR :
-:  NAME  :  (I,J,K)  : MODE : MODE : MODE :    RATE   :   RATE    :    RATE   :  RES.VOL. : CON.PR.: BLK.PR.:
-:        :           : OIL  : WAT  : GAS  :  SCM/DAY  :  SCM/DAY  :  SCM/DAY  :  RCM/DAY  :  BARSA :  BARSA :
-==============================================================================================================
-
-:   FIELD:           :      :      :      :        0.0:        0.0:        0.0:        0.0:        :        : 
-:--------:-----------:------:------:------:------------:----------:-----------:-----------:--------:--------: 
-
-:      G1:           :      :      :      :        0.0:        0.0:        0.0:        0.0:        :        : 
-:--------:-----------:------:------:------:------------:----------:-----------:-----------:--------:--------: 
-
-=================================================== CUMULATIVE PRODUCTION/INJECTION REPORT =========================================
-:  WELL  :  LOCATION :  WELL  :CTRL:    OIL    :   WATER   :    GAS    :   Prod    :    OIL    :   WATER   :    GAS    :   INJ     :
-:  NAME  :  (I,J,K)  :  TYPE  :MODE:    PROD   :   PROD    :    PROD   :  RES.VOL. :    INJ    :   INJ     :    INJ    :  RES.VOL. :
-:        :           :        :    :    MSCM   :   MSCM    :    MMSCM  :   MRCM    :    MSCM   :   MSCM    :    MMSCM  :   MRCM    :
-====================================================================================================================================
-
-:   FIELD:           :        :    :        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
-:--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
-
-:      G1:           :        :    :        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0:        0.0: 
-:--------:-----------:--------:----:------------:----------:-----------:-----------:------------:----------:-----------:-----------: 
-
-Time step summary: newton its =  2, linearizations =  3 ( 0.366 sec), linear its =   5 ( 0.326 sec)
-
-Warning: Keyword 'BASIC' is unhandled for output to file.
-
-Warning: Keyword 'FLOWS' is unhandled for output to file.
-
-Warning: Keyword 'FREQ' is unhandled for output to file.
-
-Warning: Keyword 'SUMMARY' is unhandled for output to file.
-
-Warning: Keyword 'WELSPECS' is unhandled for output to file.
-
-                              **************************************************************************
-  Balance  at        19  Days *ODEH PROBLEM - IMPLICIT OPTION                                          *
-  Report    4    20 Jan 2020  *                                             Flow  version     2020.04  *
-                              **************************************************************************
-
-
-Report step  4/10 at day 19/366, date = 20-Jan-2020
-
-Time step 0, stepsize 2 days, at day 19/23, date = 20-Jan-2020
-Restart file written for report step:  4/10.  Date: 2020/01/20
-    Switching control mode for well p from BHP to LRAT on rank 1
