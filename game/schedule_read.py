@@ -407,6 +407,8 @@ class Events:
             wname = event['Название скважины']
         if wname in self.schedule.wells:
             pump = self.schedule.wells[wname].pump
+            if np.isnan(pump):
+                pump = ''
             if pump == '' or pump == 'Нет':
                 pump = 'Насос 100-500'
             pump_rate = float(pump.split()[1].split('-')[0])
