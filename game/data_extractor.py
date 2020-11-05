@@ -83,15 +83,16 @@ def export_to_csv(path, team_name):
                   '09_Удл':0,          
                   '10_Ндин':random.randint(200,500),
                   '11_СЭ':'ESP',
-                  '12_Рзаб':df['WBHP:'+name].tail(5).mean(),        
-                  '13_Qнефти':df['WOPR:'+name].tail(5).mean(),
-                  '14_Qжидк':df['WLPR:'+name].tail(5).mean(),
-                  '15_Обводненность':df['WWPR:'+name].tail(5).mean()/(1+df['WLPR:'+name].tail(5).mean()),
-                  '16_Pзатр':15,
-                  '17_ГФ':60,
-                  '18_Тпл':104,
-                  '19_Пл-ть_нефти':0.85,
-                  '20_Пл-ть_воды':1 })
+                  '12_Рзаб':df['WBHP:'+name].tail(2).mean(),        
+                  '13_Qнефти':df['WOPR:'+name].tail(2).mean(),
+                  '14_Qжидк':df['WLPR:'+name].tail(2).mean(),
+                  '15_Qзак':df['WWIR:'+name].tail(2).mean(),
+                  '16_Обводненность':df['WWPR:'+name].tail(2).mean()/(1+df['WLPR:'+name].tail(2).mean()),
+                  '17_Pзатр':15,
+                  '18_ГФ':60,
+                  '19_Тпл':104,
+                  '20_Пл-ть_нефти':0.85,
+                  '21_Пл-ть_воды':1 })
         df1=pd.DataFrame(d)
         append_df_to_excel(f"resultspace/{team_name}/201910_TR_1.xlsx", df1,sheet_name='TR', 
                             startrow=0, startcol=0, index=False, header=False)

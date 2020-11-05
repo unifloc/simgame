@@ -38,14 +38,14 @@ def export_to_GT(path, name):
         body = {
                 "valueInputOption": "USER_ENTERED",
     "data": [
-        {"range": f"{name}!A68:X200",
+        {"range": f"{name}!A89:X250",
          "majorDimension": "ROWS",     # сначала заполнять ряды, затем столбцы (т.е. самые внутренние списки в values - это ряды)
          "values": list_data }]}
         ).execute()
                         
     df=pd.read_csv(path + f"/resultspace/{name}/sim_result.csv")
     kin = []
-    for i in range(0, len(df['FOPT'])-1):
+    for i in range(1, len(df['FOPT'])):
         col = []
         col.append(df['time'][i])
         col.append(int(df['FOPT'][i]))
@@ -55,7 +55,7 @@ def export_to_GT(path, name):
         body = {
             "valueInputOption": "USER_ENTERED",
             "data": [
-                {"range": f"{name}!A100:B150",
+                {"range": f"{name}!A160:B750",
                         "majorDimension": "ROWS",
                         "values": kin}]}
         ).execute()
@@ -118,9 +118,3 @@ def export_snapshots(name):
         view.export_snapshot()
 
     process.kill()
-
-    images = []
-    image_paths = glob.glob(dirname + '/*')
-
-    for path in image_paths:
-        images.append(Image.open(path))

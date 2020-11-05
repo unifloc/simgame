@@ -350,7 +350,7 @@ class Events:
             
     def zapusk_gno(self, event, tstep, year):
         self.define_tstep_and_add_to_sch(tstep, 1, year)
-        n = event['Название скважины'] + '_perev'
+        n = event['Название скважины'] + '_per'
         if n in self.schedule.wells:
             wname = n
         else:
@@ -400,40 +400,41 @@ class Events:
 
     def zapusk(self, event, tstep, year):
         self.define_tstep_and_add_to_sch(tstep, 1, year)
-        n = event['Название скважины'] + '_perev'
+        n = event['Название скважины'] + '_per'
         if n in self.schedule.wells:
             wname = n
         else:
             wname = event['Название скважины']
         if wname in self.schedule.wells:
-            pump = self.schedule.wells[wname].pump
-            if np.isnan(pump):
-                pump = ''
-            if pump == '' or pump == 'Нет':
-                pump = 'Насос 100-500'
-            pump_rate = float(pump.split()[1].split('-')[0])
-            pump_head = float(pump.split()[1].split('-')[1])
-            pump_bhp_min = 250 - pump_head/10
-            if self.schedule.wells[wname].lrat is not None:
-                qliq = self.schedule.wells[wname].lrat
-            else:
-                if not np.isnan(float(event['Контроль дебит/ Контроль закачка'])) and float(event['Контроль дебит/ Контроль закачка']) < pump_rate:
-                    qliq = float(event['Контроль дебит/ Контроль закачка'])
-                    self.schedule.wells[wname].lrat = qliq
-                else:
-                    qliq = pump_rate 
-                    self.schedule.wells[wname].lrat = qliq
-            if self.schedule.wells[wname].bhp is not None:
-                bhp = self.schedule.wells[wname].bhp
-            else:
-                if not np.isnan(float(event['Контроль Рзаб'])) and float(event['Контроль Рзаб']) > pump_bhp_min:
-                    bhp = float(event['Контроль Рзаб'])
-                    self.schedule.wells[wname].bhp = bhp
-                else:
-                    bhp = pump_bhp_min 
-                    self.schedule.wells[wname].bhp = bhp
             status = 'OPEN'
             if self.schedule.wells[wname].type == 'PROD':
+                pump = self.schedule.wells[wname].pump
+                print(pump)
+                #if np.isnan(float(pump)):
+                 #   pump = ''
+                if pump == '' or pump == 'Нет':
+                    pump = 'Насос 100-500'
+                pump_rate = float(pump.split()[1].split('-')[0])
+                pump_head = float(pump.split()[1].split('-')[1])
+                pump_bhp_min = 250 - pump_head/10
+                if self.schedule.wells[wname].lrat is not None:
+                    qliq = self.schedule.wells[wname].lrat
+                else:
+                    if not np.isnan(float(event['Контроль дебит/ Контроль закачка'])) and float(event['Контроль дебит/ Контроль закачка']) < pump_rate:
+                        qliq = float(event['Контроль дебит/ Контроль закачка'])
+                        self.schedule.wells[wname].lrat = qliq
+                    else:
+                        qliq = pump_rate 
+                        self.schedule.wells[wname].lrat = qliq
+                if self.schedule.wells[wname].bhp is not None:
+                    bhp = self.schedule.wells[wname].bhp
+                else:
+                    if not np.isnan(float(event['Контроль Рзаб'])) and float(event['Контроль Рзаб']) > pump_bhp_min:
+                        bhp = float(event['Контроль Рзаб'])
+                        self.schedule.wells[wname].bhp = bhp
+                    else:
+                        bhp = pump_bhp_min 
+                        self.schedule.wells[wname].bhp = bhp
                 if np.isnan(qliq):
                     control = 'BHP'
                     qliq = '1*'
@@ -446,6 +447,8 @@ class Events:
                     control = 'BHP'
                 self.schedule_new.extend(self.schedule.make_WCONPROD(wname, qliq, bhp, status, control))
             else:
+                qliq = 0
+                bhp = 250
                 if self.schedule.wells[wname].lrat is not None:
                     qliq = self.schedule.wells[wname].lrat
                 else:
@@ -458,6 +461,10 @@ class Events:
                     if not np.isnan(float(event['Контроль Рзаб'])):
                         bhp = float(event['Контроль Рзаб'])
                         self.schedule.wells[wname].bhp = bhp
+                if qliq > 800:
+                    qliq = 800
+                if bhp > 800:
+                    bhp = 800
                 if np.isnan(qliq):
                     control = 'BHP'
                     qliq = '1*'
@@ -473,7 +480,7 @@ class Events:
 
     def ostanovka(self, event, tstep, year):
         self.define_tstep_and_add_to_sch(tstep, 1, year)
-        n = event['Название скважины'] + '_perev'
+        n = event['Название скважины'] + '_per'
         if n in self.schedule.wells:
             wname = n
         else:
@@ -542,7 +549,7 @@ class Events:
 
     def reperforation(self, event, tstep, year):
         self.define_tstep_and_add_to_sch(tstep, 4, year)
-        n = event['Название скважины'] + '_perev'
+        n = event['Название скважины'] + '_per'
         if n in self.schedule.wells:
             wname = n
         else:
@@ -568,7 +575,7 @@ class Events:
     
     def build_na_perev(self, event, tstep, year):
         self.define_tstep_and_add_to_sch(tstep, 14, year)
-        wname = event['Название скважины'] + '_perev'
+        wname = event['Название скважины'] + '_per'
         if wname not in self.schedule.wells:
             x = self.schedule.wells[event['Название скважины']].x
             y = self.schedule.wells[event['Название скважины']].y
@@ -593,7 +600,7 @@ class Events:
 
     def zapusk_perev(self, event, tstep, year):
         self.define_tstep_and_add_to_sch(tstep, 1, year)
-        wname = event['Название скважины'] + '_perev'
+        wname = event['Название скважины'] + '_per'
         status = 'OPEN'
         qliq = np.nan
         bhp = np.nan
@@ -619,7 +626,7 @@ class Events:
     
     def OPZ(self, event, tstep, year):
         self.define_tstep_and_add_to_sch(tstep, 3, year)
-        n = event['Название скважины'] + '_perev'
+        n = event['Название скважины'] + '_per'
         if n in self.schedule.wells:
             wname = n
         else:
